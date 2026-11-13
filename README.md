@@ -40,6 +40,19 @@ python scripts/index_lci.py --limit 100
 
 ใช้ `--limit 100` ทดลองปริมาณเล็กน้อยก่อน จากนั้นรันโดยไม่ใส่ `--limit` เพื่อสร้าง embeddings ให้ครบทุก Exchange ที่ยังไม่มีหรือข้อมูลเปลี่ยน สคริปต์เก็บผลเป็นชุดและอัปเดตซ้ำได้
 
+## รันงานบน Render
+
+เมื่อตั้ง `DATABASE_URL` และ `GEMINI_API_KEY` ใน Render Web Service แล้ว ให้เปิด **Shell** ของบริการและรันจากโฟลเดอร์รากของ repository:
+
+```sh
+python scripts/setup_semantic_search.py
+python scripts/index_lci.py --limit 100
+```
+
+ถ้าผลทดลองถูกต้อง ให้รัน `python scripts/index_lci.py` โดยไม่ใส่ `--limit` เพื่อทำ embeddings ให้ครบ งานนี้อ่านฐานข้อมูล Render ผ่าน Internal URL และใช้ Gemini key จาก Environment ของบริการ ไม่ต้องนำ secret มาใส่ในคำสั่ง
+
+การย้ายตาราง LCI จาก LocalDB เป็นอีกขั้นหนึ่ง: Render ต้องได้รับไฟล์ dump ก่อน เพราะไม่สามารถอ่านไฟล์หรือ Docker container ในเครื่องเราได้ หลังส่ง dump เข้า Render แล้ว จึงค่อย restore และรันคำสั่งข้างต้นบน Render
+
 ## Deploy ที่ Render
 
 ใช้ Blueprint จาก `render.yaml` โดยตั้ง Environment Variables ในหน้า Render:
