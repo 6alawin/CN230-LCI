@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CN230 LCI Semantic Search</title>
+  <style>
+    :root { font-family: system-ui, sans-serif; color: #172033; background: #f5f7fb; }
+    body { margin: 0; }
+    main { max-width: 880px; margin: 4rem auto; padding: 0 1.25rem; }
+    h1 { margin-bottom: .4rem; }
+    p { color: #536179; }
+    form { display: grid; grid-template-columns: 1fr 150px auto; gap: .65rem; margin: 2rem 0; }
+    input, select, button { font: inherit; padding: .8rem; border: 1px solid #cbd3df; border-radius: 9px; background: white; }
+    button { border: 0; background: #1769e0; color: white; cursor: pointer; }
+    article { background: white; border: 1px solid #e0e5ed; border-radius: 12px; padding: 1rem 1.2rem; margin: .8rem 0; }
+    article h2 { font-size: 1rem; margin: 0 0 .5rem; }
+    small { color: #63718a; }
+    #status { min-height: 1.5rem; }
+    @media (max-width: 650px) { form { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ค้นหาข้อมูล LCI</h1>
+    <p>พิมพ์สิ่งที่ต้องการค้นหาเป็นภาษาไทยหรืออังกฤษ เช่น “การใช้ก๊าซธรรมชาติในอุตสาหกรรม”</p>
+    <form id="search-form">
+      <input id="query" name="query" required minlength="2" placeholder="พิมพ์คำค้น...">
+      <select id="source"><option value="">ทุกแหล่งข้อมูล</option></select>
+      <button type="submit">ค้นหา</button>
+    </form>
+    <div id="status" role="status"></div>
+    <section id="results" aria-live="polite"></section>
+  </main>
+  <script>
+    const sourceSelect = document.querySelector('#source');
+    for (let i = 1; i <= 18; i++) {
+      const code = `SRC-${String(i).padStart(2, '0')}`;
+      sourceSelect.add(new Option(code, code));
+    }
+    const form = document.querySelector('#search-form');
+    const status = document.querySelector('#status');
+    const results = document.querySelector('#results');
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      status.textContent = 'กำลังค้นหา...';
+      results.replaceChildren();
+      try {
+        const response = await fetch('/api/search', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query: document.querySelector('#query').value, source_code: sourceSelect.value || null, limit: 10 })
+        });
+        const payload = await response.json();
+        if (!response.ok) throw new Error(payload.detail || 'ค้นหาไม่สำเร็จ');
+        status.textContent = `พบ ${payload.results.length} รายการ`;
+        for (const item of payload.results) {
+          const article = document.createElement('article');
+          const title = document.createElement('h2');
+          title.textContent = item.title;
+          const content = document.createElement('p');
+          content.textContent = item.content;
+          const meta = document.createElement('small');
+          meta.textContent = `${item.source_code || 'ไม่ระบุ SRC'} · ความใกล้เคียง ${(item.similarity * 100).toFixed(1)}%`;
+          article.append(title, content, meta);
+          results.append(article);
+        }
+      } catch (error) { status.textContent = error.message; }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+# CN230 LCI Semantic Search
+
+เว็บค้นหาข้อมูล LCI ตามความหมายของคำค้น ด้วย Gemini Embeddings และ pgvector บน Render PostgreSQL
+
+## สิ่งที่เตรียมไว้
+
+- หน้าเว็บค้นภาษาไทย/อังกฤษพร้อมกรองแหล่ง SRC
+- FastAPI endpoint สำหรับค้นเวกเตอร์
+- SQL migration สำหรับ `pgvector` และตารางเก็บ embeddings
+- สคริปต์ทำดัชนี Exchange จาก schema CN230 LCI
+- Blueprint สำหรับ deploy เป็น Render Web Service
+
+## ตั้งค่าในเครื่อง
+
+1. คัดลอก `.env.example` เป็น `.env` และกำหนด `DATABASE_URL` สำหรับพัฒนาในเครื่อง โดยใช้ External URL จาก Render พร้อม `?sslmode=require`
+2. ใส่ Gemini API key ใน `GEMINI_API_KEY` (อย่า commit ไฟล์ `.env`)
+3. ติดตั้งและเปิดเว็บ:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+เปิด `http://localhost:8000` เพื่อใช้หน้า search และ `http://localhost:8000/docs` เพื่อดู API
+
+## เตรียม Render PostgreSQL
+
+รัน [db/001_semantic_search.sql](db/001_semantic_search.sql) หนึ่งครั้งกับฐานข้อมูล Render เพื่อเปิด extension `vector` และสร้างตาราง/ดัชนีค้นหา ไฟล์นี้ไม่แก้หรือลบตาราง LCI เดิม
+
+## ทำดัชนีข้อมูล
+
+เมื่อใส่ `GEMINI_API_KEY` และรัน migration แล้ว:
+
+```powershell
+python scripts/index_lci.py --limit 100
+```
+
+ใช้ `--limit 100` ทดลองปริมาณเล็กน้อยก่อน จากนั้นรันโดยไม่ใส่ `--limit` เพื่อสร้าง embeddings ให้ครบทุก Exchange ที่ยังไม่มีหรือข้อมูลเปลี่ยน สคริปต์เก็บผลเป็นชุดและอัปเดตซ้ำได้
+
+## Deploy ที่ Render
+
+ใช้ Blueprint จาก `render.yaml` โดยตั้ง Environment Variables ในหน้า Render:
+
+- `DATABASE_URL`: Internal Database URL ของ Render จาก host/port/database/user/password ที่ให้มา เมื่อ Web Service อยู่ใน workspace และ region เดียวกัน
+- `GEMINI_API_KEY`: API key จาก Google AI Studio
+
+Hostname รูปแบบ `dpg-...-a` ที่ได้มาจาก Render เป็น Internal URL ใช้ได้เมื่อ Web Service อยู่ใน workspace/region เดียวกับ DB เท่านั้น ให้นำค่า Internal URL ไปตั้ง `DATABASE_URL` ใน Environment ของ Render; สำหรับรันในเครื่องต้องใช้ External URL ซึ่งมี hostname อีกแบบและต้องมี `sslmode=require`.
+
+ใช้โมเดล `gemini-embedding-001` เพื่อสร้าง embeddings หลายรายการต่อ request ได้อย่างถูกต้อง พร้อมแยก task สำหรับเอกสารและ query ตามงาน retrieval ของ Gemini
+
+เก็บ secret ใน Environment ของ Render เท่านั้น ห้ามใส่ลง Git หรือ `render.yaml`
+
+API: `POST /api/search` รับ `{ "query": "การใช้ก๊าซธรรมชาติ", "limit": 10, "source_code": "SRC-11" }`
+
+สถานะ: `GET /api/health`
