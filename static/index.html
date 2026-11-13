@@ -3,69 +3,293 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CN230 LCI Semantic Search</title>
+  <meta name="theme-color" content="#0b1220">
+  <title>CN230 LCI — Semantic Search</title>
   <style>
-    :root { font-family: system-ui, sans-serif; color: #172033; background: #f5f7fb; }
-    body { margin: 0; }
-    main { max-width: 880px; margin: 4rem auto; padding: 0 1.25rem; }
-    h1 { margin-bottom: .4rem; }
-    p { color: #536179; }
-    form { display: grid; grid-template-columns: 1fr 150px auto; gap: .65rem; margin: 2rem 0; }
-    input, select, button { font: inherit; padding: .8rem; border: 1px solid #cbd3df; border-radius: 9px; background: white; }
-    button { border: 0; background: #1769e0; color: white; cursor: pointer; }
-    article { background: white; border: 1px solid #e0e5ed; border-radius: 12px; padding: 1rem 1.2rem; margin: .8rem 0; }
-    article h2 { font-size: 1rem; margin: 0 0 .5rem; }
-    small { color: #63718a; }
-    #status { min-height: 1.5rem; }
-    @media (max-width: 650px) { form { grid-template-columns: 1fr; } }
+    :root {
+      color-scheme: dark;
+      font-family: Inter, "Segoe UI", Tahoma, sans-serif;
+      color: #e7edf6;
+      background: #0b1220;
+      font-synthesis: none;
+      --muted: #91a0b6;
+      --line: rgba(148, 163, 184, .16);
+      --panel: #111b2c;
+      --panel-soft: #152238;
+      --teal: #37d6c0;
+      --blue: #80a8ff;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 72% -12%, #173457 0, transparent 38%), #0b1220; }
+    button, input, select { font: inherit; }
+    button { cursor: pointer; }
+    .shell { min-height: 100vh; display: grid; grid-template-columns: 248px minmax(0, 1fr); }
+    aside { position: sticky; top: 0; height: 100vh; padding: 28px 18px; border-right: 1px solid var(--line); background: rgba(11, 18, 32, .83); display: flex; flex-direction: column; }
+    .brand { display: flex; align-items: center; gap: 12px; padding: 2px 10px 30px; }
+    .brand-mark { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 12px; color: #07151b; background: linear-gradient(135deg, #5eead4, #60a5fa); font-weight: 900; letter-spacing: -.08em; }
+    .brand-name { font-weight: 750; font-size: 14px; letter-spacing: .02em; }
+    .brand-sub { margin-top: 3px; color: var(--muted); font-size: 11px; }
+    .nav-label { padding: 0 12px; margin: 7px 0 9px; color: #65758c; text-transform: uppercase; font-size: 10px; font-weight: 750; letter-spacing: .14em; }
+    .nav-item { display: flex; align-items: center; gap: 11px; padding: 11px 12px; border-radius: 10px; color: #9baac0; font-size: 13px; text-decoration: none; }
+    .nav-item.active { color: #e8fffb; background: rgba(55, 214, 192, .11); box-shadow: inset 2px 0 #37d6c0; }
+    .nav-icon { width: 18px; text-align: center; font-size: 15px; }
+    .side-bottom { margin-top: auto; padding: 15px 12px 4px; border-top: 1px solid var(--line); color: #8291a7; font-size: 11px; line-height: 1.65; }
+    .db-state { display: flex; align-items: center; gap: 8px; color: #b7c5d8; font-size: 12px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #f5b942; box-shadow: 0 0 12px currentColor; }
+    .dot.online { color: #37d6a0; background: #37d6a0; }
+    .dot.offline { color: #fb7185; background: #fb7185; }
+    main { min-width: 0; padding: 34px clamp(22px, 5vw, 72px) 64px; max-width: 1500px; width: 100%; margin: 0 auto; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 45px; }
+    .crumb { color: var(--muted); font-size: 12px; }
+    .top-actions { display: flex; align-items: center; gap: 10px; }
+    .pill { display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px; color: #bdc9d9; border: 1px solid var(--line); border-radius: 999px; background: rgba(17, 27, 44, .72); font-size: 11px; }
+    .avatar { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid rgba(128,168,255,.3); border-radius: 50%; color: #c5d5ff; background: #1a2b49; font-size: 12px; font-weight: 700; }
+    .eyebrow { color: var(--teal); font-size: 11px; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 12px 0 8px; max-width: 760px; font-size: clamp(30px, 4vw, 46px); line-height: 1.1; letter-spacing: -.045em; }
+    .intro { margin: 0; max-width: 720px; color: #9eacc0; font-size: 14px; line-height: 1.75; }
+    .hero { margin-bottom: 27px; }
+    .search-panel { padding: 10px; border: 1px solid rgba(148,163,184,.2); border-radius: 16px; background: rgba(17,27,44,.88); box-shadow: 0 20px 70px rgba(0,0,0,.18); }
+    .search-row { display: grid; grid-template-columns: minmax(180px, 1fr) 180px auto; gap: 9px; }
+    .field-wrap { position: relative; }
+    .search-symbol { position: absolute; top: 50%; left: 15px; transform: translateY(-50%); color: #8294ad; font-size: 17px; pointer-events: none; }
+    input, select { width: 100%; min-height: 50px; color: #ecf2fa; border: 1px solid transparent; border-radius: 10px; outline: none; background: #0c1524; }
+    input { padding: 0 15px 0 43px; }
+    input::placeholder { color: #70819a; }
+    input:focus, select:focus { border-color: rgba(55,214,192,.65); box-shadow: 0 0 0 3px rgba(55,214,192,.1); }
+    select { padding: 0 13px; color: #c4cede; }
+    .search-button { min-width: 118px; padding: 0 18px; border: 0; border-radius: 10px; color: #06211f; background: linear-gradient(135deg, #5eead4, #48c9d5); font-weight: 750; transition: filter .15s, transform .15s; }
+    .search-button:hover { filter: brightness(1.07); transform: translateY(-1px); }
+    .search-button:disabled { opacity: .65; cursor: wait; transform: none; }
+    .search-hints { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 12px 5px 2px; color: #71829a; font-size: 11px; }
+    .suggestion { padding: 6px 10px; border: 1px solid var(--line); border-radius: 999px; color: #a9b8cb; background: #131e30; font-size: 11px; }
+    .suggestion:hover { color: #d7fffa; border-color: rgba(55,214,192,.4); }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 14px; margin: 34px 0 13px; }
+    .section-head h2 { margin: 0; font-size: 16px; letter-spacing: -.01em; }
+    .section-note { color: var(--muted); font-size: 11px; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; }
+    .stat-card { min-height: 99px; padding: 17px 19px; border: 1px solid var(--line); border-radius: 13px; background: linear-gradient(145deg, rgba(21,34,56,.92), rgba(15,24,39,.84)); }
+    .stat-label { color: #92a2b8; font-size: 11px; }
+    .stat-value { display: flex; align-items: baseline; gap: 8px; margin-top: 8px; color: #edf4ff; font-size: 23px; font-weight: 700; letter-spacing: -.035em; }
+    .stat-hint { color: #73849b; font-size: 10px; font-weight: 500; letter-spacing: 0; }
+    .results-toolbar { display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 4px; color: #91a0b6; font-size: 12px; }
+    #status { min-height: 20px; }
+    #results { display: grid; gap: 11px; }
+    .result-card { position: relative; padding: 18px 20px 17px; border: 1px solid var(--line); border-radius: 13px; background: rgba(17,27,44,.8); transition: border-color .15s, transform .15s; }
+    .result-card:hover { transform: translateY(-1px); border-color: rgba(128,168,255,.35); }
+    .result-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+    .result-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tag { padding: 5px 8px; border: 1px solid rgba(128,168,255,.2); border-radius: 6px; color: #b8ccff; background: rgba(47,74,120,.2); font-size: 10px; font-weight: 650; }
+    .tag.type { color: #9ceadf; border-color: rgba(55,214,192,.2); background: rgba(55,214,192,.07); }
+    .score { color: #66ddc6; font-size: 11px; font-weight: 750; white-space: nowrap; }
+    .result-card h3 { margin: 0 0 7px; color: #e7effa; font-size: 14px; line-height: 1.5; }
+    .result-card p { margin: 0; color: #a2b0c3; font-size: 12px; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .empty-state { display: grid; place-items: center; min-height: 190px; padding: 28px; border: 1px dashed rgba(148,163,184,.22); border-radius: 13px; color: #8494aa; text-align: center; }
+    .empty-icon { margin-bottom: 12px; font-size: 25px; opacity: .8; }
+    .empty-state strong { display: block; margin-bottom: 5px; color: #bfccdc; font-size: 13px; }
+    .empty-state span { font-size: 11px; line-height: 1.6; }
+    .error { color: #ff9eaa !important; }
+    .skeleton { height: 108px; border: 1px solid var(--line); border-radius: 13px; background: linear-gradient(100deg, #111b2c 30%, #1b2a40 48%, #111b2c 66%); background-size: 200% 100%; animation: shimmer 1.2s infinite; }
+    @keyframes shimmer { to { background-position-x: -200%; } }
+    footer { margin-top: 35px; padding-top: 18px; border-top: 1px solid var(--line); color: #687990; font-size: 10px; display: flex; justify-content: space-between; gap: 10px; }
+    @media (max-width: 850px) { .shell { grid-template-columns: 1fr; } aside { position: static; height: auto; padding: 14px 18px; border-right: 0; border-bottom: 1px solid var(--line); flex-direction: row; align-items: center; justify-content: space-between; } .brand { padding: 0; } .nav-label, .nav-item, .side-bottom { display: none; } main { padding-top: 25px; } .topbar { margin-bottom: 34px; } }
+    @media (max-width: 620px) { main { padding: 22px 16px 40px; } .topbar { margin-bottom: 29px; } .crumb { display: none; } .search-row { grid-template-columns: 1fr 1fr; } .field-wrap { grid-column: 1 / -1; } .search-button { min-height: 48px; } .stats { grid-template-columns: 1fr; gap: 8px; } .stat-card { min-height: auto; padding: 13px 15px; } .stat-value { margin-top: 4px; font-size: 20px; } .result-card { padding: 15px; } footer { flex-direction: column; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }
   </style>
 </head>
 <body>
-  <main>
-    <h1>ค้นหาข้อมูล LCI</h1>
-    <p>พิมพ์สิ่งที่ต้องการค้นหาเป็นภาษาไทยหรืออังกฤษ เช่น “การใช้ก๊าซธรรมชาติในอุตสาหกรรม”</p>
-    <form id="search-form">
-      <input id="query" name="query" required minlength="2" placeholder="พิมพ์คำค้น...">
-      <select id="source"><option value="">ทุกแหล่งข้อมูล</option></select>
-      <button type="submit">ค้นหา</button>
-    </form>
-    <div id="status" role="status"></div>
-    <section id="results" aria-live="polite"></section>
-  </main>
+  <div class="shell">
+    <aside aria-label="เมนูหลัก">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">LCI</div>
+        <div><div class="brand-name">CN230 LCI</div><div class="brand-sub">Semantic Search</div></div>
+      </div>
+      <div class="nav-label">Workspace</div>
+      <a class="nav-item active" href="#overview"><span class="nav-icon">⌂</span> ภาพรวม</a>
+      <a class="nav-item" href="#search"><span class="nav-icon">⌕</span> ค้นหาข้อมูล</a>
+      <div class="side-bottom">
+        <div class="db-state"><span class="dot" id="side-dot"></span><span id="side-health">กำลังตรวจสอบระบบ</span></div>
+        <div style="margin-top:10px">ค้นข้อมูลวัฏจักรชีวิตจากฐานข้อมูล LCI</div>
+      </div>
+    </aside>
+
+    <main id="overview">
+      <div class="topbar">
+        <div class="crumb">CN230 LCI <span aria-hidden="true">/</span> Semantic Search</div>
+        <div class="top-actions"><span class="pill"><span class="dot" id="top-dot"></span><span id="top-health">กำลังเชื่อมต่อ</span></span><div class="avatar" aria-label="CN230">CN</div></div>
+      </div>
+
+      <section class="hero">
+        <div class="eyebrow">Life Cycle Inventory · Search Workspace</div>
+        <h1>ค้นข้อมูล LCI<br>ด้วยความหมาย</h1>
+        <p class="intro">ค้นหา Exchange และข้อมูลกระบวนการด้วยภาษาที่คุณใช้ ระบบจะจับคู่จากความหมายของคำค้น ไม่จำเป็นต้องพิมพ์ให้ตรงกับข้อความในฐานข้อมูล</p>
+      </section>
+
+      <section class="search-panel" id="search" aria-label="ค้นหาข้อมูล">
+        <form id="search-form">
+          <div class="search-row">
+            <div class="field-wrap"><span class="search-symbol" aria-hidden="true">⌕</span><input id="query" name="query" required minlength="2" maxlength="1000" autocomplete="off" placeholder="ลองค้นหา เช่น การผลิตไฟฟ้าจากลิกไนต์" aria-label="คำค้นหา"></div>
+            <select id="source" aria-label="กรองตามแหล่งข้อมูล"><option value="">ทุกแหล่งข้อมูล</option></select>
+            <button class="search-button" id="search-button" type="submit">ค้นหา <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="search-hints"><span>ลองค้นหา:</span>
+            <button class="suggestion" type="button" data-query="การผลิตไฟฟ้าจากถ่านหิน">การผลิตไฟฟ้าจากถ่านหิน</button>
+            <button class="suggestion" type="button" data-query="การขนส่งน้ำมันดิบ">การขนส่งน้ำมันดิบ</button>
+            <button class="suggestion" type="button" data-query="การใช้ก๊าซธรรมชาติในอุตสาหกรรม">ก๊าซธรรมชาติในอุตสาหกรรม</button>
+          </div>
+        </form>
+      </section>
+
+      <section aria-label="สรุปการค้นหา">
+        <div class="section-head"><h2>ภาพรวมการค้นหา</h2><span class="section-note">ข้อมูลจาก semantic search</span></div>
+        <div class="stats">
+          <div class="stat-card"><div class="stat-label">จำนวนผลลัพธ์ล่าสุด</div><div class="stat-value"><span id="result-count">—</span><span class="stat-hint">รายการ</span></div></div>
+          <div class="stat-card"><div class="stat-label">แหล่งข้อมูล</div><div class="stat-value"><span id="source-label">ทั้งหมด</span><span class="stat-hint">SRC</span></div></div>
+          <div class="stat-card"><div class="stat-label">ประเภทการค้นหา</div><div class="stat-value">Semantic<span class="stat-hint">Gemini Embedding</span></div></div>
+        </div>
+      </section>
+
+      <section aria-label="ผลการค้นหา">
+        <div class="section-head"><h2>ผลการค้นหา</h2><span class="section-note" id="query-label">เริ่มจากคำค้นด้านบน</span></div>
+        <div class="results-toolbar"><span id="status" role="status" aria-live="polite">ค้นหาตามความหมายได้ทั้งภาษาไทยและภาษาอังกฤษ</span><span id="result-range"></span></div>
+        <div id="results" aria-live="polite">
+          <div class="empty-state"><div><div class="empty-icon" aria-hidden="true">⌕</div><strong>พร้อมค้นหาข้อมูล LCI</strong><span>พิมพ์คำค้นหรือเลือกตัวอย่างด้านบนเพื่อเริ่มต้น</span></div></div>
+        </div>
+      </section>
+
+      <footer><span>CN230 LCI · Semantic Search</span><span>ค้นหาความรู้จากข้อมูลวัฏจักรชีวิต</span></footer>
+    </main>
+  </div>
+
   <script>
     const sourceSelect = document.querySelector('#source');
     for (let i = 1; i <= 18; i++) {
       const code = `SRC-${String(i).padStart(2, '0')}`;
       sourceSelect.add(new Option(code, code));
     }
+
     const form = document.querySelector('#search-form');
+    const queryInput = document.querySelector('#query');
     const status = document.querySelector('#status');
     const results = document.querySelector('#results');
+    const searchButton = document.querySelector('#search-button');
+
+    function setHealth(online) {
+      for (const id of ['side-dot', 'top-dot']) {
+        const dot = document.getElementById(id);
+        dot.classList.toggle('online', online);
+        dot.classList.toggle('offline', !online);
+      }
+      document.querySelector('#side-health').textContent = online ? 'ฐานข้อมูลพร้อมใช้งาน' : 'ฐานข้อมูลยังไม่พร้อม';
+      document.querySelector('#top-health').textContent = online ? 'ระบบพร้อมใช้งาน' : 'ระบบยังไม่พร้อม';
+    }
+
+    async function checkHealth() {
+      try {
+        const response = await fetch('/api/health');
+        setHealth(response.ok);
+      } catch { setHealth(false); }
+    }
+
+    function showEmpty(title, message, error = false) {
+      results.replaceChildren();
+      const state = document.createElement('div');
+      state.className = 'empty-state';
+      if (error) state.classList.add('error');
+      const wrapper = document.createElement('div');
+      const icon = document.createElement('div');
+      icon.className = 'empty-icon';
+      icon.textContent = error ? '!' : '⌕';
+      const heading = document.createElement('strong');
+      heading.textContent = title;
+      const detail = document.createElement('span');
+      detail.textContent = message;
+      wrapper.append(icon, heading, detail);
+      state.append(wrapper);
+      results.append(state);
+    }
+
+    function makeResult(item) {
+      const card = document.createElement('article');
+      card.className = 'result-card';
+      const top = document.createElement('div');
+      top.className = 'result-top';
+      const tags = document.createElement('div');
+      tags.className = 'result-tags';
+      const type = document.createElement('span');
+      type.className = 'tag type';
+      type.textContent = item.entity_type || 'LCI';
+      tags.append(type);
+      if (item.source_code) {
+        const source = document.createElement('span');
+        source.className = 'tag';
+        source.textContent = item.source_code;
+        tags.append(source);
+      }
+      const score = document.createElement('span');
+      score.className = 'score';
+      score.textContent = `${(Number(item.similarity || 0) * 100).toFixed(1)}% match`;
+      top.append(tags, score);
+      const title = document.createElement('h3');
+      title.textContent = item.title || 'ไม่มีชื่อรายการ';
+      const content = document.createElement('p');
+      content.textContent = item.content || '';
+      card.append(top, title, content);
+      return card;
+    }
+
+    document.querySelectorAll('.suggestion').forEach((button) => {
+      button.addEventListener('click', () => {
+        queryInput.value = button.dataset.query;
+        form.requestSubmit();
+      });
+    });
+
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
-      status.textContent = 'กำลังค้นหา...';
-      results.replaceChildren();
+      const query = queryInput.value.trim();
+      if (query.length < 2) return;
+      const sourceCode = sourceSelect.value || null;
+      searchButton.disabled = true;
+      searchButton.textContent = 'กำลังค้นหา…';
+      status.textContent = 'กำลังค้นหาความหมายที่ใกล้เคียง';
+      status.classList.remove('error');
+      document.querySelector('#query-label').textContent = `คำค้น: ${query}`;
+      document.querySelector('#result-count').textContent = '…';
+      document.querySelector('#source-label').textContent = sourceCode || 'ทั้งหมด';
+      document.querySelector('#result-range').textContent = '';
+      results.replaceChildren(...Array.from({ length: 3 }, () => {
+        const skeleton = document.createElement('div');
+        skeleton.className = 'skeleton';
+        return skeleton;
+      }));
+
       try {
         const response = await fetch('/api/search', {
-          method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ query: document.querySelector('#query').value, source_code: sourceSelect.value || null, limit: 10 })
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query, source_code: sourceCode, limit: 10 }),
         });
         const payload = await response.json();
         if (!response.ok) throw new Error(payload.detail || 'ค้นหาไม่สำเร็จ');
-        status.textContent = `พบ ${payload.results.length} รายการ`;
-        for (const item of payload.results) {
-          const article = document.createElement('article');
-          const title = document.createElement('h2');
-          title.textContent = item.title;
-          const content = document.createElement('p');
-          content.textContent = item.content;
-          const meta = document.createElement('small');
-          meta.textContent = `${item.source_code || 'ไม่ระบุ SRC'} · ความใกล้เคียง ${(item.similarity * 100).toFixed(1)}%`;
-          article.append(title, content, meta);
-          results.append(article);
-        }
-      } catch (error) { status.textContent = error.message; }
+        const items = payload.results || [];
+        document.querySelector('#result-count').textContent = String(items.length);
+        document.querySelector('#result-range').textContent = items.length ? `แสดง ${items.length} รายการ` : '';
+        status.textContent = items.length ? 'เรียงตามความหมายที่ใกล้เคียงที่สุด' : 'ยังไม่พบข้อมูลที่ตรงกับคำค้นนี้';
+        if (items.length) results.replaceChildren(...items.map(makeResult));
+        else showEmpty('ยังไม่พบผลลัพธ์', 'ลองใช้คำค้นอื่น หรือเลือกทุกแหล่งข้อมูล');
+      } catch (error) {
+        document.querySelector('#result-count').textContent = '—';
+        status.textContent = 'ค้นหาไม่สำเร็จ';
+        status.classList.add('error');
+        showEmpty('ระบบค้นหายังไม่พร้อม', 'ตรวจสอบการตั้งค่า Gemini, ฐานข้อมูล และตาราง semantic search ใน Render', true);
+      } finally {
+        searchButton.disabled = false;
+        searchButton.innerHTML = 'ค้นหา <span aria-hidden="true">→</span>';
+        checkHealth();
+      }
     });
+
+    checkHealth();
   </script>
 </body>
 </html>
