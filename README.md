@@ -53,6 +53,12 @@ python scripts/index_lci.py --limit 100
 
 การย้ายตาราง LCI จาก LocalDB เป็นอีกขั้นหนึ่ง: Render ต้องได้รับไฟล์ dump ก่อน เพราะไม่สามารถอ่านไฟล์หรือ Docker container ในเครื่องเราได้ หลังส่ง dump เข้า Render แล้ว จึงค่อย restore และรันคำสั่งข้างต้นบน Render
 
+## Colab สำหรับ Semantic Search ของ LCI
+
+เปิด [notebooks/CN230_LCI_Semantic_Search_Colab.ipynb](notebooks/CN230_LCI_Semantic_Search_Colab.ipynb) ใน Google Colab แล้วเพิ่ม `DATABASE_URL` (External URL ของ Render) และ `GEMINI_API_KEY` ใน Colab Secrets ก่อนรัน Notebook จะใช้ `gemini-embedding-001` ขนาด 768 มิติให้ตรงกับ API ของเว็บ และเขียนเฉพาะ embeddings ลง `semantic_search_documents`; ไม่โหลด LCI ซ้ำ
+
+เริ่ม index 100 แถวเพื่อเช็กผลก่อน แล้วตั้ง `INDEX_LIMIT = 0` เพื่อทำรายการที่เหลือ หากพบ `exchange_id` ซ้ำ Notebook จะหยุดก่อนเขียน embeddings
+
 ## Deploy ที่ Render
 
 ใช้ Blueprint จาก `render.yaml` โดยตั้ง Environment Variables ในหน้า Render:
