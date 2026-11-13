@@ -9,6 +9,7 @@
 - SQL migration สำหรับ `pgvector` และตารางเก็บ embeddings
 - สคริปต์ทำดัชนี Exchange จาก schema CN230 LCI
 - Blueprint สำหรับ deploy เป็น Render Web Service
+- `.python-version` ล็อก Python runtime ให้ build ทำซ้ำได้
 
 ## ตั้งค่าในเครื่อง
 
