@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": null,
+  "outputDirectory": "static",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://cn230-lci.onrender.com/api/:path*"
+    }
+  ]
+}

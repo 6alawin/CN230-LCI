@@ -53,6 +53,14 @@ Hostname รูปแบบ `dpg-...-a` ที่ได้มาจาก Render
 
 เก็บ secret ใน Environment ของ Render เท่านั้น ห้ามใส่ลง Git หรือ `render.yaml`
 
+## Deploy หน้า Dashboard บน Vercel
+
+โปรเจกต์นี้เตรียม `vercel.json` ไว้ให้ Vercel เสิร์ฟไฟล์หน้าเว็บจาก `static/` และ proxy คำขอ `/api/*` ไปยัง FastAPI ที่ Render (`https://cn230-lci.onrender.com`) หน้า Dashboard จึงเรียก `/api/health` และ `/api/search` บน origin เดียวกับหน้าเว็บได้ โดยไม่ต้องใส่ Gemini key ใน Vercel หรือเปิด CORS เพิ่ม
+
+เมื่อนำ GitHub repository นี้เข้า Vercel ให้ใช้ Root Directory เป็นราก repository และ Framework Preset เป็น Other; ค่าคำสั่ง build และ output directory อ่านจาก `vercel.json` (`static`) ได้เลย หาก Project Settings มีค่า override เก่าค้างอยู่ ให้ปิด override เพื่อให้ใช้ค่าจากไฟล์
+
+`DATABASE_URL` และ `GEMINI_API_KEY` ยังคงต้องตั้งไว้ใน Environment ของ Render เพราะ Render เป็น backend ที่เรียกฐานข้อมูลและ Gemini ส่วน Vercel ให้บริการเฉพาะหน้าเว็บและ proxy API
+
 API: `POST /api/search` รับ `{ "query": "การใช้ก๊าซธรรมชาติ", "limit": 10, "source_code": "SRC-11" }`
 
 สถานะ: `GET /api/health`
