@@ -6,6 +6,8 @@ This deployment uses the same multilingual MiniLM model and 384-D vectors as the
 
 The prepared upload creates a new Render schema `lci_verified_20261115` containing the verified Local corpus (40,721 Exchange records, 21 Sources), related reference tables, import log, and 40,721 384-D embedding vectors. Existing public tables remain untouched. `scripts/upload_cloud_snapshot.py` refuses to overwrite an existing snapshot schema.
 
+Uploaded and verified on 2026-11-15: 40,721 unique exchange IDs, 21 sources, and 40,721 vectors of dimension 384. Both unfiltered search and SRC-21 filtered retrieval passed against Render. `scripts/verify_cloud_snapshot.py` repeats these checks. Quantized/original query-vector cosine similarities on four Thai/English examples were 0.9960–0.9980. Development Windows memory for the web imports plus encoder after a maximum-length query was about 465 MiB; actual Linux hosting memory must also be verified.
+
 ## Render settings
 
 Build command:

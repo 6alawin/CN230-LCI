@@ -23,7 +23,17 @@ def search_cloud(request, settings):
         WHERE (%s::text IS NULL OR source_code=%s::text)
         ORDER BY embedding <=> %s::public.vector LIMIT %s''').format(sql.Identifier(settings.cloud_snapshot_schema))
     with psycopg.connect(settings.database_url,connect_timeout=15) as conn:
-        rows=conn.execute(query,(literal,request.source_code,request.source_code,literal,request.limit)).fetchall()
+        if request.source_code:
+            # Rank all rows in the requested source; a global approximate index
+            # can otherwise discard source matches before applying LIMIT.
+            filtered=sql.SQL('''WITH candidates AS MATERIALIZED (
+                SELECT * FROM {}.semantic_local_documents WHERE source_code=%s)
+                SELECT exchange_id,title,content,source_code,
+                    1-(embedding <=> %s::public.vector) AS similarity
+                FROM candidates ORDER BY embedding <=> %s::public.vector LIMIT %s''').format(sql.Identifier(settings.cloud_snapshot_schema))
+            rows=conn.execute(filtered,(request.source_code,literal,literal,request.limit)).fetchall()
+        else:
+            rows=conn.execute(query,(literal,None,None,literal,request.limit)).fetchall()
     return {'query':request.query,'backend':'local_model_on_cloud','embedding_model':settings.local_embedding_model,
         'results':[{'entity_type':'exchange','entity_id':r[0],'title':r[1],'content':r[2],'source_code':r[3],
                     'similarity':float(r[4]),'metadata':{}} for r in rows]}
