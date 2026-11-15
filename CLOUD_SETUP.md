@@ -26,7 +26,7 @@ Set `SEARCH_BACKEND=local_model`, `CLOUD_SNAPSHOT_SCHEMA=lci_verified_20261115`,
 
 The current service remains on the previous search backend until these settings are applied. CPU/RAM capacity and hosting costs still apply; this is not unlimited free compute. Check memory on the chosen plan before switching production traffic.
 
-The web runtime uses the publisher's ONNX AVX2 uint8 version, with masked mean pooling, length 128, and L2 normalization. This avoids loading PyTorch into the server. Existing 384-D full-precision document embeddings remain compatible with the same model's quantized query encoder; quantization can slightly change ranking. Validate query similarity and memory before enabling it. Original PyTorch inference measured about 1.1 GB RAM on the development machine.
+The web runtime uses the publisher's ONNX AVX2 uint8 version and SentencePiece tokenizer, with masked mean pooling, length 128, and L2 normalization. This avoids loading PyTorch into the server. Existing 384-D full-precision document embeddings remain compatible with the same model's quantized query encoder; quantization can slightly change ranking. The revised runtime used about 248 MiB, with a 332 MiB peak, on the development machine after a long query. Validate actual Render memory and query results after deployment.
 
 ## RAG
 

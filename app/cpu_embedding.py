@@ -3,14 +3,12 @@ from pathlib import Path
 from threading import Lock
 import numpy as np
 import onnxruntime as ort
-from tokenizers import Tokenizer
+import sentencepiece as spm
 
 class CpuEmbedding:
     def __init__(self, model_path):
         path = Path(model_path)
-        self.tokenizer = Tokenizer.from_file(str(path / 'tokenizer.json'))
-        self.tokenizer.enable_truncation(max_length=128)
-        self.tokenizer.enable_padding(pad_id=0, pad_token='[PAD]')
+        self.tokenizer = spm.SentencePieceProcessor(model_file=str(path / 'sentencepiece.bpe.model'))
         options = ort.SessionOptions()
         options.intra_op_num_threads = 1
         options.inter_op_num_threads = 1
@@ -23,11 +21,16 @@ class CpuEmbedding:
         self.lock = Lock()
 
     def encode(self, texts, **kwargs):
-        tokens = self.tokenizer.encode_batch(texts)
+        # XLM-R aligns SentencePiece IDs with Fairseq: unknown=3, other
+        # normal pieces offset by one, and wraps each query in <s> / </s>.
+        tokens = [[0] + [3 if token == 0 else token + 1
+                         for token in self.tokenizer.encode(text, out_type=int)[:126]] + [2]
+                  for text in texts]
+        width = max(map(len, tokens))
         inputs = {
-            'input_ids': np.asarray([t.ids for t in tokens], dtype=np.int64),
-            'attention_mask': np.asarray([t.attention_mask for t in tokens], dtype=np.int64),
-            'token_type_ids': np.asarray([t.type_ids for t in tokens], dtype=np.int64),
+            'input_ids': np.asarray([t + [1] * (width-len(t)) for t in tokens], dtype=np.int64),
+            'attention_mask': np.asarray([[1] * len(t) + [0] * (width-len(t)) for t in tokens], dtype=np.int64),
+            'token_type_ids': np.zeros((len(tokens), width), dtype=np.int64),
         }
         names = {i.name for i in self.session.get_inputs()}
         with self.lock:

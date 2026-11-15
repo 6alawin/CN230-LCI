@@ -28,7 +28,8 @@ def health():
             conn.execute("SELECT 1")
             if settings.search_backend == 'local_model':
                 from pathlib import Path
-                if not (Path(settings.local_model_path) / 'onnx/model_quint8_avx2.onnx').is_file():
+                if not all((Path(settings.local_model_path) / name).is_file() for name in
+                           ('onnx/model_quint8_avx2.onnx', 'sentencepiece.bpe.model')):
                     raise RuntimeError('Embedding model has not been built')
                 snapshot = settings.cloud_snapshot_schema + '.semantic_local_documents'
                 if conn.execute('SELECT to_regclass(%s)', (snapshot,)).fetchone()[0] is None:
