@@ -15,4 +15,5 @@ venv/
 .coverage
 .venv/
 local_lci_index.npz
+src22_prepared.npz
 models/
