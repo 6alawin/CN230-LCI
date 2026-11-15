@@ -284,7 +284,8 @@
           ragAnswer.textContent = ragText ? 'คำตอบจากข้อมูล LCI (RAG)\n\n' + ragText : '';
         document.querySelector('#result-count').textContent = String(items.length);
         document.querySelector('#result-range').textContent = items.length ? `แสดง ${items.length} รายการ` : '';
-        status.textContent = items.length ? (sourceCode ? 'เรียงตามความหมายที่ใกล้เคียงที่สุด' : 'เรียงตามความหมาย พร้อมกระจายแหล่งข้อมูล') : 'ยังไม่พบข้อมูลที่ตรงกับคำค้นนี้';
+        const years = (payload.year_filter || []).join(', ');
+        status.textContent = items.length ? ((years ? `ปี ${years} · ` : '') + (sourceCode ? 'เรียงตามความหมายที่ใกล้เคียงที่สุด' : 'เรียงตามความหมาย พร้อมกระจายแหล่งข้อมูล')) : (years ? `ไม่พบข้อมูลปี ${years} ตามเงื่อนไขที่เลือก` : 'ยังไม่พบข้อมูลที่ตรงกับคำค้นนี้');
         if (items.length) results.replaceChildren(...items.map(makeResult));
         else showEmpty('ยังไม่พบผลลัพธ์', 'ลองใช้คำค้นอื่น หรือเลือกทุกแหล่งข้อมูล');
       } catch (error) {
