@@ -27,14 +27,22 @@ class RagTest(unittest.TestCase):
         request.return_value = response('ข้อมูลอื่น [SRC-21 / exchange 999]')
         answer, message = generate_answer('คำถาม', HITS, SETTINGS)
         self.assertIsNone(answer)
-        self.assertIn('อ้างอิง', message)
+        self.assertIn('SRC-22 / exchange 42', message)
 
     @patch('app.rag.urlopen')
     def test_rejects_unknown_id_inside_group(self, request):
         request.return_value = response('ผล [SRC-22 / exchange 42, 999]')
         answer, message = generate_answer('คำถาม', HITS, SETTINGS)
         self.assertIsNone(answer)
-        self.assertIn('อ้างอิง', message)
+        self.assertIn('SRC-22 / exchange 42', message)
+
+    @patch('app.rag.urlopen')
+    def test_uncited_answer_shows_real_evidence(self, request):
+        request.return_value = response('ไม่มีหลักฐานเพียงพอ')
+        answer, message = generate_answer('คำถาม', HITS, SETTINGS)
+        self.assertIsNone(answer)
+        self.assertIn('ใช้ก๊าซธรรมชาติ', message)
+        self.assertIn('SRC-22 / exchange 42', message)
 
     @patch('app.rag.urlopen')
     def test_quota_exhaustion_preserves_search(self, request):
