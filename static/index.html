@@ -279,8 +279,9 @@
         if (!response.ok) throw new Error(payload.detail || 'ค้นหาไม่สำเร็จ');
         const items = payload.results || [];
           const ragAnswer = document.querySelector('#rag-answer');
-          ragAnswer.style.display = payload.answer ? 'block' : 'none';
-          ragAnswer.textContent = payload.answer ? 'คำตอบจากข้อมูล LCI (RAG)\n\n' + payload.answer : '';
+          const ragText = payload.answer || payload.rag_message;
+          ragAnswer.style.display = ragText ? 'block' : 'none';
+          ragAnswer.textContent = ragText ? 'คำตอบจากข้อมูล LCI (RAG)\n\n' + ragText : '';
         document.querySelector('#result-count').textContent = String(items.length);
         document.querySelector('#result-range').textContent = items.length ? `แสดง ${items.length} รายการ` : '';
         status.textContent = items.length ? 'เรียงตามความหมายที่ใกล้เคียงที่สุด' : 'ยังไม่พบข้อมูลที่ตรงกับคำค้นนี้';

@@ -34,7 +34,8 @@ def health():
                 snapshot = settings.cloud_snapshot_schema + '.semantic_local_documents'
                 if conn.execute('SELECT to_regclass(%s)', (snapshot,)).fetchone()[0] is None:
                     raise RuntimeError('Verified cloud snapshot is missing')
-        return {"status": "ok", "database": "connected", "search_backend": settings.search_backend}
+        return {"status": "ok", "database": "connected", "search_backend": settings.search_backend,
+                "rag_configured": bool(settings.gemini_api_key)}
     except Exception as exc:
         raise HTTPException(status_code=503, detail="Database is unavailable or DATABASE_URL is not configured") from exc
 
@@ -45,7 +46,10 @@ def search(request: SearchRequest):
         settings = get_settings()
         if settings.search_backend == 'local_model':
             from app.cloud_search import search_cloud
-            return search_cloud(request, settings)
+            result = search_cloud(request, settings)
+            from app.rag import generate_answer
+            result['answer'], result['rag_message'] = generate_answer(request.query, result['results'], settings)
+            return result
         from app.search import embed_query
         vector = embed_query(request.query, settings)
         vector_literal = "[" + ",".join(str(value) for value in vector) + "]"
