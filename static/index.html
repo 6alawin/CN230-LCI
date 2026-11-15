@@ -144,7 +144,7 @@
         <div class="stats">
           <div class="stat-card"><div class="stat-label">จำนวนผลลัพธ์ล่าสุด</div><div class="stat-value"><span id="result-count">—</span><span class="stat-hint">รายการ</span></div></div>
           <div class="stat-card"><div class="stat-label">แหล่งข้อมูล</div><div class="stat-value"><span id="source-label">ทั้งหมด</span><span class="stat-hint">SRC</span></div></div>
-          <div class="stat-card"><div class="stat-label">ประเภทการค้นหา</div><div class="stat-value">Semantic<span class="stat-hint" id="embedding-label">Embedding Search</span></div></div>
+          <div class="stat-card"><div class="stat-label">ประเภทการค้นหา</div><div class="stat-value"><span id="search-mode">Semantic</span><span class="stat-hint" id="embedding-label">Embedding Search</span></div></div>
         </div>
       </section>
 
@@ -190,7 +190,7 @@
         setHealth(response.ok);
         if (response.ok) {
           const health = await response.json();
-          document.querySelector('#embedding-label').textContent = health.search_backend === 'local_model' ? 'MiniLM · Cloud CPU' : 'Embedding Search';
+          if (document.querySelector('#search-mode').textContent === 'Semantic') document.querySelector('#embedding-label').textContent = health.search_backend === 'local_model' ? 'MiniLM · Cloud CPU' : 'Embedding Search';
         }
       } catch { setHealth(false); }
     }
@@ -232,6 +232,7 @@
       }
       const score = document.createElement('span');
       score.className = 'score';
+      score.hidden = item.similarity == null;
       score.textContent = `${(Number(item.similarity || 0) * 100).toFixed(1)}% match`;
       top.append(tags, score);
       const title = document.createElement('h3');
@@ -281,11 +282,15 @@
           const ragAnswer = document.querySelector('#rag-answer');
           const ragText = payload.answer || payload.rag_message;
           ragAnswer.style.display = ragText ? 'block' : 'none';
-          ragAnswer.textContent = ragText ? 'คำตอบจากข้อมูล LCI (RAG)\n\n' + ragText : '';
-        document.querySelector('#result-count').textContent = String(items.length);
-        document.querySelector('#result-range').textContent = items.length ? `แสดง ${items.length} รายการ` : '';
+          const monthly = payload.backend === 'monthly_sql';
+          document.querySelector('#search-mode').textContent = monthly ? 'รายเดือน' : 'Semantic';
+          document.querySelector('#embedding-label').textContent = monthly ? 'SQL' : 'Embedding Search';
+          ragAnswer.textContent = ragText ? (monthly ? 'ผลจากฐานข้อมูลรายเดือน' : 'คำตอบจากข้อมูล LCI (RAG)') + '\n\n' + ragText : '';
+        document.querySelector('#result-count').textContent = String(payload.total_records ?? items.length);
+        document.querySelector('#result-range').textContent = items.length ? `แสดง ${items.length} จาก ${payload.total_records ?? items.length} รายการ` : '';
         const years = (payload.year_filter || []).join(', ');
         status.textContent = items.length ? ((years ? `ปี ${years} · ` : '') + (sourceCode ? 'เรียงตามความหมายที่ใกล้เคียงที่สุด' : 'เรียงตามความหมาย พร้อมกระจายแหล่งข้อมูล')) : (years ? `ไม่พบข้อมูลปี ${years} ตามเงื่อนไขที่เลือก` : 'ยังไม่พบข้อมูลที่ตรงกับคำค้นนี้');
+        if (monthly) status.textContent = "รายการอ้างอิงจากฐานข้อมูล เรียงตามเดือน";
         if (items.length) results.replaceChildren(...items.map(makeResult));
         else showEmpty('ยังไม่พบผลลัพธ์', 'ลองใช้คำค้นอื่น หรือเลือกทุกแหล่งข้อมูล');
       } catch (error) {

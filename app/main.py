@@ -45,7 +45,12 @@ def search(request: SearchRequest):
     try:
         settings = get_settings()
         if settings.search_backend == 'local_model':
-            from app.cloud_search import search_cloud
+            from app.cloud_search import requested_years, search_cloud
+            from app.monthly import monthly_report, monthly_scope
+            years = requested_years(request.query)
+            scope = monthly_scope(request.query, years)
+            if scope:
+                return monthly_report(request, settings, years[0], scope)
             result = search_cloud(request, settings)
             from app.rag import generate_answer
             result['answer'], result['rag_message'] = generate_answer(request.query, result['results'], settings)
