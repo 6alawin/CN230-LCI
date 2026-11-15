@@ -4,7 +4,6 @@ from pydantic import BaseModel, Field
 import psycopg
 
 from app.config import get_settings
-from app.search import embed_query
 
 
 class SearchRequest(BaseModel):
@@ -27,7 +26,14 @@ def health():
         settings = get_settings()
         with psycopg.connect(settings.database_url, connect_timeout=8) as conn:
             conn.execute("SELECT 1")
-        return {"status": "ok", "database": "connected"}
+            if settings.search_backend == 'local_model':
+                from pathlib import Path
+                if not (Path(settings.local_model_path) / 'onnx/model_quint8_avx2.onnx').is_file():
+                    raise RuntimeError('Embedding model has not been built')
+                snapshot = settings.cloud_snapshot_schema + '.semantic_local_documents'
+                if conn.execute('SELECT to_regclass(%s)', (snapshot,)).fetchone()[0] is None:
+                    raise RuntimeError('Verified cloud snapshot is missing')
+        return {"status": "ok", "database": "connected", "search_backend": settings.search_backend}
     except Exception as exc:
         raise HTTPException(status_code=503, detail="Database is unavailable or DATABASE_URL is not configured") from exc
 
@@ -36,6 +42,10 @@ def health():
 def search(request: SearchRequest):
     try:
         settings = get_settings()
+        if settings.search_backend == 'local_model':
+            from app.cloud_search import search_cloud
+            return search_cloud(request, settings)
+        from app.search import embed_query
         vector = embed_query(request.query, settings)
         vector_literal = "[" + ",".join(str(value) for value in vector) + "]"
         with psycopg.connect(settings.database_url, connect_timeout=8) as conn:
@@ -44,7 +54,7 @@ def search(request: SearchRequest):
                 SELECT entity_type, entity_id, title, content, source_code,
                        metadata, 1 - (embedding <=> %s::vector) AS similarity
                 FROM semantic_search_documents
-                WHERE (%s IS NULL OR source_code = %s)
+                WHERE (%s::varchar IS NULL OR source_code = %s::varchar)
                 ORDER BY embedding <=> %s::vector
                 LIMIT %s
                 """,
@@ -63,4 +73,4 @@ def search(request: SearchRequest):
         }
     except Exception as exc:
         # Do not expose DB credentials, SQL details, or provider errors to API clients.
-        raise HTTPException(status_code=503, detail="Search is not ready; check DATABASE_URL, pgvector setup, and Gemini configuration") from exc
+        raise HTTPException(status_code=503, detail="Search is not ready; check database, embedding model, and search index configuration") from exc

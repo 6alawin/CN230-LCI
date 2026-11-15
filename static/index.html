@@ -144,11 +144,12 @@
         <div class="stats">
           <div class="stat-card"><div class="stat-label">จำนวนผลลัพธ์ล่าสุด</div><div class="stat-value"><span id="result-count">—</span><span class="stat-hint">รายการ</span></div></div>
           <div class="stat-card"><div class="stat-label">แหล่งข้อมูล</div><div class="stat-value"><span id="source-label">ทั้งหมด</span><span class="stat-hint">SRC</span></div></div>
-          <div class="stat-card"><div class="stat-label">ประเภทการค้นหา</div><div class="stat-value">Semantic<span class="stat-hint">Gemini Embedding</span></div></div>
+          <div class="stat-card"><div class="stat-label">ประเภทการค้นหา</div><div class="stat-value">Semantic<span class="stat-hint" id="embedding-label">Embedding Search</span></div></div>
         </div>
       </section>
 
       <section aria-label="ผลการค้นหา">
+          <div id="rag-answer" class="result-card" style="display:none;white-space:pre-wrap" aria-live="polite"></div>
         <div class="section-head"><h2>ผลการค้นหา</h2><span class="section-note" id="query-label">เริ่มจากคำค้นด้านบน</span></div>
         <div class="results-toolbar"><span id="status" role="status" aria-live="polite">ค้นหาตามความหมายได้ทั้งภาษาไทยและภาษาอังกฤษ</span><span id="result-range"></span></div>
         <div id="results" aria-live="polite">
@@ -162,7 +163,7 @@
 
   <script>
     const sourceSelect = document.querySelector('#source');
-    for (let i = 1; i <= 18; i++) {
+    for (let i = 1; i <= 21; i++) {
       const code = `SRC-${String(i).padStart(2, '0')}`;
       sourceSelect.add(new Option(code, code));
     }
@@ -187,6 +188,10 @@
       try {
         const response = await fetch('/api/health');
         setHealth(response.ok);
+        if (response.ok) {
+          const health = await response.json();
+          document.querySelector('#embedding-label').textContent = health.search_backend === 'local_model' ? 'MiniLM · Cloud CPU' : 'Embedding Search';
+        }
       } catch { setHealth(false); }
     }
 
@@ -252,6 +257,7 @@
       searchButton.disabled = true;
       searchButton.textContent = 'กำลังค้นหา…';
       status.textContent = 'กำลังค้นหาความหมายที่ใกล้เคียง';
+      document.querySelector('#rag-answer').style.display = 'none';
       status.classList.remove('error');
       document.querySelector('#query-label').textContent = `คำค้น: ${query}`;
       document.querySelector('#result-count').textContent = '…';
@@ -272,6 +278,9 @@
         const payload = await response.json();
         if (!response.ok) throw new Error(payload.detail || 'ค้นหาไม่สำเร็จ');
         const items = payload.results || [];
+          const ragAnswer = document.querySelector('#rag-answer');
+          ragAnswer.style.display = payload.answer ? 'block' : 'none';
+          ragAnswer.textContent = payload.answer ? 'คำตอบจากข้อมูล LCI (RAG)\n\n' + payload.answer : '';
         document.querySelector('#result-count').textContent = String(items.length);
         document.querySelector('#result-range').textContent = items.length ? `แสดง ${items.length} รายการ` : '';
         status.textContent = items.length ? 'เรียงตามความหมายที่ใกล้เคียงที่สุด' : 'ยังไม่พบข้อมูลที่ตรงกับคำค้นนี้';
@@ -281,7 +290,7 @@
         document.querySelector('#result-count').textContent = '—';
         status.textContent = 'ค้นหาไม่สำเร็จ';
         status.classList.add('error');
-        showEmpty('ระบบค้นหายังไม่พร้อม', 'ตรวจสอบการตั้งค่า Gemini, ฐานข้อมูล และตาราง semantic search ใน Render', true);
+        showEmpty('ระบบค้นหายังไม่พร้อม', error.message || 'ตรวจสอบฐานข้อมูลและดัชนีค้นหาในเครื่อง', true);
       } finally {
         searchButton.disabled = false;
         searchButton.innerHTML = 'ค้นหา <span aria-hidden="true">→</span>';
