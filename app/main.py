@@ -46,8 +46,11 @@ def search(request: SearchRequest):
         settings = get_settings()
         if settings.search_backend == 'local_model':
             from app.cloud_search import requested_years, search_cloud
-            from app.monthly import monthly_report, monthly_scope
+            from app.monthly import emission_report, emission_scope, monthly_report, monthly_scope
             years = requested_years(request.query)
+            emission = emission_scope(request.query, years)
+            if emission:
+                return emission_report(request, settings, years[0], emission)
             scope = monthly_scope(request.query, years)
             if scope:
                 return monthly_report(request, settings, years[0], scope)
