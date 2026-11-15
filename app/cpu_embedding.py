@@ -15,7 +15,7 @@ class CpuEmbedding:
         options.intra_op_num_threads = 1
         options.inter_op_num_threads = 1
         options.enable_cpu_mem_arena = False
-        options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_BASIC
+        options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_DISABLE_ALL
         options.add_session_config_entry('session.disable_prepacking', '1')
         self.session = ort.InferenceSession(
             str(path / 'onnx/model_quint8_avx2.onnx'), options,
