@@ -1,0 +1,2375 @@
+﻿Year,Month,Product,Quantity,UNIT
+1989,March,DIESEL,0.12,Million Litres
+1989,March,GASOLINE,0.06,Million Litres
+1989,May,DIESEL,0.478,Million Litres
+1989,May,GASOLINE,0.3,Million Litres
+1989,June,DIESEL,0.917,Million Litres
+1989,June,GASOLINE,0.312,Million Litres
+1989,July,DIESEL,0.09,Million Litres
+1989,July,GASOLINE,0.21,Million Litres
+1989,August,DIESEL,1.633,Million Litres
+1989,August,GASOLINE,1.049,Million Litres
+1989,September,DIESEL,1.147,Million Litres
+1989,September,GASOLINE,0.87,Million Litres
+1989,October,DIESEL,0.689,Million Litres
+1989,October,GASOLINE,0.87,Million Litres
+1989,December,DIESEL,0.331,Million Litres
+1989,December,GASOLINE,0.392,Million Litres
+1990,January,DIESEL,0.78,Million Litres
+1990,January,GASOLINE,0.21,Million Litres
+1990,February,DIESEL,1.334,Million Litres
+1990,February,GASOLINE,0.72,Million Litres
+1990,March,DIESEL,1.75,Million Litres
+1990,March,GASOLINE,1.172,Million Litres
+1990,April,DIESEL,0.956,Million Litres
+1990,April,GASOLINE,0.554,Million Litres
+1990,May,DIESEL,0.837,Million Litres
+1990,May,GASOLINE,0.538,Million Litres
+1990,June,DIESEL,0.807,Million Litres
+1990,June,GASOLINE,1.228,Million Litres
+1990,July,DIESEL,1.016,Million Litres
+1990,July,GASOLINE,0.827,Million Litres
+1990,August,DIESEL,1.075,Million Litres
+1990,August,GASOLINE,1.258,Million Litres
+1990,September,DIESEL,1.613,Million Litres
+1990,September,GASOLINE,0.839,Million Litres
+1990,October,DIESEL,1.917,Million Litres
+1990,October,GASOLINE,1.081,Million Litres
+1990,November,DIESEL,1.347,Million Litres
+1990,November,GASOLINE,0.24,Million Litres
+1990,December,DIESEL,1.02,Million Litres
+1990,December,GASOLINE,0.634,Million Litres
+1991,January,DIESEL,1.603,Million Litres
+1991,January,GASOLINE,0.98,Million Litres
+1991,February,DIESEL,0.585,Million Litres
+1991,February,GASOLINE,0.482,Million Litres
+1991,March,DIESEL,2.063,Million Litres
+1991,March,GASOLINE,1.65,Million Litres
+1991,April,DIESEL,1.285,Million Litres
+1991,April,GASOLINE,1.35,Million Litres
+1991,April,LPG,0.0148,Million Litres
+1991,May,DIESEL,1.884,Million Litres
+1991,May,GASOLINE,1.467,Million Litres
+1991,May,LPG,0.0315,Million Litres
+1991,June,DIESEL,2.126,Million Litres
+1991,June,GASOLINE,2.1,Million Litres
+1991,June,LPG,0.0296,Million Litres
+1991,July,DIESEL,2.545,Million Litres
+1991,July,GASOLINE,2.523,Million Litres
+1991,August,DIESEL,0.938,Million Litres
+1991,August,GASOLINE,1.142,Million Litres
+1991,August,LPG,0.0296,Million Litres
+1991,September,DIESEL,2.084,Million Litres
+1991,September,GASOLINE,2.072,Million Litres
+1991,October,DIESEL,0.705,Million Litres
+1991,October,GASOLINE,1.505,Million Litres
+1991,October,JET PETROLEUM,0.128,Million Litres
+1991,November,DIESEL,0.555,Million Litres
+1991,November,GASOLINE,1.385,Million Litres
+1991,November,JET PETROLEUM,0.075,Million Litres
+1991,November,LPG,0.0296,Million Litres
+1991,December,DIESEL,1.043,Million Litres
+1991,December,JET PETROLEUM,0.12,Million Litres
+1991,December,LPG,0.0296,Million Litres
+1992,January,DIESEL,0.12,Million Litres
+1992,January,GASOLINE,0.67,Million Litres
+1992,January,LPG,0.0148,Million Litres
+1992,February,DIESEL,0.315,Million Litres
+1992,February,GASOLINE,1.32,Million Litres
+1992,February,JET PETROLEUM,0.269,Million Litres
+1992,February,LPG,0.0148,Million Litres
+1992,March,DIESEL,0.84,Million Litres
+1992,March,GASOLINE,1.499,Million Litres
+1992,March,JET PETROLEUM,0.152,Million Litres
+1992,March,LPG,0.0296,Million Litres
+1992,April,DIESEL,2.224,Million Litres
+1992,April,GASOLINE,0.749,Million Litres
+1992,April,JET PETROLEUM,0.11,Million Litres
+1992,April,LPG,0.0296,Million Litres
+1992,May,DIESEL,1.318,Million Litres
+1992,May,GASOLINE,1.2,Million Litres
+1992,May,JET PETROLEUM,0.179,Million Litres
+1992,May,LPG,5.8944,Million Litres
+1992,June,DIESEL,1.602,Million Litres
+1992,June,GASOLINE,0.751,Million Litres
+1992,June,JET PETROLEUM,0.239,Million Litres
+1992,June,LPG,2.2389,Million Litres
+1992,July,DIESEL,0.329,Million Litres
+1992,July,GASOLINE,0.27,Million Litres
+1992,July,JET PETROLEUM,0.239,Million Litres
+1992,July,LPG,9.3537,Million Litres
+1992,August,DIESEL,1.618,Million Litres
+1992,August,GASOLINE,0.36,Million Litres
+1992,August,JET PETROLEUM,0.06,Million Litres
+1992,August,LPG,9.3574,Million Litres
+1992,September,DIESEL,8.1,Million Litres
+1992,September,GASOLINE,1.142,Million Litres
+1992,September,JET PETROLEUM,0.06,Million Litres
+1992,September,LPG,9.9259,Million Litres
+1992,October,DIESEL,0.781,Million Litres
+1992,October,GASOLINE,26.269,Million Litres
+1992,October,JET PETROLEUM,4.924,Million Litres
+1992,October,LPG,13.0444,Million Litres
+1992,November,DIESEL,3.364,Million Litres
+1992,November,GASOLINE,44.869,Million Litres
+1992,November,LPG,4.7685,Million Litres
+1992,December,DIESEL,2.695,Million Litres
+1992,December,GASOLINE,26.505,Million Litres
+1992,December,LPG,4.6907,Million Litres
+1993,January,DIESEL,3.094,Million Litres
+1993,January,FUEL OIL,0.108,Million Litres
+1993,January,GASOLINE,17.55,Million Litres
+1993,January,LPG,3.2259,Million Litres
+1993,February,DIESEL,0.003,Million Litres
+1993,February,GASOLINE,33.064,Million Litres
+1993,February,LPG,0.1463,Million Litres
+1993,March,DIESEL,2.934,Million Litres
+1993,March,GASOLINE,45.617,Million Litres
+1993,March,LPG,0.1796,Million Litres
+1993,April,DIESEL,3.861,Million Litres
+1993,April,GASOLINE,32.762,Million Litres
+1993,April,LPG,0.2333,Million Litres
+1993,May,DIESEL,4.545,Million Litres
+1993,May,GASOLINE,35.314,Million Litres
+1993,May,JET PETROLEUM,1,Million Litres
+1993,May,LPG,20.9685,Million Litres
+1993,June,DIESEL,9.2,Million Litres
+1993,June,FUEL OIL,8.573,Million Litres
+1993,June,GASOLINE,20.947,Million Litres
+1993,June,JET PETROLEUM,1.088,Million Litres
+1993,June,KEROSENE,0.06,Million Litres
+1993,June,LPG,18.9556,Million Litres
+1993,July,DIESEL,6.409,Million Litres
+1993,July,GASOLINE,10.281,Million Litres
+1993,July,JET PETROLEUM,0.742,Million Litres
+1993,July,KEROSENE,0.06,Million Litres
+1993,July,LPG,19.5648,Million Litres
+1993,August,DIESEL,5.944,Million Litres
+1993,August,FUEL OIL,0.048,Million Litres
+1993,August,GASOLINE,24.478,Million Litres
+1993,August,JET PETROLEUM,0.8,Million Litres
+1993,August,LPG,8.6463,Million Litres
+1993,September,DIESEL,4.973,Million Litres
+1993,September,FUEL OIL,0.084,Million Litres
+1993,September,GASOLINE,10.648,Million Litres
+1993,September,JET PETROLEUM,0.594,Million Litres
+1993,September,LPG,10.2352,Million Litres
+1993,October,DIESEL,4.17,Million Litres
+1993,October,FUEL OIL,5.398,Million Litres
+1993,October,GASOLINE,15.394,Million Litres
+1993,October,JET PETROLEUM,0.85,Million Litres
+1993,October,KEROSENE,0.12,Million Litres
+1993,October,LPG,2.5444,Million Litres
+1993,November,DIESEL,3.94,Million Litres
+1993,November,FUEL OIL,5.239,Million Litres
+1993,November,GASOLINE,29.361,Million Litres
+1993,November,JET PETROLEUM,0.998,Million Litres
+1993,November,LPG,2.4019,Million Litres
+1993,December,DIESEL,5.073,Million Litres
+1993,December,FUEL OIL,0.06,Million Litres
+1993,December,GASOLINE,28.764,Million Litres
+1993,December,JET PETROLEUM,1.116,Million Litres
+1993,December,KEROSENE,0.03,Million Litres
+1993,December,LPG,0.1074,Million Litres
+1994,January,DIESEL,5.383,Million Litres
+1994,January,FUEL OIL,0.048,Million Litres
+1994,January,GASOLINE,23.697,Million Litres
+1994,January,JET PETROLEUM,0.504,Million Litres
+1994,January,KEROSENE,0.09,Million Litres
+1994,January,LPG,9.287,Million Litres
+1994,February,DIESEL,6.605,Million Litres
+1994,February,FUEL OIL,0.084,Million Litres
+1994,February,GASOLINE,15.4,Million Litres
+1994,February,JET PETROLEUM,0.788,Million Litres
+1994,February,KEROSENE,0.06,Million Litres
+1994,February,LPG,2.5722,Million Litres
+1994,March,DIESEL,8.227,Million Litres
+1994,March,FUEL OIL,0.096,Million Litres
+1994,March,GASOLINE,28.183,Million Litres
+1994,March,JET PETROLEUM,0.982,Million Litres
+1994,March,KEROSENE,0.03,Million Litres
+1994,March,LPG,0.8352,Million Litres
+1994,April,DIESEL,6.653,Million Litres
+1994,April,FUEL OIL,6.653,Million Litres
+1994,April,GASOLINE,28.533,Million Litres
+1994,April,JET PETROLEUM,0.654,Million Litres
+1994,April,LPG,1.0667,Million Litres
+1994,May,DIESEL,7.015,Million Litres
+1994,May,FUEL OIL,0.084,Million Litres
+1994,May,GASOLINE,30.483,Million Litres
+1994,May,JET PETROLEUM,0.912,Million Litres
+1994,May,LPG,0.0926,Million Litres
+1994,June,DIESEL,5.621,Million Litres
+1994,June,FUEL OIL,0.072,Million Litres
+1994,June,GASOLINE,24.957,Million Litres
+1994,June,JET PETROLEUM,0.638,Million Litres
+1994,June,KEROSENE,0.12,Million Litres
+1994,June,LPG,2.6852,Million Litres
+1994,July,DIESEL,3.582,Million Litres
+1994,July,FUEL OIL,9.024,Million Litres
+1994,July,GASOLINE,10.202,Million Litres
+1994,July,JET PETROLEUM,0.76,Million Litres
+1994,July,LPG,0.8037,Million Litres
+1994,August,DIESEL,4.252,Million Litres
+1994,August,FUEL OIL,9.049,Million Litres
+1994,August,GASOLINE,17.695,Million Litres
+1994,August,JET PETROLEUM,0.72,Million Litres
+1994,August,LPG,1.0574,Million Litres
+1994,September,DIESEL,3.811,Million Litres
+1994,September,FUEL OIL,0.06,Million Litres
+1994,September,GASOLINE,22.762,Million Litres
+1994,September,JET PETROLEUM,0.872,Million Litres
+1994,September,LPG,2,Million Litres
+1994,October,DIESEL,3.56,Million Litres
+1994,October,FUEL OIL,0.072,Million Litres
+1994,October,GASOLINE,23.5,Million Litres
+1994,October,JET PETROLEUM,0.641,Million Litres
+1994,October,KEROSENE,0.06,Million Litres
+1994,October,LPG,2.0241,Million Litres
+1994,November,DIESEL,7.924,Million Litres
+1994,November,FUEL OIL,0.096,Million Litres
+1994,November,GASOLINE,8.841,Million Litres
+1994,November,JET PETROLEUM,1.031,Million Litres
+1994,November,LPG,1.7796,Million Litres
+1994,December,DIESEL,8.609,Million Litres
+1994,December,FUEL OIL,0.12,Million Litres
+1994,December,GASOLINE,5.134,Million Litres
+1994,December,JET PETROLEUM,1.128,Million Litres
+1994,December,KEROSENE,0.03,Million Litres
+1994,December,LPG,2.7685,Million Litres
+1995,January,DIESEL,7.058,Million Litres
+1995,January,FUEL OIL,0.084,Million Litres
+1995,January,GASOLINE,5.55,Million Litres
+1995,January,JET PETROLEUM,1.211,Million Litres
+1995,January,KEROSENE,0.06,Million Litres
+1995,January,LPG,4.2963,Million Litres
+1995,February,DIESEL,6.439,Million Litres
+1995,February,FUEL OIL,0.072,Million Litres
+1995,February,GASOLINE,28.285,Million Litres
+1995,February,JET PETROLEUM,1.173,Million Litres
+1995,February,LPG,10.5759,Million Litres
+1995,March,DIESEL,9.708,Million Litres
+1995,March,FUEL OIL,0.072,Million Litres
+1995,March,GASOLINE,20.382,Million Litres
+1995,March,JET PETROLEUM,1.213,Million Litres
+1995,March,LPG,24.7185,Million Litres
+1995,April,DIESEL,6.343,Million Litres
+1995,April,FUEL OIL,0.084,Million Litres
+1995,April,GASOLINE,20.446,Million Litres
+1995,April,JET PETROLEUM,0.792,Million Litres
+1995,April,LPG,37.4463,Million Litres
+1995,May,DIESEL,6.895,Million Litres
+1995,May,FUEL OIL,0.12,Million Litres
+1995,May,GASOLINE,16.644,Million Litres
+1995,May,JET PETROLEUM,0.686,Million Litres
+1995,May,KEROSENE,0.03,Million Litres
+1995,May,LPG,16.0389,Million Litres
+1995,June,DIESEL,4.229,Million Litres
+1995,June,FUEL OIL,0.156,Million Litres
+1995,June,GASOLINE,30.48,Million Litres
+1995,June,JET PETROLEUM,0.592,Million Litres
+1995,June,KEROSENE,0.06,Million Litres
+1995,June,LPG,19.1907,Million Litres
+1995,July,DIESEL,9.013,Million Litres
+1995,July,FUEL OIL,0.12,Million Litres
+1995,July,GASOLINE,18.688,Million Litres
+1995,July,JET PETROLEUM,1.882,Million Litres
+1995,July,KEROSENE,0.09,Million Litres
+1995,July,LPG,6.6907,Million Litres
+1995,August,DIESEL,7.323,Million Litres
+1995,August,FUEL OIL,0.12,Million Litres
+1995,August,GASOLINE,11.995,Million Litres
+1995,August,JET PETROLEUM,1.252,Million Litres
+1995,August,LPG,9.363,Million Litres
+1995,September,DIESEL,5.625,Million Litres
+1995,September,FUEL OIL,0.036,Million Litres
+1995,September,GASOLINE,40.624,Million Litres
+1995,September,JET PETROLEUM,1.412,Million Litres
+1995,September,LPG,10.2981,Million Litres
+1995,October,DIESEL,7.365,Million Litres
+1995,October,FUEL OIL,0.12,Million Litres
+1995,October,GASOLINE,25.426,Million Litres
+1995,October,JET PETROLEUM,1.008,Million Litres
+1995,October,KEROSENE,0.015,Million Litres
+1995,October,LPG,19.2185,Million Litres
+1995,November,DIESEL,8.872,Million Litres
+1995,November,FUEL OIL,43.377,Million Litres
+1995,November,GASOLINE,22.503,Million Litres
+1995,November,JET PETROLEUM,1.06,Million Litres
+1995,November,LPG,5.9093,Million Litres
+1995,December,DIESEL,8.405,Million Litres
+1995,December,FUEL OIL,0.156,Million Litres
+1995,December,GASOLINE,33.015,Million Litres
+1995,December,JET PETROLEUM,1.288,Million Litres
+1995,December,LPG,24.1278,Million Litres
+1996,January,DIESEL,12.195,Million Litres
+1996,January,FUEL OIL,2.613,Million Litres
+1996,January,GASOLINE,15.982,Million Litres
+1996,January,JET PETROLEUM,1.08,Million Litres
+1996,January,KEROSENE,0.015,Million Litres
+1996,January,LPG,21.0204,Million Litres
+1996,February,DIESEL,9.463,Million Litres
+1996,February,FUEL OIL,65.6,Million Litres
+1996,February,GASOLINE,19.066,Million Litres
+1996,February,JET PETROLEUM,1.641,Million Litres
+1996,February,KEROSENE,0.105,Million Litres
+1996,February,LPG,9.6556,Million Litres
+1996,March,DIESEL,6.844,Million Litres
+1996,March,FUEL OIL,105.264,Million Litres
+1996,March,GASOLINE,55.256,Million Litres
+1996,March,JET PETROLEUM,1.471,Million Litres
+1996,March,KEROSENE,0.18,Million Litres
+1996,March,LPG,10.9278,Million Litres
+1996,April,DIESEL,8.719,Million Litres
+1996,April,FUEL OIL,0.168,Million Litres
+1996,April,GASOLINE,53.614,Million Litres
+1996,April,JET PETROLEUM,0.998,Million Litres
+1996,April,LPG,12.5389,Million Litres
+1996,May,DIESEL,10.165,Million Litres
+1996,May,FUEL OIL,171.19,Million Litres
+1996,May,GASOLINE,29.282,Million Litres
+1996,May,JET PETROLEUM,1.634,Million Litres
+1996,May,KEROSENE,0.015,Million Litres
+1996,May,LPG,11.5537,Million Litres
+1996,June,DIESEL,62.4,Million Litres
+1996,June,FUEL OIL,139.84,Million Litres
+1996,June,GASOLINE,42.381,Million Litres
+1996,June,JET PETROLEUM,1.904,Million Litres
+1996,June,KEROSENE,0.045,Million Litres
+1996,June,LPG,33.4593,Million Litres
+1996,July,DIESEL,40.705,Million Litres
+1996,July,FUEL OIL,162.67,Million Litres
+1996,July,GASOLINE,139.216,Million Litres
+1996,July,JET PETROLEUM,1.252,Million Litres
+1996,July,LPG,46.9407,Million Litres
+1996,August,DIESEL,69.7,Million Litres
+1996,August,FUEL OIL,2.218,Million Litres
+1996,August,GASOLINE,162.134,Million Litres
+1996,August,JET PETROLEUM,1.274,Million Litres
+1996,August,LPG,70.8759,Million Litres
+1996,September,DIESEL,148.777,Million Litres
+1996,September,FUEL OIL,110.963,Million Litres
+1996,September,GASOLINE,164.633,Million Litres
+1996,September,JET PETROLEUM,38.14,Million Litres
+1996,September,LPG,61.5611,Million Litres
+1996,October,DIESEL,284.229,Million Litres
+1996,October,FUEL OIL,77.824,Million Litres
+1996,October,GASOLINE,168.93,Million Litres
+1996,October,JET PETROLEUM,32.035,Million Litres
+1996,October,LPG,37.3556,Million Litres
+1996,November,DIESEL,175.643,Million Litres
+1996,November,FUEL OIL,41.381,Million Litres
+1996,November,GASOLINE,155.385,Million Litres
+1996,November,JET PETROLEUM,28.54,Million Litres
+1996,November,LPG,24.5074,Million Litres
+1996,December,DIESEL,242.227,Million Litres
+1996,December,FUEL OIL,135.023,Million Litres
+1996,December,GASOLINE,230.922,Million Litres
+1996,December,JET PETROLEUM,85.42,Million Litres
+1996,December,KEROSENE,38.694,Million Litres
+1996,December,LPG,24.0648,Million Litres
+1997,January,DIESEL,176.41,Million Litres
+1997,January,FUEL OIL,6.454,Million Litres
+1997,January,GASOLINE,216.013,Million Litres
+1997,January,JET PETROLEUM,85.776,Million Litres
+1997,January,LPG,51.0481,Million Litres
+1997,February,DIESEL,61.091,Million Litres
+1997,February,FUEL OIL,154.6,Million Litres
+1997,February,GASOLINE,176.142,Million Litres
+1997,February,JET PETROLEUM,56.215,Million Litres
+1997,February,LPG,57.5685,Million Litres
+1997,March,DIESEL,47.281,Million Litres
+1997,March,FUEL OIL,56.565,Million Litres
+1997,March,GASOLINE,102.53,Million Litres
+1997,March,JET PETROLEUM,1.08,Million Litres
+1997,March,LPG,53.6315,Million Litres
+1997,April,DIESEL,44.134,Million Litres
+1997,April,FUEL OIL,125.07,Million Litres
+1997,April,GASOLINE,114.476,Million Litres
+1997,April,JET PETROLEUM,1.233,Million Litres
+1997,April,KEROSENE,13.697,Million Litres
+1997,April,LPG,90.7389,Million Litres
+1997,May,DIESEL,67.95,Million Litres
+1997,May,FUEL OIL,63.019,Million Litres
+1997,May,GASOLINE,151.21,Million Litres
+1997,May,JET PETROLEUM,1.034,Million Litres
+1997,May,LPG,97.7315,Million Litres
+1997,June,DIESEL,67.666,Million Litres
+1997,June,FUEL OIL,13.583,Million Litres
+1997,June,GASOLINE,193.303,Million Litres
+1997,June,JET PETROLEUM,0.898,Million Litres
+1997,June,LPG,60.4074,Million Litres
+1997,July,DIESEL,48.016,Million Litres
+1997,July,FUEL OIL,19.019,Million Litres
+1997,July,GASOLINE,147.47,Million Litres
+1997,July,JET PETROLEUM,0.756,Million Litres
+1997,July,LPG,86.3463,Million Litres
+1997,August,DIESEL,77.388,Million Litres
+1997,August,FUEL OIL,97.182,Million Litres
+1997,August,GASOLINE,125.652,Million Litres
+1997,August,JET PETROLEUM,0.893,Million Litres
+1997,August,LPG,88.7519,Million Litres
+1997,September,DIESEL,174.762,Million Litres
+1997,September,FUEL OIL,68.384,Million Litres
+1997,September,GASOLINE,162.098,Million Litres
+1997,September,JET PETROLEUM,0.62,Million Litres
+1997,September,LPG,44.3519,Million Litres
+1997,October,DIESEL,432.045,Million Litres
+1997,October,FUEL OIL,19.36,Million Litres
+1997,October,GASOLINE,113.333,Million Litres
+1997,October,JET PETROLEUM,0.91,Million Litres
+1997,October,LPG,71.9537,Million Litres
+1997,November,DIESEL,347.774,Million Litres
+1997,November,FUEL OIL,51.176,Million Litres
+1997,November,GASOLINE,190.276,Million Litres
+1997,November,JET PETROLEUM,87.698,Million Litres
+1997,November,LPG,89.8278,Million Litres
+1997,December,DIESEL,408.584,Million Litres
+1997,December,FUEL OIL,40.762,Million Litres
+1997,December,GASOLINE,256.16,Million Litres
+1997,December,JET PETROLEUM,40.397,Million Litres
+1997,December,LPG,81.2481,Million Litres
+1998,January,DIESEL,216.393,Million Litres
+1998,January,FUEL OIL,2.508,Million Litres
+1998,January,GASOLINE,193.027,Million Litres
+1998,January,JET PETROLEUM,34.065,Million Litres
+1998,January,LPG,87.4389,Million Litres
+1998,February,DIESEL,177.577,Million Litres
+1998,February,FUEL OIL,28.015,Million Litres
+1998,February,GASOLINE,146.125,Million Litres
+1998,February,JET PETROLEUM,0.871,Million Litres
+1998,February,LPG,84.8815,Million Litres
+1998,March,DIESEL,86.993,Million Litres
+1998,March,FUEL OIL,0.774,Million Litres
+1998,March,GASOLINE,154.587,Million Litres
+1998,March,JET PETROLEUM,1.018,Million Litres
+1998,March,LPG,69.5444,Million Litres
+1998,April,DIESEL,69.38,Million Litres
+1998,April,FUEL OIL,0.388,Million Litres
+1998,April,GASOLINE,165.038,Million Litres
+1998,April,JET PETROLEUM,0.596,Million Litres
+1998,April,LPG,75.0722,Million Litres
+1998,May,DIESEL,202.113,Million Litres
+1998,May,FUEL OIL,26.229,Million Litres
+1998,May,GASOLINE,114.54,Million Litres
+1998,May,JET PETROLEUM,0.666,Million Litres
+1998,May,KEROSENE,0.06,Million Litres
+1998,May,LPG,80.7741,Million Litres
+1998,June,DIESEL,261.622,Million Litres
+1998,June,FUEL OIL,32.816,Million Litres
+1998,June,GASOLINE,175.738,Million Litres
+1998,June,JET PETROLEUM,0.43,Million Litres
+1998,June,KEROSENE,0.03,Million Litres
+1998,June,LPG,67.6778,Million Litres
+1998,July,DIESEL,351.531,Million Litres
+1998,July,FUEL OIL,34.68,Million Litres
+1998,July,GASOLINE,232.511,Million Litres
+1998,July,JET PETROLEUM,0.544,Million Litres
+1998,July,LPG,70.3815,Million Litres
+1998,August,DIESEL,285.485,Million Litres
+1998,August,FUEL OIL,32.582,Million Litres
+1998,August,GASOLINE,214.861,Million Litres
+1998,August,JET PETROLEUM,38.4,Million Litres
+1998,August,LPG,75.0593,Million Litres
+1998,September,DIESEL,203.238,Million Litres
+1998,September,FUEL OIL,2.52,Million Litres
+1998,September,GASOLINE,126.665,Million Litres
+1998,September,JET PETROLEUM,54.537,Million Litres
+1998,September,LPG,58.25,Million Litres
+1998,October,DIESEL,218.755,Million Litres
+1998,October,FUEL OIL,3.118,Million Litres
+1998,October,GASOLINE,90.812,Million Litres
+1998,October,JET PETROLEUM,46.494,Million Litres
+1998,October,KEROSENE,26.129,Million Litres
+1998,October,LPG,67.513,Million Litres
+1998,November,DIESEL,60.14,Million Litres
+1998,November,FUEL OIL,5.381,Million Litres
+1998,November,GASOLINE,47.939,Million Litres
+1998,November,JET PETROLEUM,52.707,Million Litres
+1998,November,KEROSENE,0.06,Million Litres
+1998,November,LPG,65.2074,Million Litres
+1998,December,DIESEL,70.012,Million Litres
+1998,December,FUEL OIL,30.359,Million Litres
+1998,December,GASOLINE,54.261,Million Litres
+1998,December,JET PETROLEUM,6.467,Million Litres
+1998,December,LPG,71.4519,Million Litres
+1999,January,DIESEL,189.906,Million Litres
+1999,January,FUEL OIL,58.254,Million Litres
+1999,January,GASOLINE,172.608,Million Litres
+1999,January,JET PETROLEUM,52.316,Million Litres
+1999,January,KEROSENE,37.004,Million Litres
+1999,January,LPG,102.6,Million Litres
+1999,February,DIESEL,173.653,Million Litres
+1999,February,FUEL OIL,64.536,Million Litres
+1999,February,GASOLINE,156.564,Million Litres
+1999,February,JET PETROLEUM,11.586,Million Litres
+1999,February,KEROSENE,7.911,Million Litres
+1999,February,LPG,97.9185,Million Litres
+1999,March,DIESEL,167.829,Million Litres
+1999,March,FUEL OIL,67.529,Million Litres
+1999,March,GASOLINE,247.597,Million Litres
+1999,March,JET PETROLEUM,61.82,Million Litres
+1999,March,KEROSENE,5.219,Million Litres
+1999,March,LPG,121.8444,Million Litres
+1999,April,DIESEL,161.517,Million Litres
+1999,April,FUEL OIL,33.151,Million Litres
+1999,April,GASOLINE,139.42,Million Litres
+1999,April,JET PETROLEUM,33.353,Million Litres
+1999,April,KEROSENE,7.852,Million Litres
+1999,April,LPG,108.5815,Million Litres
+1999,May,DIESEL,193.312,Million Litres
+1999,May,FUEL OIL,37.883,Million Litres
+1999,May,GASOLINE,184.537,Million Litres
+1999,May,JET PETROLEUM,43.593,Million Litres
+1999,May,KEROSENE,6.756,Million Litres
+1999,May,LPG,142.5463,Million Litres
+1999,June,DIESEL,237.799,Million Litres
+1999,June,FUEL OIL,36.456,Million Litres
+1999,June,GASOLINE,213.05,Million Litres
+1999,June,JET PETROLEUM,0.742,Million Litres
+1999,June,LPG,104.887,Million Litres
+1999,July,DIESEL,220.253,Million Litres
+1999,July,FUEL OIL,7.778,Million Litres
+1999,July,GASOLINE,96.879,Million Litres
+1999,July,JET PETROLEUM,93.597,Million Litres
+1999,July,KEROSENE,21.225,Million Litres
+1999,July,LPG,102.8278,Million Litres
+1999,August,DIESEL,163.924,Million Litres
+1999,August,FUEL OIL,2.628,Million Litres
+1999,August,GASOLINE,154.356,Million Litres
+1999,August,JET PETROLEUM,117.424,Million Litres
+1999,August,KEROSENE,7.131,Million Litres
+1999,August,LPG,96.1426,Million Litres
+1999,September,DIESEL,127.614,Million Litres
+1999,September,FUEL OIL,6.81,Million Litres
+1999,September,GASOLINE,93.444,Million Litres
+1999,September,JET PETROLEUM,108.792,Million Litres
+1999,September,KEROSENE,32.616,Million Litres
+1999,September,LPG,86.9315,Million Litres
+1999,October,DIESEL,156.1,Million Litres
+1999,October,FUEL OIL,6.679,Million Litres
+1999,October,GASOLINE,51.009,Million Litres
+1999,October,JET PETROLEUM,119.374,Million Litres
+1999,October,KEROSENE,36.674,Million Litres
+1999,October,LPG,120.4741,Million Litres
+1999,November,DIESEL,125.296,Million Litres
+1999,November,FUEL OIL,2.415,Million Litres
+1999,November,GASOLINE,122.045,Million Litres
+1999,November,JET PETROLEUM,163.118,Million Litres
+1999,November,KEROSENE,58.382,Million Litres
+1999,November,LPG,156.2778,Million Litres
+1999,December,DIESEL,58.83,Million Litres
+1999,December,FUEL OIL,6.636,Million Litres
+1999,December,GASOLINE,77.026,Million Litres
+1999,December,JET PETROLEUM,15.076,Million Litres
+1999,December,KEROSENE,81.417,Million Litres
+1999,December,LPG,105.0463,Million Litres
+2000,January,DIESEL,30.096,Million Litres
+2000,January,FUEL OIL,8.128,Million Litres
+2000,January,GASOLINE,16.923,Million Litres
+2000,January,JET PETROLEUM,15.327,Million Litres
+2000,January,KEROSENE,50.45,Million Litres
+2000,January,LPG,98.5222,Million Litres
+2000,February,DIESEL,83.037,Million Litres
+2000,February,FUEL OIL,2.115,Million Litres
+2000,February,GASOLINE,25.236,Million Litres
+2000,February,JET PETROLEUM,85.621,Million Litres
+2000,February,KEROSENE,34.048,Million Litres
+2000,February,LPG,110.9315,Million Litres
+2000,March,DIESEL,66.02,Million Litres
+2000,March,FUEL OIL,69.904,Million Litres
+2000,March,GASOLINE,83.622,Million Litres
+2000,March,JET PETROLEUM,38.761,Million Litres
+2000,March,KEROSENE,31.701,Million Litres
+2000,March,LPG,120.0352,Million Litres
+2000,April,DIESEL,172.747,Million Litres
+2000,April,FUEL OIL,38.382,Million Litres
+2000,April,GASOLINE,92.498,Million Litres
+2000,April,JET PETROLEUM,7.537,Million Litres
+2000,April,LPG,115.5704,Million Litres
+2000,May,DIESEL,83.945,Million Litres
+2000,May,FUEL OIL,96.924,Million Litres
+2000,May,GASOLINE,75.648,Million Litres
+2000,May,JET PETROLEUM,41.722,Million Litres
+2000,May,LPG,143.6167,Million Litres
+2000,June,DIESEL,140.979,Million Litres
+2000,June,FUEL OIL,6.508,Million Litres
+2000,June,GASOLINE,70.258,Million Litres
+2000,June,JET PETROLEUM,35.481,Million Litres
+2000,June,LPG,88.7778,Million Litres
+2000,July,DIESEL,75.047,Million Litres
+2000,July,FUEL OIL,74.917,Million Litres
+2000,July,GASOLINE,46.811,Million Litres
+2000,July,JET PETROLEUM,1.964,Million Litres
+2000,July,LPG,84.1185,Million Litres
+2000,August,DIESEL,126.089,Million Litres
+2000,August,FUEL OIL,33.047,Million Litres
+2000,August,GASOLINE,120.717,Million Litres
+2000,August,JET PETROLEUM,79.889,Million Litres
+2000,August,LPG,61.3981,Million Litres
+2000,September,DIESEL,234.645,Million Litres
+2000,September,FUEL OIL,122.814,Million Litres
+2000,September,GASOLINE,116.676,Million Litres
+2000,September,JET PETROLEUM,70.556,Million Litres
+2000,September,LPG,76.5852,Million Litres
+2000,October,DIESEL,287.636,Million Litres
+2000,October,FUEL OIL,69.629,Million Litres
+2000,October,GASOLINE,163.77,Million Litres
+2000,October,JET PETROLEUM,122.512,Million Litres
+2000,October,KEROSENE,36.874,Million Litres
+2000,October,LPG,97.8537,Million Litres
+2000,November,DIESEL,157.164,Million Litres
+2000,November,FUEL OIL,102.758,Million Litres
+2000,November,GASOLINE,138.62,Million Litres
+2000,November,JET PETROLEUM,146.179,Million Litres
+2000,November,KEROSENE,154.756,Million Litres
+2000,November,LPG,118.4204,Million Litres
+2000,December,DIESEL,219.387,Million Litres
+2000,December,FUEL OIL,144.156,Million Litres
+2000,December,GASOLINE,151.535,Million Litres
+2000,December,JET PETROLEUM,170.808,Million Litres
+2000,December,KEROSENE,83.862,Million Litres
+2000,December,LPG,124.6352,Million Litres
+2001,January,DIESEL,128.871,Million Litres
+2001,January,FUEL OIL,148.78,Million Litres
+2001,January,GASOLINE,91.703,Million Litres
+2001,January,JET PETROLEUM,54.183,Million Litres
+2001,January,KEROSENE,38.658,Million Litres
+2001,January,LPG,158.0611,Million Litres
+2001,February,DIESEL,55.16,Million Litres
+2001,February,FUEL OIL,26.633,Million Litres
+2001,February,GASOLINE,85.564,Million Litres
+2001,February,JET PETROLEUM,1.608,Million Litres
+2001,February,KEROSENE,86.304,Million Litres
+2001,February,LPG,73.3889,Million Litres
+2001,March,DIESEL,48.772,Million Litres
+2001,March,FUEL OIL,139.028,Million Litres
+2001,March,GASOLINE,162.623,Million Litres
+2001,March,JET PETROLEUM,2.877,Million Litres
+2001,March,KEROSENE,53.858,Million Litres
+2001,March,LPG,120.3426,Million Litres
+2001,April,DIESEL,143.247,Million Litres
+2001,April,FUEL OIL,197.036,Million Litres
+2001,April,GASOLINE,198.622,Million Litres
+2001,April,JET PETROLEUM,44.894,Million Litres
+2001,April,LPG,109.9278,Million Litres
+2001,May,DIESEL,75.572,Million Litres
+2001,May,FUEL OIL,104.292,Million Litres
+2001,May,GASOLINE,181.381,Million Litres
+2001,May,JET PETROLEUM,7.692,Million Litres
+2001,May,LPG,157.5519,Million Litres
+2001,June,DIESEL,193.318,Million Litres
+2001,June,FUEL OIL,196.936,Million Litres
+2001,June,GASOLINE,169.069,Million Litres
+2001,June,JET PETROLEUM,44.697,Million Litres
+2001,June,LPG,122.9315,Million Litres
+2001,July,DIESEL,132.165,Million Litres
+2001,July,FUEL OIL,43.157,Million Litres
+2001,July,GASOLINE,61.617,Million Litres
+2001,July,JET PETROLEUM,10.061,Million Litres
+2001,July,LPG,97.0556,Million Litres
+2001,August,DIESEL,207.148,Million Litres
+2001,August,FUEL OIL,291.405,Million Litres
+2001,August,GASOLINE,143.011,Million Litres
+2001,August,JET PETROLEUM,38.429,Million Litres
+2001,August,LPG,111.5352,Million Litres
+2001,September,DIESEL,192.171,Million Litres
+2001,September,FUEL OIL,149.128,Million Litres
+2001,September,GASOLINE,64.717,Million Litres
+2001,September,JET PETROLEUM,98.081,Million Litres
+2001,September,KEROSENE,72.175,Million Litres
+2001,September,LPG,119.9611,Million Litres
+2001,October,DIESEL,96.37,Million Litres
+2001,October,FUEL OIL,73.351,Million Litres
+2001,October,GASOLINE,71.29,Million Litres
+2001,October,JET PETROLEUM,44.049,Million Litres
+2001,October,KEROSENE,33.565,Million Litres
+2001,October,LPG,113.6019,Million Litres
+2001,November,DIESEL,216.113,Million Litres
+2001,November,FUEL OIL,46.211,Million Litres
+2001,November,GASOLINE,103.265,Million Litres
+2001,November,JET PETROLEUM,9.717,Million Litres
+2001,November,KEROSENE,4.167,Million Litres
+2001,November,LPG,93.937,Million Litres
+2001,December,DIESEL,157.319,Million Litres
+2001,December,FUEL OIL,87.618,Million Litres
+2001,December,GASOLINE,147.739,Million Litres
+2001,December,JET PETROLEUM,131.555,Million Litres
+2001,December,KEROSENE,105.972,Million Litres
+2001,December,LPG,124.963,Million Litres
+2002,January,DIESEL,138.57,Million Litres
+2002,January,FUEL OIL,71.533,Million Litres
+2002,January,GASOLINE,131.307,Million Litres
+2002,January,JET PETROLEUM,134.805,Million Litres
+2002,January,KEROSENE,79.13,Million Litres
+2002,January,LPG,152.2259,Million Litres
+2002,February,DIESEL,127.533,Million Litres
+2002,February,FUEL OIL,44.641,Million Litres
+2002,February,GASOLINE,78.692,Million Litres
+2002,February,JET PETROLEUM,50.945,Million Litres
+2002,February,KEROSENE,78.551,Million Litres
+2002,February,LPG,99.9685,Million Litres
+2002,March,DIESEL,164.805,Million Litres
+2002,March,FUEL OIL,67.463,Million Litres
+2002,March,GASOLINE,70.473,Million Litres
+2002,March,JET PETROLEUM,19.536,Million Litres
+2002,March,LPG,106.963,Million Litres
+2002,April,DIESEL,126.202,Million Litres
+2002,April,FUEL OIL,4.013,Million Litres
+2002,April,GASOLINE,97.326,Million Litres
+2002,April,JET PETROLEUM,1.474,Million Litres
+2002,April,LPG,91.5444,Million Litres
+2002,May,DIESEL,188.569,Million Litres
+2002,May,FUEL OIL,98.974,Million Litres
+2002,May,GASOLINE,126.288,Million Litres
+2002,May,JET PETROLEUM,18.766,Million Litres
+2002,May,KEROSENE,4.618,Million Litres
+2002,May,LPG,84.2611,Million Litres
+2002,June,DIESEL,242.333,Million Litres
+2002,June,FUEL OIL,52.223,Million Litres
+2002,June,GASOLINE,117.865,Million Litres
+2002,June,JET PETROLEUM,18.431,Million Litres
+2002,June,KEROSENE,8.51,Million Litres
+2002,June,LPG,92.0759,Million Litres
+2002,July,DIESEL,210.981,Million Litres
+2002,July,FUEL OIL,71.435,Million Litres
+2002,July,GASOLINE,60.802,Million Litres
+2002,July,JET PETROLEUM,7.703,Million Litres
+2002,July,KEROSENE,10.562,Million Litres
+2002,July,LPG,105.5833,Million Litres
+2002,August,DIESEL,236.857,Million Litres
+2002,August,FUEL OIL,3.84,Million Litres
+2002,August,GASOLINE,120.572,Million Litres
+2002,August,JET PETROLEUM,92.212,Million Litres
+2002,August,KEROSENE,4.159,Million Litres
+2002,August,LPG,89.2185,Million Litres
+2002,September,DIESEL,260.068,Million Litres
+2002,September,FUEL OIL,31.838,Million Litres
+2002,September,GASOLINE,102.411,Million Litres
+2002,September,JET PETROLEUM,187.711,Million Litres
+2002,September,LPG,96.8241,Million Litres
+2002,October,DIESEL,221.164,Million Litres
+2002,October,FUEL OIL,62.635,Million Litres
+2002,October,GASOLINE,104.221,Million Litres
+2002,October,JET PETROLEUM,160.976,Million Litres
+2002,October,KEROSENE,40.014,Million Litres
+2002,October,LPG,114.4759,Million Litres
+2002,November,DIESEL,215.451,Million Litres
+2002,November,FUEL OIL,128.94,Million Litres
+2002,November,GASOLINE,110.243,Million Litres
+2002,November,JET PETROLEUM,74.524,Million Litres
+2002,November,KEROSENE,44.679,Million Litres
+2002,November,LPG,107.8278,Million Litres
+2002,December,DIESEL,199.095,Million Litres
+2002,December,FUEL OIL,129.241,Million Litres
+2002,December,GASOLINE,110.17,Million Litres
+2002,December,JET PETROLEUM,153.576,Million Litres
+2002,December,KEROSENE,48.311,Million Litres
+2002,December,LPG,128.9019,Million Litres
+2003,January,DIESEL,176.145,Million Litres
+2003,January,FUEL OIL,107.61,Million Litres
+2003,January,GASOLINE,83.959,Million Litres
+2003,January,JET PETROLEUM,75.156,Million Litres
+2003,January,KEROSENE,53.194,Million Litres
+2003,January,LPG,153.4537,Million Litres
+2003,February,DIESEL,128.499,Million Litres
+2003,February,FUEL OIL,157.461,Million Litres
+2003,February,GASOLINE,84.47,Million Litres
+2003,February,JET PETROLEUM,12.652,Million Litres
+2003,February,KEROSENE,3.684,Million Litres
+2003,February,LPG,101.837,Million Litres
+2003,March,DIESEL,125.448,Million Litres
+2003,March,FUEL OIL,139.423,Million Litres
+2003,March,GASOLINE,47.316,Million Litres
+2003,March,JET PETROLEUM,3.248,Million Litres
+2003,March,KEROSENE,7.491,Million Litres
+2003,March,LPG,158.8907,Million Litres
+2003,April,DIESEL,142.278,Million Litres
+2003,April,FUEL OIL,70.004,Million Litres
+2003,April,GASOLINE,106.269,Million Litres
+2003,April,JET PETROLEUM,34.587,Million Litres
+2003,April,LPG,130.0574,Million Litres
+2003,May,DIESEL,157.987,Million Litres
+2003,May,FUEL OIL,51.371,Million Litres
+2003,May,GASOLINE,128.989,Million Litres
+2003,May,JET PETROLEUM,17.02,Million Litres
+2003,May,KEROSENE,17.748,Million Litres
+2003,May,LPG,97.9463,Million Litres
+2003,June,DIESEL,147.362,Million Litres
+2003,June,FUEL OIL,42.906,Million Litres
+2003,June,GASOLINE,118.94,Million Litres
+2003,June,JET PETROLEUM,2.926,Million Litres
+2003,June,KEROSENE,3.759,Million Litres
+2003,June,LPG,123.9222,Million Litres
+2003,July,DIESEL,140.316,Million Litres
+2003,July,FUEL OIL,36.356,Million Litres
+2003,July,GASOLINE,75.278,Million Litres
+2003,July,JET PETROLEUM,2.01,Million Litres
+2003,July,LPG,143.637,Million Litres
+2003,August,DIESEL,184.843,Million Litres
+2003,August,FUEL OIL,48.568,Million Litres
+2003,August,GASOLINE,157.881,Million Litres
+2003,August,JET PETROLEUM,20.202,Million Litres
+2003,August,LPG,114.7519,Million Litres
+2003,September,DIESEL,318.194,Million Litres
+2003,September,FUEL OIL,48.071,Million Litres
+2003,September,GASOLINE,70.533,Million Litres
+2003,September,JET PETROLEUM,134.302,Million Litres
+2003,September,KEROSENE,3.489,Million Litres
+2003,September,LPG,95.4907,Million Litres
+2003,October,DIESEL,330.854,Million Litres
+2003,October,FUEL OIL,70.763,Million Litres
+2003,October,GASOLINE,70.474,Million Litres
+2003,October,JET PETROLEUM,63.412,Million Litres
+2003,October,KEROSENE,4.751,Million Litres
+2003,October,LPG,134.7574,Million Litres
+2003,November,DIESEL,153.113,Million Litres
+2003,November,FUEL OIL,2.611,Million Litres
+2003,November,GASOLINE,85.236,Million Litres
+2003,November,JET PETROLEUM,133.798,Million Litres
+2003,November,KEROSENE,6.837,Million Litres
+2003,November,LPG,46.05,Million Litres
+2003,December,DIESEL,143.182,Million Litres
+2003,December,FUEL OIL,4.719,Million Litres
+2003,December,GASOLINE,78.968,Million Litres
+2003,December,JET PETROLEUM,58.699,Million Litres
+2003,December,KEROSENE,8.459,Million Litres
+2003,December,LPG,125.2667,Million Litres
+2004,January,DIESEL,191.589,Million Litres
+2004,January,FUEL OIL,46.483,Million Litres
+2004,January,GASOLINE,66.478,Million Litres
+2004,January,JET PETROLEUM,8.879,Million Litres
+2004,January,KEROSENE,5.147,Million Litres
+2004,January,LPG,129.1481,Million Litres
+2004,February,DIESEL,259.835,Million Litres
+2004,February,FUEL OIL,64.439,Million Litres
+2004,February,GASOLINE,63.75,Million Litres
+2004,February,JET PETROLEUM,5.67,Million Litres
+2004,February,LPG,88.4778,Million Litres
+2004,March,DIESEL,257.631,Million Litres
+2004,March,FUEL OIL,43.966,Million Litres
+2004,March,GASOLINE,116.167,Million Litres
+2004,March,JET PETROLEUM,5.489,Million Litres
+2004,March,LPG,95.1926,Million Litres
+2004,April,DIESEL,193.111,Million Litres
+2004,April,FUEL OIL,30.147,Million Litres
+2004,April,GASOLINE,106.164,Million Litres
+2004,April,JET PETROLEUM,7.174,Million Litres
+2004,April,LPG,120.1685,Million Litres
+2004,May,DIESEL,152.047,Million Litres
+2004,May,FUEL OIL,57.037,Million Litres
+2004,May,GASOLINE,103.509,Million Litres
+2004,May,JET PETROLEUM,7.265,Million Litres
+2004,May,LPG,119.9074,Million Litres
+2004,June,DIESEL,166.421,Million Litres
+2004,June,FUEL OIL,26.352,Million Litres
+2004,June,GASOLINE,125.268,Million Litres
+2004,June,JET PETROLEUM,3.121,Million Litres
+2004,June,LPG,142.463,Million Litres
+2004,July,DIESEL,183.965,Million Litres
+2004,July,FUEL OIL,140.786,Million Litres
+2004,July,GASOLINE,109.007,Million Litres
+2004,July,JET PETROLEUM,45.493,Million Litres
+2004,July,KEROSENE,6.868,Million Litres
+2004,July,LPG,150.8019,Million Litres
+2004,August,DIESEL,195.972,Million Litres
+2004,August,FUEL OIL,97.357,Million Litres
+2004,August,GASOLINE,69.229,Million Litres
+2004,August,JET PETROLEUM,80.547,Million Litres
+2004,August,LPG,137.0981,Million Litres
+2004,September,DIESEL,174.782,Million Litres
+2004,September,FUEL OIL,154.931,Million Litres
+2004,September,GASOLINE,118.954,Million Litres
+2004,September,JET PETROLEUM,14.257,Million Litres
+2004,September,KEROSENE,2.294,Million Litres
+2004,September,LPG,154.7556,Million Litres
+2004,October,DIESEL,217.552,Million Litres
+2004,October,FUEL OIL,150.105,Million Litres
+2004,October,GASOLINE,135.686,Million Litres
+2004,October,JET PETROLEUM,147.592,Million Litres
+2004,October,KEROSENE,8.791,Million Litres
+2004,October,LPG,195.7463,Million Litres
+2004,November,DIESEL,200.278,Million Litres
+2004,November,FUEL OIL,146.744,Million Litres
+2004,November,GASOLINE,132.265,Million Litres
+2004,November,JET PETROLEUM,17.195,Million Litres
+2004,November,KEROSENE,10.465,Million Litres
+2004,November,LPG,140.2741,Million Litres
+2004,December,DIESEL,188.416,Million Litres
+2004,December,FUEL OIL,119.953,Million Litres
+2004,December,GASOLINE,213.009,Million Litres
+2004,December,JET PETROLEUM,24.398,Million Litres
+2004,December,KEROSENE,25.317,Million Litres
+2004,December,LPG,174.5278,Million Litres
+2005,January,DIESEL,108.046,Million Litres
+2005,January,FUEL OIL,150.353,Million Litres
+2005,January,GASOLINE,138.987,Million Litres
+2005,January,JET PETROLEUM,11.111,Million Litres
+2005,January,LPG,180.0333,Million Litres
+2005,February,DIESEL,73.573,Million Litres
+2005,February,FUEL OIL,117.656,Million Litres
+2005,February,GASOLINE,101.544,Million Litres
+2005,February,JET PETROLEUM,11.07,Million Litres
+2005,February,LPG,111.5796,Million Litres
+2005,March,DIESEL,65.213,Million Litres
+2005,March,FUEL OIL,81.695,Million Litres
+2005,March,GASOLINE,136.264,Million Litres
+2005,March,JET PETROLEUM,14.297,Million Litres
+2005,March,LPG,128.1463,Million Litres
+2005,April,DIESEL,51.7,Million Litres
+2005,April,FUEL OIL,30.001,Million Litres
+2005,April,GASOLINE,176.398,Million Litres
+2005,April,JET PETROLEUM,11.812,Million Litres
+2005,April,LPG,150.2019,Million Litres
+2005,May,DIESEL,120.707,Million Litres
+2005,May,FUEL OIL,30.48,Million Litres
+2005,May,GASOLINE,139.14,Million Litres
+2005,May,JET PETROLEUM,3.709,Million Litres
+2005,May,LPG,164.6352,Million Litres
+2005,June,DIESEL,99.775,Million Litres
+2005,June,FUEL OIL,20.228,Million Litres
+2005,June,GASOLINE,148.097,Million Litres
+2005,June,JET PETROLEUM,42.309,Million Litres
+2005,June,LPG,135.2889,Million Litres
+2005,July,DIESEL,243.224,Million Litres
+2005,July,FUEL OIL,48.173,Million Litres
+2005,July,GASOLINE,210.587,Million Litres
+2005,July,JET PETROLEUM,12.828,Million Litres
+2005,July,KEROSENE,3.829,Million Litres
+2005,July,LPG,181.8111,Million Litres
+2005,August,DIESEL,373.099,Million Litres
+2005,August,FUEL OIL,151.135,Million Litres
+2005,August,GASOLINE,222.137,Million Litres
+2005,August,JET PETROLEUM,190.455,Million Litres
+2005,August,LPG,151.5759,Million Litres
+2005,September,DIESEL,159.199,Million Litres
+2005,September,FUEL OIL,135.953,Million Litres
+2005,September,GASOLINE,206.922,Million Litres
+2005,September,JET PETROLEUM,84.284,Million Litres
+2005,September,LPG,134.1074,Million Litres
+2005,October,DIESEL,144.361,Million Litres
+2005,October,FUEL OIL,31.652,Million Litres
+2005,October,GASOLINE,185.882,Million Litres
+2005,October,JET PETROLEUM,125.298,Million Litres
+2005,October,LPG,110.0222,Million Litres
+2005,November,DIESEL,179.812,Million Litres
+2005,November,FUEL OIL,83.654,Million Litres
+2005,November,GASOLINE,175.481,Million Litres
+2005,November,JET PETROLEUM,3.871,Million Litres
+2005,November,LPG,139.4722,Million Litres
+2005,December,DIESEL,190.285,Million Litres
+2005,December,FUEL OIL,22.446,Million Litres
+2005,December,GASOLINE,180.431,Million Litres
+2005,December,JET PETROLEUM,88.304,Million Litres
+2005,December,LPG,168.3981,Million Litres
+2006,January,DIESEL,224.372,Million Litres
+2006,January,FUEL OIL,86.649,Million Litres
+2006,January,GASOLINE,176.744,Million Litres
+2006,January,JET PETROLEUM,43.91,Million Litres
+2006,January,LPG,190.637,Million Litres
+2006,February,DIESEL,147.391,Million Litres
+2006,February,FUEL OIL,105.458,Million Litres
+2006,February,GASOLINE,149.817,Million Litres
+2006,February,JET PETROLEUM,119.157,Million Litres
+2006,February,LPG,104.1333,Million Litres
+2006,March,DIESEL,150.045,Million Litres
+2006,March,FUEL OIL,71.283,Million Litres
+2006,March,GASOLINE,131.074,Million Litres
+2006,March,JET PETROLEUM,46.934,Million Litres
+2006,March,KEROSENE,14.989,Million Litres
+2006,March,LPG,91.5981,Million Litres
+2006,April,DIESEL,122.082,Million Litres
+2006,April,FUEL OIL,135.124,Million Litres
+2006,April,GASOLINE,200.923,Million Litres
+2006,April,JET PETROLEUM,2.629,Million Litres
+2006,April,LPG,117.2259,Million Litres
+2006,May,DIESEL,145.669,Million Litres
+2006,May,FUEL OIL,106.224,Million Litres
+2006,May,GASOLINE,192.94,Million Litres
+2006,May,JET PETROLEUM,3.496,Million Litres
+2006,May,LPG,99.3815,Million Litres
+2006,June,DIESEL,198.694,Million Litres
+2006,June,FUEL OIL,96.499,Million Litres
+2006,June,GASOLINE,157.178,Million Litres
+2006,June,JET PETROLEUM,14.794,Million Litres
+2006,June,LPG,73.2019,Million Litres
+2006,July,DIESEL,322.078,Million Litres
+2006,July,FUEL OIL,140.281,Million Litres
+2006,July,GASOLINE,184.336,Million Litres
+2006,July,JET PETROLEUM,128.59,Million Litres
+2006,July,LPG,65.0593,Million Litres
+2006,August,DIESEL,370.435,Million Litres
+2006,August,FUEL OIL,153.726,Million Litres
+2006,August,GASOLINE,190.207,Million Litres
+2006,August,JET PETROLEUM,181.038,Million Litres
+2006,August,KEROSENE,4.614,Million Litres
+2006,August,LPG,55.9722,Million Litres
+2006,September,DIESEL,374.125,Million Litres
+2006,September,FUEL OIL,118.663,Million Litres
+2006,September,GASOLINE,162.942,Million Litres
+2006,September,JET PETROLEUM,138.906,Million Litres
+2006,September,KEROSENE,9.743,Million Litres
+2006,September,LPG,53.0185,Million Litres
+2006,October,DIESEL,348.036,Million Litres
+2006,October,FUEL OIL,60.102,Million Litres
+2006,October,GASOLINE,118.548,Million Litres
+2006,October,JET PETROLEUM,47.026,Million Litres
+2006,October,LPG,62.1889,Million Litres
+2006,November,DIESEL,323.716,Million Litres
+2006,November,FUEL OIL,115.603,Million Litres
+2006,November,GASOLINE,150.945,Million Litres
+2006,November,JET PETROLEUM,155.217,Million Litres
+2006,November,KEROSENE,4.622,Million Litres
+2006,November,LPG,57.0981,Million Litres
+2006,December,DIESEL,213.81,Million Litres
+2006,December,FUEL OIL,228.947,Million Litres
+2006,December,GASOLINE,106.259,Million Litres
+2006,December,JET PETROLEUM,135.579,Million Litres
+2006,December,LPG,97.6926,Million Litres
+2007,January,DIESEL,163.394,Million Litres
+2007,January,FUEL OIL,127.707,Million Litres
+2007,January,GASOLINE,126.673,Million Litres
+2007,January,JET PETROLEUM,100,Million Litres
+2007,January,LPG,65.8241,Million Litres
+2007,February,DIESEL,137.589,Million Litres
+2007,February,FUEL OIL,133.698,Million Litres
+2007,February,GASOLINE,123.391,Million Litres
+2007,February,JET PETROLEUM,49.118,Million Litres
+2007,February,KEROSENE,10.108,Million Litres
+2007,February,LPG,100.4389,Million Litres
+2007,March,DIESEL,197.796,Million Litres
+2007,March,FUEL OIL,151.614,Million Litres
+2007,March,GASOLINE,162.143,Million Litres
+2007,March,JET PETROLEUM,8.943,Million Litres
+2007,March,LPG,50.1019,Million Litres
+2007,April,DIESEL,143.86,Million Litres
+2007,April,FUEL OIL,168.665,Million Litres
+2007,April,GASOLINE,166.54,Million Litres
+2007,April,JET PETROLEUM,6.028,Million Litres
+2007,April,KEROSENE,5.256,Million Litres
+2007,April,LPG,53.5167,Million Litres
+2007,May,DIESEL,211.674,Million Litres
+2007,May,FUEL OIL,265.481,Million Litres
+2007,May,GASOLINE,185.749,Million Litres
+2007,May,JET PETROLEUM,131.853,Million Litres
+2007,May,LPG,58.5167,Million Litres
+2007,June,DIESEL,226.617,Million Litres
+2007,June,FUEL OIL,213.7,Million Litres
+2007,June,GASOLINE,134.099,Million Litres
+2007,June,JET PETROLEUM,33.004,Million Litres
+2007,June,KEROSENE,5.353,Million Litres
+2007,June,LPG,36.8519,Million Litres
+2007,July,DIESEL,173.527,Million Litres
+2007,July,FUEL OIL,154.02,Million Litres
+2007,July,GASOLINE,80.511,Million Litres
+2007,July,JET PETROLEUM,16.974,Million Litres
+2007,July,KEROSENE,6.991,Million Litres
+2007,July,LPG,30.0796,Million Litres
+2007,August,DIESEL,216.26,Million Litres
+2007,August,FUEL OIL,243.546,Million Litres
+2007,August,GASOLINE,119.246,Million Litres
+2007,August,JET PETROLEUM,32.474,Million Litres
+2007,August,KEROSENE,4.979,Million Litres
+2007,August,LPG,29.4944,Million Litres
+2007,September,DIESEL,244.518,Million Litres
+2007,September,FUEL OIL,196.617,Million Litres
+2007,September,GASOLINE,115.988,Million Litres
+2007,September,JET PETROLEUM,4.914,Million Litres
+2007,September,KEROSENE,4.5,Million Litres
+2007,September,LPG,19.1481,Million Litres
+2007,October,DIESEL,336.413,Million Litres
+2007,October,FUEL OIL,193.597,Million Litres
+2007,October,GASOLINE,132.4,Million Litres
+2007,October,JET PETROLEUM,5.656,Million Litres
+2007,October,LPG,29.1944,Million Litres
+2007,November,DIESEL,363.847,Million Litres
+2007,November,FUEL OIL,333.938,Million Litres
+2007,November,GASOLINE,73.315,Million Litres
+2007,November,JET PETROLEUM,6.999,Million Litres
+2007,November,LPG,21.6796,Million Litres
+2007,December,DIESEL,273.996,Million Litres
+2007,December,FUEL OIL,295.449,Million Litres
+2007,December,GASOLINE,158.866,Million Litres
+2007,December,JET PETROLEUM,53.013,Million Litres
+2007,December,LPG,19.1593,Million Litres
+2008,January,DIESEL,258.788,Million Litres
+2008,January,FUEL OIL,284.817,Million Litres
+2008,January,GASOLINE,191.435,Million Litres
+2008,January,JET PETROLEUM,99.248,Million Litres
+2008,January,LPG,16.4481,Million Litres
+2008,February,DIESEL,149.479,Million Litres
+2008,February,FUEL OIL,284.767,Million Litres
+2008,February,GASOLINE,137.758,Million Litres
+2008,February,JET PETROLEUM,98.834,Million Litres
+2008,February,LPG,11.5944,Million Litres
+2008,March,DIESEL,302.865,Million Litres
+2008,March,FUEL OIL,320.08,Million Litres
+2008,March,GASOLINE,146.587,Million Litres
+2008,March,JET PETROLEUM,99.793,Million Litres
+2008,March,KEROSENE,9.656,Million Litres
+2008,March,LPG,0.0037,Million Litres
+2008,April,DIESEL,234.36,Million Litres
+2008,April,FUEL OIL,251.371,Million Litres
+2008,April,GASOLINE,204.995,Million Litres
+2008,April,JET PETROLEUM,114.938,Million Litres
+2008,April,LPG,0.1278,Million Litres
+2008,May,DIESEL,377.491,Million Litres
+2008,May,FUEL OIL,327.124,Million Litres
+2008,May,GASOLINE,83.059,Million Litres
+2008,May,JET PETROLEUM,66.473,Million Litres
+2008,May,KEROSENE,50.541,Million Litres
+2008,May,LPG,2.7704,Million Litres
+2008,June,DIESEL,315.091,Million Litres
+2008,June,FUEL OIL,240.101,Million Litres
+2008,June,GASOLINE,187.553,Million Litres
+2008,June,JET PETROLEUM,55.946,Million Litres
+2008,June,LPG,0.137,Million Litres
+2008,July,DIESEL,429.366,Million Litres
+2008,July,FUEL OIL,205.556,Million Litres
+2008,July,GASOLINE,176.737,Million Litres
+2008,July,JET PETROLEUM,115.379,Million Litres
+2008,July,LPG,0.0815,Million Litres
+2008,August,DIESEL,404.955,Million Litres
+2008,August,FUEL OIL,387.23,Million Litres
+2008,August,GASOLINE,128.689,Million Litres
+2008,August,JET PETROLEUM,113.575,Million Litres
+2008,August,KEROSENE,48.357,Million Litres
+2008,August,LPG,0.1352,Million Litres
+2008,September,DIESEL,285.881,Million Litres
+2008,September,FUEL OIL,275.144,Million Litres
+2008,September,GASOLINE,63.391,Million Litres
+2008,September,JET PETROLEUM,97.996,Million Litres
+2008,September,LPG,0.2352,Million Litres
+2008,October,DIESEL,338.494,Million Litres
+2008,October,FUEL OIL,418.621,Million Litres
+2008,October,GASOLINE,33.439,Million Litres
+2008,October,JET PETROLEUM,134.176,Million Litres
+2008,October,LPG,0.7481,Million Litres
+2008,November,DIESEL,331.544,Million Litres
+2008,November,FUEL OIL,205.523,Million Litres
+2008,November,GASOLINE,33.957,Million Litres
+2008,November,JET PETROLEUM,111.109,Million Litres
+2008,November,LPG,4.9537,Million Litres
+2008,December,DIESEL,377.957,Million Litres
+2008,December,FUEL OIL,423.975,Million Litres
+2008,December,GASOLINE,90.77,Million Litres
+2008,December,JET PETROLEUM,239.342,Million Litres
+2008,December,LPG,2.0889,Million Litres
+2009,January,DIESEL,281.957,Million Litres
+2009,January,FUEL OIL,399.801,Million Litres
+2009,January,GASOLINE,133.53,Million Litres
+2009,January,JET PETROLEUM,101.413,Million Litres
+2009,January,LPG,2.0148,Million Litres
+2009,February,DIESEL,145.475,Million Litres
+2009,February,FUEL OIL,323.793,Million Litres
+2009,February,GASOLINE,52.601,Million Litres
+2009,February,JET PETROLEUM,104.805,Million Litres
+2009,February,LPG,1.5519,Million Litres
+2009,March,DIESEL,244.047,Million Litres
+2009,March,FUEL OIL,327.251,Million Litres
+2009,March,GASOLINE,73.015,Million Litres
+2009,March,JET PETROLEUM,54.247,Million Litres
+2009,March,LPG,1.8352,Million Litres
+2009,April,DIESEL,352.911,Million Litres
+2009,April,FUEL OIL,327.974,Million Litres
+2009,April,GASOLINE,125.01,Million Litres
+2009,April,JET PETROLEUM,77.939,Million Litres
+2009,April,LPG,2.0704,Million Litres
+2009,May,DIESEL,600.52,Million Litres
+2009,May,FUEL OIL,278.425,Million Litres
+2009,May,GASOLINE,120.43,Million Litres
+2009,May,JET PETROLEUM,197.64,Million Litres
+2009,May,LPG,2.8463,Million Litres
+2009,June,DIESEL,275.864,Million Litres
+2009,June,FUEL OIL,500.24,Million Litres
+2009,June,GASOLINE,158.121,Million Litres
+2009,June,JET PETROLEUM,102.037,Million Litres
+2009,June,KEROSENE,6.355,Million Litres
+2009,June,LPG,2.8,Million Litres
+2009,July,DIESEL,332.178,Million Litres
+2009,July,FUEL OIL,329.018,Million Litres
+2009,July,GASOLINE,143.792,Million Litres
+2009,July,JET PETROLEUM,205.468,Million Litres
+2009,July,LPG,1.7056,Million Litres
+2009,August,DIESEL,569.778,Million Litres
+2009,August,FUEL OIL,300.896,Million Litres
+2009,August,GASOLINE,153.459,Million Litres
+2009,August,JET PETROLEUM,152.108,Million Litres
+2009,August,LPG,1.7278,Million Litres
+2009,September,DIESEL,468.966,Million Litres
+2009,September,FUEL OIL,343.435,Million Litres
+2009,September,GASOLINE,109.475,Million Litres
+2009,September,JET PETROLEUM,159.742,Million Litres
+2009,September,LPG,2.3074,Million Litres
+2009,October,DIESEL,638.395,Million Litres
+2009,October,FUEL OIL,210.821,Million Litres
+2009,October,GASOLINE,115.05,Million Litres
+2009,October,JET PETROLEUM,172.24,Million Litres
+2009,October,LPG,3.0056,Million Litres
+2009,November,DIESEL,370.425,Million Litres
+2009,November,FUEL OIL,267.272,Million Litres
+2009,November,GASOLINE,87.074,Million Litres
+2009,November,JET PETROLEUM,114.137,Million Litres
+2009,November,KEROSENE,6.45,Million Litres
+2009,November,LPG,2.7093,Million Litres
+2009,December,DIESEL,515.934,Million Litres
+2009,December,FUEL OIL,269.046,Million Litres
+2009,December,GASOLINE,82.168,Million Litres
+2009,December,JET PETROLEUM,167.522,Million Litres
+2009,December,KEROSENE,6.209,Million Litres
+2009,December,LPG,3.1778,Million Litres
+2010,January,DIESEL,200.727,Million Litres
+2010,January,FUEL OIL,230.432,Million Litres
+2010,January,GASOLINE,86.324,Million Litres
+2010,January,JET PETROLEUM,98.044,Million Litres
+2010,January,LPG,3.7759,Million Litres
+2010,February,DIESEL,266.686,Million Litres
+2010,February,FUEL OIL,274.407,Million Litres
+2010,February,GASOLINE,79.47,Million Litres
+2010,February,JET PETROLEUM,59.32,Million Litres
+2010,February,LPG,4.3611,Million Litres
+2010,March,DIESEL,304.015,Million Litres
+2010,March,FUEL OIL,325.587,Million Litres
+2010,March,GASOLINE,70.705,Million Litres
+2010,March,JET PETROLEUM,102.816,Million Litres
+2010,March,LPG,4.1333,Million Litres
+2010,April,DIESEL,365.619,Million Litres
+2010,April,FUEL OIL,293.26,Million Litres
+2010,April,GASOLINE,134.543,Million Litres
+2010,April,JET PETROLEUM,152.136,Million Litres
+2010,April,LPG,4.0148,Million Litres
+2010,May,DIESEL,418.648,Million Litres
+2010,May,FUEL OIL,272.571,Million Litres
+2010,May,GASOLINE,158.797,Million Litres
+2010,May,JET PETROLEUM,63.709,Million Litres
+2010,May,KEROSENE,5.412,Million Litres
+2010,May,LPG,3.8889,Million Litres
+2010,June,DIESEL,493.057,Million Litres
+2010,June,FUEL OIL,270.864,Million Litres
+2010,June,GASOLINE,152.237,Million Litres
+2010,June,JET PETROLEUM,189.748,Million Litres
+2010,June,KEROSENE,23.28,Million Litres
+2010,June,LPG,3.4519,Million Litres
+2010,July,DIESEL,546.902,Million Litres
+2010,July,FUEL OIL,266.154,Million Litres
+2010,July,GASOLINE,149.447,Million Litres
+2010,July,JET PETROLEUM,110.583,Million Litres
+2010,July,KEROSENE,23.299,Million Litres
+2010,July,LPG,3.4093,Million Litres
+2010,August,DIESEL,621.449,Million Litres
+2010,August,FUEL OIL,191.263,Million Litres
+2010,August,GASOLINE,109.29,Million Litres
+2010,August,JET PETROLEUM,286.834,Million Litres
+2010,August,KEROSENE,24.691,Million Litres
+2010,August,LPG,5.2611,Million Litres
+2010,September,DIESEL,737.547,Million Litres
+2010,September,FUEL OIL,288.889,Million Litres
+2010,September,GASOLINE,135.023,Million Litres
+2010,September,JET PETROLEUM,42.982,Million Litres
+2010,September,KEROSENE,111.399,Million Litres
+2010,September,LPG,4.4148,Million Litres
+2010,October,DIESEL,587.158,Million Litres
+2010,October,FUEL OIL,245.508,Million Litres
+2010,October,GASOLINE,70.139,Million Litres
+2010,October,JET PETROLEUM,124.862,Million Litres
+2010,October,KEROSENE,161.64,Million Litres
+2010,October,LPG,5.2796,Million Litres
+2010,November,DIESEL,480.338,Million Litres
+2010,November,FUEL OIL,315.448,Million Litres
+2010,November,GASOLINE,73.763,Million Litres
+2010,November,JET PETROLEUM,81.8,Million Litres
+2010,November,KEROSENE,62.952,Million Litres
+2010,November,LPG,1.8222,Million Litres
+2010,December,DIESEL,483.148,Million Litres
+2010,December,FUEL OIL,259.638,Million Litres
+2010,December,GASOLINE,124.697,Million Litres
+2010,December,JET PETROLEUM,91.692,Million Litres
+2010,December,KEROSENE,13.393,Million Litres
+2010,December,LPG,1.863,Million Litres
+2011,January,DIESEL,305.99,Million Litres
+2011,January,FUEL OIL,354.158,Million Litres
+2011,January,GASOLINE,56.635,Million Litres
+2011,January,JET PETROLEUM,87.25,Million Litres
+2011,January,LPG,1.7463,Million Litres
+2011,February,DIESEL,182.95,Million Litres
+2011,February,FUEL OIL,182.796,Million Litres
+2011,February,GASOLINE,42.105,Million Litres
+2011,February,JET PETROLEUM,3.895,Million Litres
+2011,February,LPG,1.637,Million Litres
+2011,March,DIESEL,268.534,Million Litres
+2011,March,FUEL OIL,256.622,Million Litres
+2011,March,GASOLINE,60.022,Million Litres
+2011,March,JET PETROLEUM,22.53,Million Litres
+2011,March,LPG,2.0019,Million Litres
+2011,April,DIESEL,354.03,Million Litres
+2011,April,FUEL OIL,375.992,Million Litres
+2011,April,GASOLINE,64.735,Million Litres
+2011,April,JET PETROLEUM,127.869,Million Litres
+2011,April,LPG,2.2296,Million Litres
+2011,May,DIESEL,407.91,Million Litres
+2011,May,FUEL OIL,345.587,Million Litres
+2011,May,GASOLINE,146.168,Million Litres
+2011,May,JET PETROLEUM,105.521,Million Litres
+2011,May,LPG,1.9778,Million Litres
+2011,June,DIESEL,286.017,Million Litres
+2011,June,FUEL OIL,256.159,Million Litres
+2011,June,GASOLINE,102.714,Million Litres
+2011,June,JET PETROLEUM,65.271,Million Litres
+2011,June,KEROSENE,49.364,Million Litres
+2011,June,LPG,2.4963,Million Litres
+2011,July,DIESEL,652.92,Million Litres
+2011,July,FUEL OIL,251.561,Million Litres
+2011,July,GASOLINE,86.733,Million Litres
+2011,July,JET PETROLEUM,68.752,Million Litres
+2011,July,KEROSENE,57.395,Million Litres
+2011,July,LPG,2.5204,Million Litres
+2011,August,DIESEL,721.733,Million Litres
+2011,August,FUEL OIL,307.3,Million Litres
+2011,August,GASOLINE,167.427,Million Litres
+2011,August,JET PETROLEUM,169.289,Million Litres
+2011,August,LPG,2.7111,Million Litres
+2011,September,DIESEL,614.894,Million Litres
+2011,September,FUEL OIL,357.268,Million Litres
+2011,September,GASOLINE,67.278,Million Litres
+2011,September,JET PETROLEUM,145.797,Million Litres
+2011,September,LPG,2.8407,Million Litres
+2011,October,DIESEL,320.823,Million Litres
+2011,October,FUEL OIL,223.62,Million Litres
+2011,October,GASOLINE,47.111,Million Litres
+2011,October,JET PETROLEUM,18.221,Million Litres
+2011,October,LPG,3.2352,Million Litres
+2011,November,DIESEL,250.091,Million Litres
+2011,November,FUEL OIL,244.448,Million Litres
+2011,November,GASOLINE,45.635,Million Litres
+2011,November,JET PETROLEUM,127.212,Million Litres
+2011,November,LPG,3.1222,Million Litres
+2011,December,DIESEL,339.566,Million Litres
+2011,December,FUEL OIL,327.358,Million Litres
+2011,December,GASOLINE,82.144,Million Litres
+2011,December,JET PETROLEUM,259.853,Million Litres
+2011,December,LPG,3.3426,Million Litres
+2012,January,DIESEL,417.462,Million Litres
+2012,January,FUEL OIL,361.365,Million Litres
+2012,January,GASOLINE,76.213,Million Litres
+2012,January,JET PETROLEUM,72.024,Million Litres
+2012,January,LPG,2.8241,Million Litres
+2012,February,DIESEL,471.432,Million Litres
+2012,February,FUEL OIL,296.548,Million Litres
+2012,February,GASOLINE,127.883,Million Litres
+2012,February,JET PETROLEUM,70.002,Million Litres
+2012,February,LPG,1.9389,Million Litres
+2012,March,DIESEL,378.447,Million Litres
+2012,March,FUEL OIL,424.919,Million Litres
+2012,March,GASOLINE,181.31,Million Litres
+2012,March,JET PETROLEUM,25.478,Million Litres
+2012,March,LPG,0.9574,Million Litres
+2012,April,DIESEL,458.709,Million Litres
+2012,April,FUEL OIL,301.897,Million Litres
+2012,April,GASOLINE,194.461,Million Litres
+2012,April,JET PETROLEUM,22.865,Million Litres
+2012,April,LPG,1.3944,Million Litres
+2012,May,DIESEL,405.2,Million Litres
+2012,May,FUEL OIL,273.551,Million Litres
+2012,May,GASOLINE,152.2,Million Litres
+2012,May,JET PETROLEUM,62.79,Million Litres
+2012,May,KEROSENE,14.738,Million Litres
+2012,May,LPG,0.8185,Million Litres
+2012,June,DIESEL,536.125,Million Litres
+2012,June,FUEL OIL,315.621,Million Litres
+2012,June,GASOLINE,151.511,Million Litres
+2012,June,JET PETROLEUM,89.392,Million Litres
+2012,June,KEROSENE,9.17,Million Litres
+2012,June,LPG,0.9333,Million Litres
+2012,July,DIESEL,410.07,Million Litres
+2012,July,FUEL OIL,213.628,Million Litres
+2012,July,GASOLINE,82.703,Million Litres
+2012,July,JET PETROLEUM,131.815,Million Litres
+2012,July,LPG,1.4963,Million Litres
+2012,August,DIESEL,360.56,Million Litres
+2012,August,FUEL OIL,335.918,Million Litres
+2012,August,GASOLINE,100.133,Million Litres
+2012,August,JET PETROLEUM,45.917,Million Litres
+2012,August,KEROSENE,6.397,Million Litres
+2012,August,LPG,1.6685,Million Litres
+2012,September,DIESEL,489.397,Million Litres
+2012,September,FUEL OIL,340.922,Million Litres
+2012,September,GASOLINE,125.44,Million Litres
+2012,September,JET PETROLEUM,62.279,Million Litres
+2012,September,KEROSENE,1.243,Million Litres
+2012,September,LPG,1.8611,Million Litres
+2012,October,DIESEL,530.869,Million Litres
+2012,October,FUEL OIL,206.467,Million Litres
+2012,October,GASOLINE,148.697,Million Litres
+2012,October,JET PETROLEUM,57.133,Million Litres
+2012,October,LPG,1.3796,Million Litres
+2012,November,DIESEL,527.205,Million Litres
+2012,November,FUEL OIL,426.323,Million Litres
+2012,November,GASOLINE,119.734,Million Litres
+2012,November,JET PETROLEUM,40.452,Million Litres
+2012,November,LPG,1.6167,Million Litres
+2012,December,DIESEL,385.867,Million Litres
+2012,December,FUEL OIL,357.034,Million Litres
+2012,December,GASOLINE,109.907,Million Litres
+2012,December,JET PETROLEUM,72.329,Million Litres
+2012,December,LPG,1.5444,Million Litres
+2013,January,DIESEL,296.47,Million Litres
+2013,January,FUEL OIL,313.386,Million Litres
+2013,January,GASOLINE,105.828,Million Litres
+2013,January,JET PETROLEUM,58.092,Million Litres
+2013,January,LPG,1.7296,Million Litres
+2013,February,DIESEL,276.927,Million Litres
+2013,February,FUEL OIL,322.297,Million Litres
+2013,February,GASOLINE,131.908,Million Litres
+2013,February,JET PETROLEUM,95.815,Million Litres
+2013,February,LPG,1.2315,Million Litres
+2013,March,DIESEL,432.669,Million Litres
+2013,March,FUEL OIL,296.307,Million Litres
+2013,March,GASOLINE,215.354,Million Litres
+2013,March,JET PETROLEUM,76.438,Million Litres
+2013,March,LPG,0.4463,Million Litres
+2013,April,DIESEL,312.082,Million Litres
+2013,April,FUEL OIL,305.295,Million Litres
+2013,April,GASOLINE,133.304,Million Litres
+2013,April,JET PETROLEUM,120.8,Million Litres
+2013,April,LPG,0.3926,Million Litres
+2013,May,DIESEL,208.65,Million Litres
+2013,May,FUEL OIL,338.319,Million Litres
+2013,May,GASOLINE,79.351,Million Litres
+2013,May,JET PETROLEUM,91.795,Million Litres
+2013,May,LPG,1.1222,Million Litres
+2013,June,DIESEL,256.541,Million Litres
+2013,June,FUEL OIL,207.128,Million Litres
+2013,June,GASOLINE,87.403,Million Litres
+2013,June,JET PETROLEUM,39.198,Million Litres
+2013,June,LPG,1.5259,Million Litres
+2013,July,DIESEL,279.496,Million Litres
+2013,July,FUEL OIL,478.06,Million Litres
+2013,July,GASOLINE,130.782,Million Litres
+2013,July,JET PETROLEUM,162.409,Million Litres
+2013,July,LPG,1.3685,Million Litres
+2013,August,DIESEL,679.746,Million Litres
+2013,August,FUEL OIL,246.252,Million Litres
+2013,August,GASOLINE,148.829,Million Litres
+2013,August,JET PETROLEUM,155.118,Million Litres
+2013,August,KEROSENE,6.723,Million Litres
+2013,August,LPG,1.3574,Million Litres
+2013,September,DIESEL,538.98,Million Litres
+2013,September,FUEL OIL,330.465,Million Litres
+2013,September,GASOLINE,211.888,Million Litres
+2013,September,JET PETROLEUM,164.597,Million Litres
+2013,September,LPG,0.7204,Million Litres
+2013,October,DIESEL,522.51,Million Litres
+2013,October,FUEL OIL,314.26,Million Litres
+2013,October,GASOLINE,102.375,Million Litres
+2013,October,JET PETROLEUM,223.242,Million Litres
+2013,October,KEROSENE,7.197,Million Litres
+2013,October,LPG,0.4296,Million Litres
+2013,November,DIESEL,583.211,Million Litres
+2013,November,FUEL OIL,267.664,Million Litres
+2013,November,GASOLINE,128.545,Million Litres
+2013,November,JET PETROLEUM,164.508,Million Litres
+2013,November,KEROSENE,4.598,Million Litres
+2013,November,LPG,0.3963,Million Litres
+2013,December,DIESEL,487.023,Million Litres
+2013,December,FUEL OIL,354.901,Million Litres
+2013,December,GASOLINE,184.426,Million Litres
+2013,December,JET PETROLEUM,184.608,Million Litres
+2013,December,KEROSENE,0.685,Million Litres
+2013,December,LPG,0.4926,Million Litres
+2014,January,DIESEL,392.133,Million Litres
+2014,January,FUEL OIL,235.713,Million Litres
+2014,January,GASOLINE,125.202,Million Litres
+2014,January,JET PETROLEUM,74.766,Million Litres
+2014,January,KEROSENE,1.039,Million Litres
+2014,January,LPG,0.0833,Million Litres
+2014,February,DIESEL,176.415,Million Litres
+2014,February,FUEL OIL,263.216,Million Litres
+2014,February,GASOLINE,92.461,Million Litres
+2014,February,JET PETROLEUM,10.769,Million Litres
+2014,February,KEROSENE,0.991,Million Litres
+2014,February,LPG,0.113,Million Litres
+2014,March,DIESEL,199.095,Million Litres
+2014,March,FUEL OIL,282.559,Million Litres
+2014,March,GASOLINE,118.157,Million Litres
+2014,March,JET PETROLEUM,42.658,Million Litres
+2014,March,KEROSENE,0.758,Million Litres
+2014,March,LPG,0.1074,Million Litres
+2014,April,DIESEL,283.915,Million Litres
+2014,April,FUEL OIL,306.041,Million Litres
+2014,April,GASOLINE,167.785,Million Litres
+2014,April,JET PETROLEUM,21.014,Million Litres
+2014,April,KEROSENE,0.638,Million Litres
+2014,April,LPG,13.0833,Million Litres
+2014,May,DIESEL,273.57,Million Litres
+2014,May,FUEL OIL,303.849,Million Litres
+2014,May,GASOLINE,112.167,Million Litres
+2014,May,JET PETROLEUM,115.11,Million Litres
+2014,May,KEROSENE,0.478,Million Litres
+2014,May,LPG,0.3926,Million Litres
+2014,June,DIESEL,255.695,Million Litres
+2014,June,FUEL OIL,257.339,Million Litres
+2014,June,GASOLINE,104.852,Million Litres
+2014,June,JET PETROLEUM,80.343,Million Litres
+2014,June,KEROSENE,0.319,Million Litres
+2014,June,LPG,0.1426,Million Litres
+2014,July,DIESEL,244.85,Million Litres
+2014,July,FUEL OIL,400.868,Million Litres
+2014,July,GASOLINE,111.434,Million Litres
+2014,July,JET PETROLEUM,34.626,Million Litres
+2014,July,KEROSENE,0.478,Million Litres
+2014,July,LPG,0.7759,Million Litres
+2014,August,DIESEL,597.686,Million Litres
+2014,August,FUEL OIL,367.871,Million Litres
+2014,August,GASOLINE,110.276,Million Litres
+2014,August,JET PETROLEUM,132.188,Million Litres
+2014,August,KEROSENE,4.527,Million Litres
+2014,August,LPG,0.6278,Million Litres
+2014,September,DIESEL,556.504,Million Litres
+2014,September,FUEL OIL,331.236,Million Litres
+2014,September,GASOLINE,113.905,Million Litres
+2014,September,JET PETROLEUM,226.512,Million Litres
+2014,September,KEROSENE,3.861,Million Litres
+2014,September,LPG,0.5,Million Litres
+2014,October,DIESEL,451.661,Million Litres
+2014,October,FUEL OIL,395.728,Million Litres
+2014,October,GASOLINE,113.329,Million Litres
+2014,October,JET PETROLEUM,168.498,Million Litres
+2014,October,KEROSENE,7.883,Million Litres
+2014,October,LPG,0.6222,Million Litres
+2014,November,DIESEL,392.824,Million Litres
+2014,November,FUEL OIL,282.761,Million Litres
+2014,November,GASOLINE,83.91,Million Litres
+2014,November,JET PETROLEUM,174.615,Million Litres
+2014,November,KEROSENE,7.439,Million Litres
+2014,November,LPG,0.6648,Million Litres
+2014,December,DIESEL,492.525,Million Litres
+2014,December,FUEL OIL,408.681,Million Litres
+2014,December,GASOLINE,122.958,Million Litres
+2014,December,JET PETROLEUM,215.533,Million Litres
+2014,December,KEROSENE,1.373,Million Litres
+2014,December,LPG,1.4148,Million Litres
+2015,January,DIESEL,462.046,Million Litres
+2015,January,FUEL OIL,330.983,Million Litres
+2015,January,GASOLINE,123.626,Million Litres
+2015,January,JET PETROLEUM,166.753,Million Litres
+2015,January,KEROSENE,1.521,Million Litres
+2015,January,LPG,2.8759,Million Litres
+2015,February,DIESEL,365.472,Million Litres
+2015,February,FUEL OIL,235.299,Million Litres
+2015,February,GASOLINE,73.397,Million Litres
+2015,February,JET PETROLEUM,136.322,Million Litres
+2015,February,KEROSENE,1,Million Litres
+2015,February,LPG,5.263,Million Litres
+2015,March,DIESEL,348.897,Million Litres
+2015,March,FUEL OIL,309.37,Million Litres
+2015,March,GASOLINE,76.239,Million Litres
+2015,March,JET PETROLEUM,117.333,Million Litres
+2015,March,KEROSENE,1.438,Million Litres
+2015,March,LPG,5.6926,Million Litres
+2015,April,DIESEL,306.804,Million Litres
+2015,April,FUEL OIL,311.636,Million Litres
+2015,April,GASOLINE,90.265,Million Litres
+2015,April,JET PETROLEUM,84.091,Million Litres
+2015,April,KEROSENE,1.237,Million Litres
+2015,April,LPG,4.6852,Million Litres
+2015,May,DIESEL,429.336,Million Litres
+2015,May,FUEL OIL,328.112,Million Litres
+2015,May,GASOLINE,158.828,Million Litres
+2015,May,JET PETROLEUM,140.068,Million Litres
+2015,May,KEROSENE,1.476,Million Litres
+2015,May,LPG,5.0333,Million Litres
+2015,June,DIESEL,649.311,Million Litres
+2015,June,FUEL OIL,215.859,Million Litres
+2015,June,GASOLINE,130.239,Million Litres
+2015,June,JET PETROLEUM,112.243,Million Litres
+2015,June,KEROSENE,1.237,Million Litres
+2015,June,LPG,5.4222,Million Litres
+2015,July,DIESEL,691.637,Million Litres
+2015,July,FUEL OIL,373.496,Million Litres
+2015,July,GASOLINE,186.613,Million Litres
+2015,July,JET PETROLEUM,95.467,Million Litres
+2015,July,KEROSENE,0.598,Million Litres
+2015,July,LPG,4.3796,Million Litres
+2015,August,DIESEL,557.681,Million Litres
+2015,August,FUEL OIL,393.296,Million Litres
+2015,August,GASOLINE,195.771,Million Litres
+2015,August,JET PETROLEUM,162.627,Million Litres
+2015,August,KEROSENE,0.598,Million Litres
+2015,August,LPG,5.8537,Million Litres
+2015,September,DIESEL,660.651,Million Litres
+2015,September,FUEL OIL,296.877,Million Litres
+2015,September,GASOLINE,152.923,Million Litres
+2015,September,JET PETROLEUM,157.416,Million Litres
+2015,September,KEROSENE,5.75,Million Litres
+2015,September,LPG,5.2241,Million Litres
+2015,October,DIESEL,595.315,Million Litres
+2015,October,FUEL OIL,290.45,Million Litres
+2015,October,GASOLINE,114.399,Million Litres
+2015,October,JET PETROLEUM,148.475,Million Litres
+2015,October,KEROSENE,0.439,Million Litres
+2015,October,LPG,6.2593,Million Litres
+2015,November,DIESEL,603.855,Million Litres
+2015,November,FUEL OIL,276.455,Million Litres
+2015,November,GASOLINE,102.858,Million Litres
+2015,November,JET PETROLEUM,96.003,Million Litres
+2015,November,KEROSENE,0.762,Million Litres
+2015,November,LPG,7.3204,Million Litres
+2015,December,DIESEL,498.132,Million Litres
+2015,December,FUEL OIL,296.784,Million Litres
+2015,December,GASOLINE,117.151,Million Litres
+2015,December,JET PETROLEUM,100.994,Million Litres
+2015,December,KEROSENE,1.372,Million Litres
+2015,December,LPG,7.8315,Million Litres
+2016,January,DIESEL,388.259,Million Litres
+2016,January,FUEL OIL,336.012,Million Litres
+2016,January,GASOLINE,96.28,Million Litres
+2016,January,JET PETROLEUM,39.751,Million Litres
+2016,January,KEROSENE,1.493,Million Litres
+2016,January,LPG,5.6648,Million Litres
+2016,February,DIESEL,247.603,Million Litres
+2016,February,FUEL OIL,291.636,Million Litres
+2016,February,GASOLINE,94.001,Million Litres
+2016,February,JET PETROLEUM,39.179,Million Litres
+2016,February,KEROSENE,1.518,Million Litres
+2016,February,LPG,13.1556,Million Litres
+2016,March,DIESEL,321.198,Million Litres
+2016,March,FUEL OIL,263.698,Million Litres
+2016,March,GASOLINE,135.392,Million Litres
+2016,March,JET PETROLEUM,23.98,Million Litres
+2016,March,KEROSENE,2.035,Million Litres
+2016,March,LPG,7.0556,Million Litres
+2016,April,DIESEL,261.908,Million Litres
+2016,April,FUEL OIL,233.54,Million Litres
+2016,April,GASOLINE,89.385,Million Litres
+2016,April,JET PETROLEUM,11.609,Million Litres
+2016,April,KEROSENE,1.713,Million Litres
+2016,April,LPG,5.3352,Million Litres
+2016,May,DIESEL,411.724,Million Litres
+2016,May,FUEL OIL,252.715,Million Litres
+2016,May,GASOLINE,111.128,Million Litres
+2016,May,JET PETROLEUM,8.311,Million Litres
+2016,May,KEROSENE,2.792,Million Litres
+2016,May,LPG,9.663,Million Litres
+2016,June,DIESEL,364.329,Million Litres
+2016,June,FUEL OIL,226.181,Million Litres
+2016,June,GASOLINE,139.081,Million Litres
+2016,June,JET PETROLEUM,7.981,Million Litres
+2016,June,KEROSENE,2.877,Million Litres
+2016,June,LPG,7.6074,Million Litres
+2016,July,DIESEL,447.802,Million Litres
+2016,July,FUEL OIL,210.525,Million Litres
+2016,July,GASOLINE,115.924,Million Litres
+2016,July,JET PETROLEUM,93.417,Million Litres
+2016,July,KEROSENE,2.475,Million Litres
+2016,July,LPG,8.4,Million Litres
+2016,August,DIESEL,472.498,Million Litres
+2016,August,FUEL OIL,320.179,Million Litres
+2016,August,GASOLINE,121.807,Million Litres
+2016,August,JET PETROLEUM,70.114,Million Litres
+2016,August,KEROSENE,1.396,Million Litres
+2016,August,LPG,10.3407,Million Litres
+2016,September,DIESEL,360.34,Million Litres
+2016,September,FUEL OIL,246.364,Million Litres
+2016,September,GASOLINE,97.504,Million Litres
+2016,September,JET PETROLEUM,56.042,Million Litres
+2016,September,KEROSENE,3.154,Million Litres
+2016,September,LPG,13.3,Million Litres
+2016,October,DIESEL,431.25,Million Litres
+2016,October,FUEL OIL,271.33,Million Litres
+2016,October,GASOLINE,101.822,Million Litres
+2016,October,JET PETROLEUM,53.376,Million Litres
+2016,October,KEROSENE,2.517,Million Litres
+2016,October,LPG,22.8074,Million Litres
+2016,November,DIESEL,557.303,Million Litres
+2016,November,FUEL OIL,297.851,Million Litres
+2016,November,GASOLINE,160.204,Million Litres
+2016,November,JET PETROLEUM,56.605,Million Litres
+2016,November,KEROSENE,2.754,Million Litres
+2016,November,LPG,20.2037,Million Litres
+2016,December,DIESEL,545.535,Million Litres
+2016,December,FUEL OIL,304.13,Million Litres
+2016,December,GASOLINE,140.366,Million Litres
+2016,December,JET PETROLEUM,95.584,Million Litres
+2016,December,KEROSENE,2.126,Million Litres
+2016,December,LPG,28.5722,Million Litres
+2017,January,DIESEL,339.451,Million Litres
+2017,January,FUEL OIL,248.775,Million Litres
+2017,January,GASOLINE,120.5,Million Litres
+2017,January,JET PETROLEUM,57.277,Million Litres
+2017,January,KEROSENE,1.44,Million Litres
+2017,January,LPG,23.8185,Million Litres
+2017,February,DIESEL,218.58,Million Litres
+2017,February,FUEL OIL,229.701,Million Litres
+2017,February,GASOLINE,155.104,Million Litres
+2017,February,JET PETROLEUM,41.39,Million Litres
+2017,February,KEROSENE,2.593,Million Litres
+2017,February,LPG,21.837,Million Litres
+2017,March,DIESEL,245.407,Million Litres
+2017,March,FUEL OIL,226.704,Million Litres
+2017,March,GASOLINE,115.107,Million Litres
+2017,March,JET PETROLEUM,28.587,Million Litres
+2017,March,KEROSENE,3.628,Million Litres
+2017,March,LPG,27.5833,Million Litres
+2017,April,DIESEL,239.292,Million Litres
+2017,April,FUEL OIL,329.464,Million Litres
+2017,April,GASOLINE,88.976,Million Litres
+2017,April,JET PETROLEUM,40.658,Million Litres
+2017,April,KEROSENE,0.679,Million Litres
+2017,April,LPG,34.5944,Million Litres
+2017,May,DIESEL,411.552,Million Litres
+2017,May,FUEL OIL,288.92,Million Litres
+2017,May,GASOLINE,170.488,Million Litres
+2017,May,JET PETROLEUM,57.981,Million Litres
+2017,May,KEROSENE,0.37,Million Litres
+2017,May,LPG,27.2593,Million Litres
+2017,June,DIESEL,391.976,Million Litres
+2017,June,FUEL OIL,293.503,Million Litres
+2017,June,GASOLINE,142.35,Million Litres
+2017,June,JET PETROLEUM,41.422,Million Litres
+2017,June,KEROSENE,0.25,Million Litres
+2017,June,LPG,32.8704,Million Litres
+2017,July,DIESEL,483.993,Million Litres
+2017,July,FUEL OIL,257.243,Million Litres
+2017,July,GASOLINE,84.85,Million Litres
+2017,July,JET PETROLEUM,58.35,Million Litres
+2017,July,LPG,30.05,Million Litres
+2017,August,DIESEL,559.655,Million Litres
+2017,August,FUEL OIL,282.463,Million Litres
+2017,August,GASOLINE,141.548,Million Litres
+2017,August,JET PETROLEUM,117.458,Million Litres
+2017,August,KEROSENE,0.08,Million Litres
+2017,August,LPG,30.6,Million Litres
+2017,September,DIESEL,641.092,Million Litres
+2017,September,FUEL OIL,319.915,Million Litres
+2017,September,GASOLINE,188.679,Million Litres
+2017,September,JET PETROLEUM,44.434,Million Litres
+2017,September,KEROSENE,0.08,Million Litres
+2017,September,LPG,48.1185,Million Litres
+2017,October,DIESEL,588.295,Million Litres
+2017,October,FUEL OIL,346.371,Million Litres
+2017,October,GASOLINE,174.826,Million Litres
+2017,October,JET PETROLEUM,95.122,Million Litres
+2017,October,KEROSENE,0.487,Million Litres
+2017,October,LPG,41.1722,Million Litres
+2017,November,DIESEL,577.744,Million Litres
+2017,November,FUEL OIL,330.949,Million Litres
+2017,November,GASOLINE,135.689,Million Litres
+2017,November,JET PETROLEUM,116.239,Million Litres
+2017,November,KEROSENE,1.137,Million Litres
+2017,November,LPG,59.8926,Million Litres
+2017,December,DIESEL,547.704,Million Litres
+2017,December,FUEL OIL,366.237,Million Litres
+2017,December,GASOLINE,101.298,Million Litres
+2017,December,JET PETROLEUM,59.414,Million Litres
+2017,December,KEROSENE,1.604,Million Litres
+2017,December,LPG,67.2463,Million Litres
+2018,January,DIESEL,447.917,Million Litres
+2018,January,FUEL OIL,240.667,Million Litres
+2018,January,GASOLINE,177.759,Million Litres
+2018,January,JET PETROLEUM,49.13,Million Litres
+2018,January,KEROSENE,0.289,Million Litres
+2018,January,LPG,75.7796,Million Litres
+2018,February,DIESEL,319.064,Million Litres
+2018,February,FUEL OIL,249,Million Litres
+2018,February,GASOLINE,107.627,Million Litres
+2018,February,JET PETROLEUM,61.773,Million Litres
+2018,February,KEROSENE,0.165,Million Litres
+2018,February,LPG,45.3185,Million Litres
+2018,March,DIESEL,375.106,Million Litres
+2018,March,FUEL OIL,299.819,Million Litres
+2018,March,GASOLINE,239.043,Million Litres
+2018,March,JET PETROLEUM,74.628,Million Litres
+2018,March,KEROSENE,0.084,Million Litres
+2018,March,LPG,56.0593,Million Litres
+2018,April,DIESEL,376.77,Million Litres
+2018,April,FUEL OIL,281.355,Million Litres
+2018,April,GASOLINE,126.374,Million Litres
+2018,April,JET PETROLEUM,71.309,Million Litres
+2018,April,KEROSENE,0.409,Million Litres
+2018,April,LPG,73.8759,Million Litres
+2018,May,DIESEL,361.974,Million Litres
+2018,May,FUEL OIL,252.14,Million Litres
+2018,May,GASOLINE,125.234,Million Litres
+2018,May,JET PETROLEUM,61.265,Million Litres
+2018,May,KEROSENE,0.618,Million Litres
+2018,May,LPG,61.9481,Million Litres
+2018,June,DIESEL,347.555,Million Litres
+2018,June,FUEL OIL,306.916,Million Litres
+2018,June,GASOLINE,151.863,Million Litres
+2018,June,JET PETROLEUM,46.45,Million Litres
+2018,June,KEROSENE,0.582,Million Litres
+2018,June,LPG,54.4185,Million Litres
+2018,July,DIESEL,442.445,Million Litres
+2018,July,FUEL OIL,321.89,Million Litres
+2018,July,GASOLINE,144.997,Million Litres
+2018,July,JET PETROLEUM,105.033,Million Litres
+2018,July,KEROSENE,0.457,Million Litres
+2018,July,LPG,87.8407,Million Litres
+2018,August,DIESEL,531.274,Million Litres
+2018,August,FUEL OIL,357.844,Million Litres
+2018,August,GASOLINE,165.402,Million Litres
+2018,August,JET PETROLEUM,141.467,Million Litres
+2018,August,KEROSENE,0.461,Million Litres
+2018,August,LPG,62.25,Million Litres
+2018,September,DIESEL,551.597,Million Litres
+2018,September,FUEL OIL,226.374,Million Litres
+2018,September,GASOLINE,113.739,Million Litres
+2018,September,JET PETROLEUM,77.018,Million Litres
+2018,September,KEROSENE,0.503,Million Litres
+2018,September,LPG,39.2019,Million Litres
+2018,October,DIESEL,682.513,Million Litres
+2018,October,FUEL OIL,257.536,Million Litres
+2018,October,GASOLINE,126.535,Million Litres
+2018,October,JET PETROLEUM,108.031,Million Litres
+2018,October,KEROSENE,0.491,Million Litres
+2018,October,LPG,56.9148,Million Litres
+2018,November,DIESEL,550.391,Million Litres
+2018,November,FUEL OIL,261.994,Million Litres
+2018,November,GASOLINE,112.033,Million Litres
+2018,November,JET PETROLEUM,85.436,Million Litres
+2018,November,KEROSENE,0.373,Million Litres
+2018,November,LPG,44.9963,Million Litres
+2018,December,DIESEL,546.134,Million Litres
+2018,December,FUEL OIL,393.217,Million Litres
+2018,December,GASOLINE,118.722,Million Litres
+2018,December,JET PETROLEUM,127.513,Million Litres
+2018,December,KEROSENE,0.373,Million Litres
+2018,December,LPG,50.3481,Million Litres
+2019,January,DIESEL,362.33,Million Litres
+2019,January,FUEL OIL,206.995,Million Litres
+2019,January,GASOLINE,109.968,Million Litres
+2019,January,JET PETROLEUM,139.199,Million Litres
+2019,January,KEROSENE,0.252,Million Litres
+2019,January,LPG,43.735185,Million Litres
+2019,February,DIESEL,313.039,Million Litres
+2019,February,FUEL OIL,358.627,Million Litres
+2019,February,GASOLINE,112.242,Million Litres
+2019,February,JET PETROLEUM,67.063,Million Litres
+2019,February,KEROSENE,0.247,Million Litres
+2019,February,LPG,48.192593,Million Litres
+2019,March,DIESEL,339.652,Million Litres
+2019,March,FUEL OIL,227.288,Million Litres
+2019,March,GASOLINE,109.729,Million Litres
+2019,March,JET PETROLEUM,86.04,Million Litres
+2019,March,LPG,44.303704,Million Litres
+2019,April,DIESEL,273.555,Million Litres
+2019,April,FUEL OIL,324.822,Million Litres
+2019,April,GASOLINE,103.079,Million Litres
+2019,April,JET PETROLEUM,51.775,Million Litres
+2019,April,KEROSENE,0.335,Million Litres
+2019,April,LPG,48.594444,Million Litres
+2019,May,DIESEL,298.828,Million Litres
+2019,May,FUEL OIL,259.333,Million Litres
+2019,May,GASOLINE,111.653,Million Litres
+2019,May,JET PETROLEUM,50.194,Million Litres
+2019,May,KEROSENE,0.662,Million Litres
+2019,May,LPG,40.738889,Million Litres
+2019,June,DIESEL,275.798,Million Litres
+2019,June,FUEL OIL,279.26,Million Litres
+2019,June,GASOLINE,110.921,Million Litres
+2019,June,JET PETROLEUM,90.252,Million Litres
+2019,June,KEROSENE,0.126,Million Litres
+2019,June,LPG,46.331481,Million Litres
+2019,July,DIESEL,280.272,Million Litres
+2019,July,FUEL OIL,302.204,Million Litres
+2019,July,GASOLINE,95.514,Million Litres
+2019,July,JET PETROLEUM,54.436,Million Litres
+2019,July,KEROSENE,0.373,Million Litres
+2019,July,LPG,40.218519,Million Litres
+2019,August,DIESEL,215.765,Million Litres
+2019,August,FUEL OIL,279.632,Million Litres
+2019,August,GASOLINE,90.669,Million Litres
+2019,August,JET PETROLEUM,80.233,Million Litres
+2019,August,LPG,47.266667,Million Litres
+2019,September,DIESEL,321.037,Million Litres
+2019,September,FUEL OIL,291.086,Million Litres
+2019,September,GASOLINE,81.763,Million Litres
+2019,September,JET PETROLEUM,76.681,Million Litres
+2019,September,LPG,43.442593,Million Litres
+2019,October,DIESEL,424.744,Million Litres
+2019,October,FUEL OIL,169.919,Million Litres
+2019,October,GASOLINE,96.963,Million Litres
+2019,October,JET PETROLEUM,40.824,Million Litres
+2019,October,LPG,52.653704,Million Litres
+2019,November,DIESEL,328.391,Million Litres
+2019,November,FUEL OIL,208.488,Million Litres
+2019,November,GASOLINE,99.536,Million Litres
+2019,November,JET PETROLEUM,32.604,Million Litres
+2019,November,LPG,48.601852,Million Litres
+2019,December,DIESEL,342.915,Million Litres
+2019,December,FUEL OIL,311.332,Million Litres
+2019,December,GASOLINE,103.203,Million Litres
+2019,December,JET PETROLEUM,64.247,Million Litres
+2019,December,LPG,49.748148,Million Litres
+2020,January,DIESEL,384.277,Million Litres
+2020,January,FUEL OIL,211.488,Million Litres
+2020,January,GASOLINE,124.722,Million Litres
+2020,January,JET PETROLEUM,90.873,Million Litres
+2020,January,KEROSENE,0.044,Million Litres
+2020,January,LPG,42.52037,Million Litres
+2020,February,DIESEL,296.72,Million Litres
+2020,February,FUEL OIL,341.66,Million Litres
+2020,February,GASOLINE,114.961,Million Litres
+2020,February,JET PETROLEUM,54.701,Million Litres
+2020,February,LPG,29.301852,Million Litres
+2020,March,DIESEL,418.892,Million Litres
+2020,March,FUEL OIL,327.585,Million Litres
+2020,March,GASOLINE,133.664,Million Litres
+2020,March,JET PETROLEUM,37.678,Million Litres
+2020,March,LPG,38.890741,Million Litres
+2020,April,DIESEL,479.193,Million Litres
+2020,April,FUEL OIL,233.309,Million Litres
+2020,April,GASOLINE,141.959,Million Litres
+2020,April,JET PETROLEUM,100.177,Million Litres
+2020,April,KEROSENE,0.044,Million Litres
+2020,April,LPG,33.540741,Million Litres
+2020,May,DIESEL,738.145,Million Litres
+2020,May,FUEL OIL,273.194,Million Litres
+2020,May,GASOLINE,156.085,Million Litres
+2020,May,JET PETROLEUM,194.48,Million Litres
+2020,May,KEROSENE,0.167,Million Litres
+2020,May,LPG,32.255556,Million Litres
+2020,June,DIESEL,555.451,Million Litres
+2020,June,FUEL OIL,207.541,Million Litres
+2020,June,GASOLINE,122.474,Million Litres
+2020,June,JET PETROLEUM,17.304,Million Litres
+2020,June,KEROSENE,0.421,Million Litres
+2020,June,LPG,33.590741,Million Litres
+2020,July,DIESEL,397.419,Million Litres
+2020,July,FUEL OIL,204.734,Million Litres
+2020,July,GASOLINE,104.819,Million Litres
+2020,July,JET PETROLEUM,61.747,Million Litres
+2020,July,KEROSENE,0.914,Million Litres
+2020,July,LPG,37.524074,Million Litres
+2020,August,DIESEL,528.863,Million Litres
+2020,August,FUEL OIL,251.252,Million Litres
+2020,August,GASOLINE,120.137,Million Litres
+2020,August,JET PETROLEUM,49.773,Million Litres
+2020,August,KEROSENE,0.618,Million Litres
+2020,August,LPG,43.262963,Million Litres
+2020,September,DIESEL,419.623,Million Litres
+2020,September,FUEL OIL,128.617,Million Litres
+2020,September,GASOLINE,110.133,Million Litres
+2020,September,JET PETROLEUM,3.552,Million Litres
+2020,September,KEROSENE,0.893,Million Litres
+2020,September,LPG,33.572222,Million Litres
+2020,October,DIESEL,476.78,Million Litres
+2020,October,FUEL OIL,109.066,Million Litres
+2020,October,GASOLINE,107.089,Million Litres
+2020,October,JET PETROLEUM,16.794,Million Litres
+2020,October,KEROSENE,1.009,Million Litres
+2020,October,LPG,37.759259,Million Litres
+2020,November,DIESEL,497.73,Million Litres
+2020,November,FUEL OIL,88.374,Million Litres
+2020,November,GASOLINE,110.801,Million Litres
+2020,November,JET PETROLEUM,34.904,Million Litres
+2020,November,KEROSENE,1.136,Million Litres
+2020,November,LPG,34.833333,Million Litres
+2020,December,DIESEL,562.49,Million Litres
+2020,December,FUEL OIL,252.349,Million Litres
+2020,December,GASOLINE,118.182,Million Litres
+2020,December,JET PETROLEUM,23.676,Million Litres
+2020,December,KEROSENE,2.921,Million Litres
+2020,December,LPG,33.716667,Million Litres
+2021,January,DIESEL,415.333,Million Litres
+2021,January,FUEL OIL,174.716,Million Litres
+2021,January,GASOLINE,134.411,Million Litres
+2021,January,JET PETROLEUM,5.414,Million Litres
+2021,January,KEROSENE,2.099,Million Litres
+2021,January,LPG,35.142593,Million Litres
+2021,February,DIESEL,512.519,Million Litres
+2021,February,FUEL OIL,228.164,Million Litres
+2021,February,GASOLINE,124.451,Million Litres
+2021,February,JET PETROLEUM,22.495,Million Litres
+2021,February,KEROSENE,3.457,Million Litres
+2021,February,LPG,19.659259,Million Litres
+2021,March,DIESEL,465.563,Million Litres
+2021,March,FUEL OIL,155.543,Million Litres
+2021,March,GASOLINE,132.149,Million Litres
+2021,March,JET PETROLEUM,3.596,Million Litres
+2021,March,KEROSENE,4.075,Million Litres
+2021,March,LPG,0,Million Litres
+2021,April,DIESEL,471.588,Million Litres
+2021,April,FUEL OIL,225.208,Million Litres
+2021,April,GASOLINE,109.095,Million Litres
+2021,April,JET PETROLEUM,7.889,Million Litres
+2021,April,KEROSENE,2.452,Million Litres
+2021,April,LPG,24.42037,Million Litres
+2021,May,DIESEL,486.423,Million Litres
+2021,May,FUEL OIL,391.972,Million Litres
+2021,May,GASOLINE,149.305,Million Litres
+2021,May,JET PETROLEUM,12.526,Million Litres
+2021,May,KEROSENE,2.994,Million Litres
+2021,May,LPG,0,Million Litres
+2021,June,DIESEL,586.278,Million Litres
+2021,June,FUEL OIL,156.396,Million Litres
+2021,June,GASOLINE,161.453,Million Litres
+2021,June,JET PETROLEUM,18.493,Million Litres
+2021,June,KEROSENE,3.384,Million Litres
+2021,June,LPG,34.875926,Million Litres
+2021,July,DIESEL,496.503,Million Litres
+2021,July,FUEL OIL,256.329,Million Litres
+2021,July,GASOLINE,136.64,Million Litres
+2021,July,JET PETROLEUM,46.276,Million Litres
+2021,July,KEROSENE,3.259,Million Litres
+2021,July,LPG,25.953704,Million Litres
+2021,August,DIESEL,783.407,Million Litres
+2021,August,FUEL OIL,289.974,Million Litres
+2021,August,GASOLINE,160.886,Million Litres
+2021,August,JET PETROLEUM,48.192,Million Litres
+2021,August,KEROSENE,2.28,Million Litres
+2021,August,LPG,27.296296,Million Litres
+2021,September,DIESEL,581.904,Million Litres
+2021,September,FUEL OIL,227.822,Million Litres
+2021,September,GASOLINE,148.751,Million Litres
+2021,September,JET PETROLEUM,12.8,Million Litres
+2021,September,KEROSENE,2.344,Million Litres
+2021,September,LPG,28.627778,Million Litres
+2021,October,DIESEL,620.984,Million Litres
+2021,October,FUEL OIL,297.584,Million Litres
+2021,October,GASOLINE,146.257,Million Litres
+2021,October,JET PETROLEUM,52.097,Million Litres
+2021,October,KEROSENE,2.178,Million Litres
+2021,October,LPG,27.759259,Million Litres
+2021,November,DIESEL,699.752,Million Litres
+2021,November,FUEL OIL,311.31,Million Litres
+2021,November,GASOLINE,147.479,Million Litres
+2021,November,JET PETROLEUM,49.99,Million Litres
+2021,November,KEROSENE,3.227,Million Litres
+2021,November,LPG,24.331481,Million Litres
+2021,December,DIESEL,345.154,Million Litres
+2021,December,FUEL OIL,291.649,Million Litres
+2021,December,GASOLINE,187.675,Million Litres
+2021,December,JET PETROLEUM,54.39,Million Litres
+2021,December,KEROSENE,3.238,Million Litres
+2021,December,LPG,31.818519,Million Litres
+2022,January,DIESEL,291.31,Million Litres
+2022,January,FUEL OIL,227.238,Million Litres
+2022,January,GASOLINE,130.086,Million Litres
+2022,January,JET PETROLEUM,49.112,Million Litres
+2022,January,KEROSENE,4.843,Million Litres
+2022,January,LPG,41.109259,Million Litres
+2022,February,DIESEL,310.333,Million Litres
+2022,February,FUEL OIL,208.043,Million Litres
+2022,February,GASOLINE,106.016,Million Litres
+2022,February,JET PETROLEUM,34.29,Million Litres
+2022,February,KEROSENE,4.719,Million Litres
+2022,February,LPG,36.994444,Million Litres
+2022,March,DIESEL,273.039,Million Litres
+2022,March,FUEL OIL,304.889,Million Litres
+2022,March,GASOLINE,119.736,Million Litres
+2022,March,JET PETROLEUM,60.689,Million Litres
+2022,March,KEROSENE,4.914,Million Litres
+2022,March,LPG,36.198148,Million Litres
+2022,April,DIESEL,257.466,Million Litres
+2022,April,FUEL OIL,222.639,Million Litres
+2022,April,GASOLINE,161.711,Million Litres
+2022,April,JET PETROLEUM,56.182,Million Litres
+2022,April,KEROSENE,3.849,Million Litres
+2022,April,LPG,21.662963,Million Litres
+2022,May,DIESEL,517.955,Million Litres
+2022,May,FUEL OIL,271.676,Million Litres
+2022,May,GASOLINE,165.31,Million Litres
+2022,May,JET PETROLEUM,143.653,Million Litres
+2022,May,KEROSENE,1.613,Million Litres
+2022,May,LPG,24.77037,Million Litres
+2022,June,DIESEL,339.064,Million Litres
+2022,June,FUEL OIL,244.649,Million Litres
+2022,June,GASOLINE,194.343,Million Litres
+2022,June,JET PETROLEUM,97.246,Million Litres
+2022,June,KEROSENE,0.219,Million Litres
+2022,June,LPG,26.992593,Million Litres
+2022,July,DIESEL,184.069,Million Litres
+2022,July,FUEL OIL,270.887,Million Litres
+2022,July,GASOLINE,168.542,Million Litres
+2022,July,JET PETROLEUM,158.161,Million Litres
+2022,July,KEROSENE,0.126,Million Litres
+2022,July,LPG,24.387037,Million Litres
+2022,August,DIESEL,231.391,Million Litres
+2022,August,FUEL OIL,287.648,Million Litres
+2022,August,GASOLINE,137.942,Million Litres
+2022,August,JET PETROLEUM,64.753,Million Litres
+2022,August,KEROSENE,0.04,Million Litres
+2022,August,LPG,23.731481,Million Litres
+2022,September,DIESEL,257.916,Million Litres
+2022,September,FUEL OIL,180.651,Million Litres
+2022,September,GASOLINE,104.077,Million Litres
+2022,September,JET PETROLEUM,43.876,Million Litres
+2022,September,KEROSENE,0,Million Litres
+2022,September,LPG,20.388889,Million Litres
+2022,October,DIESEL,202.199,Million Litres
+2022,October,FUEL OIL,267.069,Million Litres
+2022,October,GASOLINE,132.351,Million Litres
+2022,October,JET PETROLEUM,58.371,Million Litres
+2022,October,KEROSENE,0.458,Million Litres
+2022,October,LPG,27.590741,Million Litres
+2022,November,DIESEL,237.115,Million Litres
+2022,November,FUEL OIL,141.484,Million Litres
+2022,November,GASOLINE,115.687,Million Litres
+2022,November,JET PETROLEUM,47.093,Million Litres
+2022,November,KEROSENE,0.836,Million Litres
+2022,November,LPG,28.711111,Million Litres
+2022,December,DIESEL,324.493,Million Litres
+2022,December,FUEL OIL,316.648,Million Litres
+2022,December,GASOLINE,142.547,Million Litres
+2022,December,JET PETROLEUM,31.163,Million Litres
+2022,December,KEROSENE,0.286,Million Litres
+2022,December,LPG,23.437037,Million Litres
+2023,January,DIESEL,263.364,Million Litres
+2023,January,FUEL OIL,150.081,Million Litres
+2023,January,GASOLINE,122.536,Million Litres
+2023,January,JET PETROLEUM,43.07,Million Litres
+2023,January,KEROSENE,0,Million Litres
+2023,January,LPG,26.294444,Million Litres
+2023,February,DIESEL,309.892,Million Litres
+2023,February,FUEL OIL,164.82,Million Litres
+2023,February,GASOLINE,126.909,Million Litres
+2023,February,JET PETROLEUM,40.106,Million Litres
+2023,February,KEROSENE,0.042,Million Litres
+2023,February,LPG,11.937037,Million Litres
+2023,March,DIESEL,358.194,Million Litres
+2023,March,FUEL OIL,241.726,Million Litres
+2023,March,GASOLINE,140.126,Million Litres
+2023,March,JET PETROLEUM,52.427,Million Litres
+2023,March,KEROSENE,0,Million Litres
+2023,March,LPG,19.131481,Million Litres
+2023,April,DIESEL,378.781,Million Litres
+2023,April,FUEL OIL,166.881,Million Litres
+2023,April,GASOLINE,153.78,Million Litres
+2023,April,JET PETROLEUM,49.815,Million Litres
+2023,April,KEROSENE,0.044,Million Litres
+2023,April,LPG,26.383333,Million Litres
+2023,May,DIESEL,366.182,Million Litres
+2023,May,FUEL OIL,229.449,Million Litres
+2023,May,GASOLINE,130.981,Million Litres
+2023,May,JET PETROLEUM,39.859,Million Litres
+2023,May,KEROSENE,0,Million Litres
+2023,May,LPG,15.831481,Million Litres
+2023,June,DIESEL,330.389,Million Litres
+2023,June,FUEL OIL,207.207,Million Litres
+2023,June,GASOLINE,148.55,Million Litres
+2023,June,JET PETROLEUM,87.428,Million Litres
+2023,June,KEROSENE,0,Million Litres
+2023,June,LPG,17.831481,Million Litres
+2023,July,DIESEL,350.513,Million Litres
+2023,July,FUEL OIL,316.535,Million Litres
+2023,July,GASOLINE,123.433,Million Litres
+2023,July,JET PETROLEUM,96.674,Million Litres
+2023,July,KEROSENE,0.042,Million Litres
+2023,July,LPG,25.17037,Million Litres
+2023,August,DIESEL,521.367,Million Litres
+2023,August,FUEL OIL,204.942,Million Litres
+2023,August,GASOLINE,135.789,Million Litres
+2023,August,JET PETROLEUM,90.664,Million Litres
+2023,August,KEROSENE,0,Million Litres
+2023,August,LPG,17.114815,Million Litres
+2023,September,DIESEL,553.938,Million Litres
+2023,September,FUEL OIL,180.602,Million Litres
+2023,September,GASOLINE,127.904,Million Litres
+2023,September,JET PETROLEUM,50.168,Million Litres
+2023,September,KEROSENE,0.042,Million Litres
+2023,September,LPG,15.311111,Million Litres
+2023,October,DIESEL,611.067,Million Litres
+2023,October,FUEL OIL,280.066,Million Litres
+2023,October,GASOLINE,146.51,Million Litres
+2023,October,JET PETROLEUM,78.073,Million Litres
+2023,October,KEROSENE,0,Million Litres
+2023,October,LPG,15.403704,Million Litres
+2023,November,DIESEL,525.635,Million Litres
+2023,November,FUEL OIL,290.712,Million Litres
+2023,November,GASOLINE,125.907,Million Litres
+2023,November,JET PETROLEUM,91.624,Million Litres
+2023,November,KEROSENE,0.042,Million Litres
+2023,November,LPG,20.783333,Million Litres
+2023,December,DIESEL,516.495,Million Litres
+2023,December,FUEL OIL,316.443,Million Litres
+2023,December,GASOLINE,148.931,Million Litres
+2023,December,JET PETROLEUM,162.086,Million Litres
+2023,December,KEROSENE,0,Million Litres
+2023,December,LPG,28.801852,Million Litres
+2024,January,DIESEL,283.076,Million Litres
+2024,January,FUEL OIL,287.925,Million Litres
+2024,January,GASOLINE,138.134,Million Litres
+2024,January,JET PETROLEUM,48.478,Million Litres
+2024,January,KEROSENE,0.042,Million Litres
+2024,January,LPG,25.224074,Million Litres
+2024,February,DIESEL,295.798,Million Litres
+2024,February,FUEL OIL,252.31,Million Litres
+2024,February,GASOLINE,117.457,Million Litres
+2024,February,JET PETROLEUM,14.257,Million Litres
+2024,February,KEROSENE,0.042,Million Litres
+2024,February,LPG,23.087037,Million Litres
+2024,March,DIESEL,297.077,Million Litres
+2024,March,FUEL OIL,256.012,Million Litres
+2024,March,GASOLINE,161.661,Million Litres
+2024,March,JET PETROLEUM,42,Million Litres
+2024,March,KEROSENE,0,Million Litres
+2024,March,LPG,22.277778,Million Litres
+2024,April,DIESEL,250.346,Million Litres
+2024,April,FUEL OIL,250.756,Million Litres
+2024,April,GASOLINE,154.809,Million Litres
+2024,April,JET PETROLEUM,21.083,Million Litres
+2024,April,KEROSENE,0,Million Litres
+2024,April,LPG,18.638889,Million Litres
+2024,May,DIESEL,332.403,Million Litres
+2024,May,FUEL OIL,232.5,Million Litres
+2024,May,GASOLINE,145.863,Million Litres
+2024,May,JET PETROLEUM,63.651,Million Litres
+2024,May,KEROSENE,0,Million Litres
+2024,May,LPG,14.362963,Million Litres
+2024,June,DIESEL,473.461,Million Litres
+2024,June,FUEL OIL,266.779,Million Litres
+2024,June,GASOLINE,139.024,Million Litres
+2024,June,JET PETROLEUM,66.073,Million Litres
+2024,June,KEROSENE,0,Million Litres
+2024,June,LPG,14.364815,Million Litres
+2024,July,DIESEL,471.754,Million Litres
+2024,July,FUEL OIL,293.22,Million Litres
+2024,July,GASOLINE,138.384,Million Litres
+2024,July,JET PETROLEUM,100.845,Million Litres
+2024,July,KEROSENE,0,Million Litres
+2024,July,LPG,14.322222,Million Litres
+2024,August,DIESEL,410.129,Million Litres
+2024,August,FUEL OIL,223.777,Million Litres
+2024,August,GASOLINE,161.202,Million Litres
+2024,August,JET PETROLEUM,114.555,Million Litres
+2024,August,KEROSENE,0,Million Litres
+2024,August,LPG,18.225926,Million Litres
+2024,September,DIESEL,572.032,Million Litres
+2024,September,FUEL OIL,185.906,Million Litres
+2024,September,GASOLINE,159.855,Million Litres
+2024,September,JET PETROLEUM,81.546,Million Litres
+2024,September,KEROSENE,0,Million Litres
+2024,September,LPG,14.183333,Million Litres
+2024,October,DIESEL,557.127,Million Litres
+2024,October,FUEL OIL,343.656,Million Litres
+2024,October,GASOLINE,130.044,Million Litres
+2024,October,JET PETROLEUM,70.219,Million Litres
+2024,October,KEROSENE,0,Million Litres
+2024,October,LPG,21.018519,Million Litres
+2024,November,DIESEL,479.813,Million Litres
+2024,November,FUEL OIL,402.674,Million Litres
+2024,November,GASOLINE,158.761,Million Litres
+2024,November,JET PETROLEUM,60.067,Million Litres
+2024,November,KEROSENE,0,Million Litres
+2024,November,LPG,17.577778,Million Litres
+2024,December,DIESEL,359.281,Million Litres
+2024,December,FUEL OIL,268.059,Million Litres
+2024,December,GASOLINE,143.115,Million Litres
+2024,December,JET PETROLEUM,130.326,Million Litres
+2024,December,KEROSENE,0,Million Litres
+2024,December,LPG,14.438889,Million Litres
+2025,January,DIESEL,300.227,Million Litres
+2025,January,FUEL OIL,215.723,Million Litres
+2025,January,GASOLINE,146.217,Million Litres
+2025,January,JET PETROLEUM,43.202,Million Litres
+2025,January,KEROSENE,0,Million Litres
+2025,January,LPG,14.898148,Million Litres
+2025,February,DIESEL,257.732,Million Litres
+2025,February,FUEL OIL,229.109,Million Litres
+2025,February,GASOLINE,159.128,Million Litres
+2025,February,JET PETROLEUM,26.145,Million Litres
+2025,February,KEROSENE,0,Million Litres
+2025,February,LPG,7.851852,Million Litres
+2025,March,DIESEL,325.003,Million Litres
+2025,March,FUEL OIL,225.211,Million Litres
+2025,March,GASOLINE,152.153,Million Litres
+2025,March,JET PETROLEUM,46.566,Million Litres
+2025,March,KEROSENE,0,Million Litres
+2025,March,LPG,8.485185,Million Litres
+2025,April,DIESEL,295.208,Million Litres
+2025,April,FUEL OIL,298.725,Million Litres
+2025,April,GASOLINE,128.467,Million Litres
+2025,April,JET PETROLEUM,26.824,Million Litres
+2025,April,KEROSENE,0,Million Litres
+2025,April,LPG,13.088889,Million Litres
+2025,May,DIESEL,311.604,Million Litres
+2025,May,FUEL OIL,122.344,Million Litres
+2025,May,GASOLINE,150.676,Million Litres
+2025,May,JET PETROLEUM,29.94,Million Litres
+2025,May,KEROSENE,0,Million Litres
+2025,May,LPG,7.281,Million Litres
+2025,June,DIESEL,280.027,Million Litres
+2025,June,FUEL OIL,212.511,Million Litres
+2025,June,GASOLINE,95.107,Million Litres
+2025,June,JET PETROLEUM,28.118,Million Litres
+2025,June,KEROSENE,0,Million Litres
+2025,June,LPG,6.417,Million Litres
+2025,July,DIESEL,285.391,Million Litres
+2025,July,FUEL OIL,118.564,Million Litres
+2025,July,GASOLINE,86.163,Million Litres
+2025,July,JET PETROLEUM,33.844,Million Litres
+2025,July,KEROSENE,0,Million Litres
+2025,July,LPG,4.587,Million Litres
+2025,August,DIESEL,392.561,Million Litres
+2025,August,FUEL OIL,319.316,Million Litres
+2025,August,GASOLINE,41.321,Million Litres
+2025,August,JET PETROLEUM,54.347,Million Litres
+2025,August,KEROSENE,0,Million Litres
+2025,August,LPG,5.116667,Million Litres
+2025,September,DIESEL,533.322,Million Litres
+2025,September,FUEL OIL,206.845,Million Litres
+2025,September,GASOLINE,77.554,Million Litres
+2025,September,JET PETROLEUM,47.638,Million Litres
+2025,September,KEROSENE,0,Million Litres
+2025,September,LPG,4.331481,Million Litres
+2025,October,DIESEL,260.626,Million Litres
+2025,October,FUEL OIL,149.578,Million Litres
+2025,October,GASOLINE,137.8,Million Litres
+2025,October,JET PETROLEUM,52.852,Million Litres
+2025,October,KEROSENE,0,Million Litres
+2025,October,LPG,4.718519,Million Litres
+2025,November,DIESEL,311.001,Million Litres
+2025,November,FUEL OIL,281.488,Million Litres
+2025,November,GASOLINE,114.718,Million Litres
+2025,November,JET PETROLEUM,48.596,Million Litres
+2025,November,KEROSENE,0,Million Litres
+2025,November,LPG,4.733333,Million Litres
+2025,December,DIESEL,579.48,Million Litres
+2025,December,FUEL OIL,254.075,Million Litres
+2025,December,GASOLINE,136.015,Million Litres
+2025,December,JET PETROLEUM,40.869,Million Litres
+2025,December,KEROSENE,0,Million Litres
+2025,December,LPG,4.598148,Million Litres
+2026,January,DIESEL,374.278,Million Litres
+2026,January,FUEL OIL,234.234,Million Litres
+2026,January,GASOLINE,92.043,Million Litres
+2026,January,JET PETROLEUM,70.306,Million Litres
+2026,January,KEROSENE,0,Million Litres
+2026,January,LPG,4.433333,Million Litres
+2026,February,DIESEL,229.783,Million Litres
+2026,February,FUEL OIL,171.948,Million Litres
+2026,February,GASOLINE,135.076,Million Litres
+2026,February,JET PETROLEUM,82.832,Million Litres
+2026,February,KEROSENE,0,Million Litres
+2026,February,LPG,3.994444,Million Litres
+2026,March,DIESEL,164.302,Million Litres
+2026,March,FUEL OIL,164.535,Million Litres
+2026,March,GASOLINE,73.084,Million Litres
+2026,March,JET PETROLEUM,6.664,Million Litres
+2026,March,KEROSENE,0,Million Litres
+2026,March,LPG,5.416667,Million Litres
+2026,April,DIESEL,116.415,Million Litres
+2026,April,FUEL OIL,261.658,Million Litres
+2026,April,GASOLINE,51.057,Million Litres
+2026,April,JET PETROLEUM,4.444,Million Litres
+2026,April,KEROSENE,0,Million Litres
+2026,April,LPG,3.233333,Million Litres
+2026,May,DIESEL,196.744,Million Litres
+2026,May,FUEL OIL,322.911,Million Litres
+2026,May,GASOLINE,87.546,Million Litres
+2026,May,JET PETROLEUM,9.964,Million Litres
+2026,May,KEROSENE,0,Million Litres
+2026,May,LPG,5.303704,Million Litres
+2026,June,DIESEL,355.709,Million Litres
+2026,June,FUEL OIL,299.99,Million Litres
+2026,June,GASOLINE,135.612,Million Litres
+2026,June,JET PETROLEUM,133.966,Million Litres
+2026,June,KEROSENE,0,Million Litres
+2026,June,LPG,4.409259,Million Litres
+2026,July,DIESEL,537.361,Million Litres
+2026,July,FUEL OIL,299.254,Million Litres
+2026,July,GASOLINE,116.109,Million Litres
+2026,July,JET PETROLEUM,188.287,Million Litres
+2026,July,KEROSENE,0,Million Litres
+2026,July,LPG,5.151852,Million Litres

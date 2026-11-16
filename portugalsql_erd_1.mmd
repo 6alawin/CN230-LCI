@@ -1,0 +1,61 @@
+erDiagram
+    SOURCE ||--o{ LCI_EXCHANGE : "ให้ข้อมูล"
+    LOCATION ||--o{ PROCESS : "เกิดที่"
+    PROCESS ||--o{ PROCESS_FLOW : "มี"
+    FLOW ||--o{ PROCESS_FLOW : "ถูกใช้ใน"
+    PROCESS_FLOW ||--o{ LCI_EXCHANGE : "มีค่าตามช่วงเวลา"
+    UNIT ||--o{ LCI_EXCHANGE : "หน่วยต้นทาง"
+
+    SOURCE {
+        int source_id PK
+        string src_code UK "SRC-01..SRC-18"
+        string dataset_name
+        string agency "ผู้เผยแพร่ = EPPO"
+        string data_owner "เจ้าของข้อมูลต้นทาง ค่าเดียว"
+        string url
+        date accessed_date
+    }
+
+    LOCATION {
+        int location_id PK
+        string country UK "Thailand"
+    }
+
+    PROCESS {
+        int process_id PK
+        string name UK "เช่น Domestic use - Natural gas - Power"
+        string process_type "PRODUCTION / IMPORT / EXPORT / REFINING / DOMESTIC_USE / DISTRIBUTION / EMISSION"
+        int location_id FK
+    }
+
+    FLOW {
+        int flow_id PK
+        string name UK "Crude oil, LPG, Lignite, CO2"
+        string product_type "OIL / NATURAL_GAS / COAL / BIOFUEL / EMISSION"
+    }
+
+    PROCESS_FLOW {
+        int process_flow_id PK
+        int process_id FK "UK คู่กับ flow_id"
+        int flow_id FK
+        string direction "IN = เข้า process / OUT = ออกจาก process"
+    }
+
+    UNIT {
+        int unit_id PK
+        string symbol UK "bbl/day, ML, MMscfd, kt"
+        string quantity_type "VOLUME / VOLUME_RATE / MASS / GAS_RATE"
+        decimal to_base_factor "คูณเพื่อแปลงเป็นหน่วยฐานของ quantity_type เดียวกัน"
+    }
+
+    LCI_EXCHANGE {
+        int exchange_id PK
+        int process_flow_id FK
+        decimal amount "ค่าต้นทาง ไม่แก้"
+        int unit_id FK "หน่วยต้นทาง"
+        int period_year "ค.ศ."
+        int period_month "NULL ถ้าไม่มีเดือน"
+        int source_id FK
+        string validation_status "PENDING / VERIFIED / ERROR"
+        string note
+    }

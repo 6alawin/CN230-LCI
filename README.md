@@ -1,86 +1,56 @@
-# CN230 LCI Semantic Search
+# CN230 LCI Database และ Semantic Search
 
-เว็บค้นหาข้อมูล LCI ตามความหมายของคำค้น ด้วย Gemini Embeddings และ pgvector บน Render PostgreSQL
-https://cn230-lci.onrender.com/
+โครงการรวบรวมข้อมูลพลังงานและการปล่อย CO₂ จาก EPPO จัดเก็บใน PostgreSQL เชื่อมความสัมพันธ์ด้วย Neo4j และค้นข้อมูลด้วย Semantic Search และ RAG
 
-## สิ่งที่เตรียมไว้
+- เว็บไซต์สาธิต: https://cn230-lci.onrender.com/
+- หน้า SQL Query: https://cn230-lci.onrender.com/query
+- ฐานข้อมูลที่ตรวจเมื่อ 16 พฤศจิกายน 2569 มี Exchange 42,599 รายการจาก 22 แหล่งข้อมูล และกราฟในเครื่องซิงก์ Exchange ครบ 42,599 โหนด
 
-- หน้าเว็บค้นภาษาไทย/อังกฤษพร้อมกรองแหล่ง SRC
-- FastAPI endpoint สำหรับค้นเวกเตอร์
-- SQL migration สำหรับ `pgvector` และตารางเก็บ embeddings
-- สคริปต์ทำดัชนี Exchange จาก schema CN230 LCI
-- Blueprint สำหรับ deploy เป็น Render Web Service
-- `.python-version` ล็อก Python runtime ให้ build ทำซ้ำได้
+## โครงสร้าง repository
 
-## ตั้งค่าในเครื่อง
+| ตำแหน่ง | เนื้อหา |
+| --- | --- |
+| `initdb/001_schema.sql` | PostgreSQL schema และ constraints |
+| `source/SRC-01.csv` ถึง `source/SRC-22.csv` | ข้อมูลต้นทาง EPPO และ metadata |
+| `query/` | SQL สำหรับตรวจสอบและวิเคราะห์ข้อมูล |
+| `graph/sync_neo4j.py` | ซิงก์ PostgreSQL ไป Neo4j ด้วย UNWIND และ MERGE |
+| `app/`, `static/` | FastAPI, Semantic Search, RAG และหน้าเว็บ |
+| `CN230_M3_SQL.sql` | Schema และ 3 SQL Query สำหรับส่งงาน M3 |
+| `tests/` | Regression tests สำหรับการค้นหาและ RAG |
+| `notebooks/` | Notebook ทดลองซึ่งใช้ Gemini Embedding รุ่นก่อน |
 
-1. คัดลอก `.env.example` เป็น `.env` และกำหนด `DATABASE_URL` สำหรับพัฒนาในเครื่อง โดยใช้ External URL จาก Render พร้อม `?sslmode=require`
-2. ใส่ Gemini API key ใน `GEMINI_API_KEY` (อย่า commit ไฟล์ `.env`)
-3. ติดตั้งและเปิดเว็บ:
+## ทดลองผ่านเว็บ
+
+หน้าเว็บค้นด้วยข้อความภาษาไทยหรืออังกฤษและกรองแหล่งข้อมูลได้ หน้าสาธิต Query บน Render รองรับ SQL แบบอ่านข้อมูล ส่วน Cypher ใช้ได้ในเว็บ local ที่เชื่อม Neo4j ผล Query แสดงสูงสุด 100 แถว
+
+เว็บ Render ใช้ multilingual MiniLM แบบ 384 มิติและ pgvector ค้น Exchange จากนั้นส่งหลักฐานให้ Gemini สรุปคำตอบพร้อมอ้างอิง คำถามรายเดือนบางประเภทอ่านข้อมูลโดยตรงจาก PostgreSQL เพื่อแสดงเดือนที่มีข้อมูลและเดือนที่ขาด
+
+## รันในเครื่อง
+
+ติดตั้ง Docker Desktop และ Python 3.12 แล้วเปิด Docker Desktop จากนั้นรันที่ราก repository:
 
 ```powershell
+docker compose up -d
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-uvicorn app.main:app --reload
+.\.venv\Scripts\python.exe -m pip install -r requirements-local.txt
 ```
 
-เปิด `http://localhost:8000` เพื่อใช้หน้า search และ `http://localhost:8000/docs` เพื่อดู API
+Docker สร้าง PostgreSQL ที่ `localhost:5433` และ Neo4j ที่ `localhost:7474` โดย schema จะสร้างเมื่อ volume PostgreSQL ถูกสร้างครั้งแรก ข้อมูล CSV ต้องนำเข้าฐานด้วยกระบวนการ ETL ก่อนจึงจะมีรายการสำหรับค้นหา โฟลเดอร์ source มีสคริปต์นำเข้าที่เคยใช้และไฟล์ CSV แต่การสร้างฐาน 22 แหล่งและดัชนีทั้งหมดจากศูนย์ยังไม่ได้ตรวจแบบครบขั้นตอน ไฟล์ใน repository ไม่รวมฐานข้อมูลที่นำเข้าแล้ว
 
-## เตรียม Render PostgreSQL
+สำหรับเครื่องนำเสนอที่มีข้อมูลและดัชนี local เตรียมไว้ ให้เปิด Ollama พร้อมโมเดล `gemma4:e2b` แล้วดับเบิลคลิก `Start.bat` หรือรัน `start_local.ps1` เพื่อเปิดเว็บ `http://127.0.0.1:8000` เว็บ local ใช้ Sentence Transformers และ Ollama ส่วน Cypher ต้องเปิด Neo4j ด้วย `docker compose up -d neo4j`
 
-รัน [db/001_semantic_search.sql](db/001_semantic_search.sql) หนึ่งครั้งกับฐานข้อมูล Render เพื่อเปิด extension `vector` และสร้างตาราง/ดัชนีค้นหา ไฟล์นี้ไม่แก้หรือลบตาราง LCI เดิม
+เมื่อต้องการซิงก์ข้อมูลลงกราฟจาก PostgreSQL ที่เตรียมแล้ว ให้รัน `graph/sync_neo4j.ps1` จากราก repository แล้วตรวจจำนวนและความสัมพันธ์ กราฟต้องซิงก์ใหม่เมื่อข้อมูลต้นทางเปลี่ยน
 
-## ทำดัชนีข้อมูล
-
-เมื่อใส่ `GEMINI_API_KEY` และรัน migration แล้ว:
+## ทดสอบ
 
 ```powershell
-python scripts/index_lci.py --limit 100
+.\.venv\Scripts\python.exe -m unittest discover -s tests
 ```
 
-ใช้ `--limit 100` ทดลองปริมาณเล็กน้อยก่อน จากนั้นรันโดยไม่ใส่ `--limit` เพื่อสร้าง embeddings ให้ครบทุก Exchange ที่ยังไม่มีหรือข้อมูลเปลี่ยน สคริปต์เก็บผลเป็นชุดและอัปเดตซ้ำได้
+## Deploy Render
 
-## รันงานบน Render
+`render-cloud.yaml` แสดง build และ runtime สำหรับ ONNX MiniLM บน CPU การ deploy ต้องตั้ง `DATABASE_URL`, `GEMINI_API_KEY`, `SEARCH_BACKEND=local_model` และ `CLOUD_SNAPSHOT_SCHEMA` ให้ตรงกับฐานจริง โดยไม่ใส่รหัสผ่านหรือ API key ใน repository ส่วน notebook และสคริปต์ Gemini embedding เป็นวิธีทดลองรุ่นก่อนซึ่งใช้ดัชนีคนละชุดกับเว็บปัจจุบัน
 
-เมื่อตั้ง `DATABASE_URL` และ `GEMINI_API_KEY` ใน Render Web Service แล้ว ให้เปิด **Shell** ของบริการและรันจากโฟลเดอร์รากของ repository:
+## ข้อจำกัด
 
-```sh
-python scripts/setup_semantic_search.py
-python scripts/index_lci.py --limit 100
-```
-
-ถ้าผลทดลองถูกต้อง ให้รัน `python scripts/index_lci.py` โดยไม่ใส่ `--limit` เพื่อทำ embeddings ให้ครบ งานนี้อ่านฐานข้อมูล Render ผ่าน Internal URL และใช้ Gemini key จาก Environment ของบริการ ไม่ต้องนำ secret มาใส่ในคำสั่ง
-
-การย้ายตาราง LCI จาก LocalDB เป็นอีกขั้นหนึ่ง: Render ต้องได้รับไฟล์ dump ก่อน เพราะไม่สามารถอ่านไฟล์หรือ Docker container ในเครื่องเราได้ หลังส่ง dump เข้า Render แล้ว จึงค่อย restore และรันคำสั่งข้างต้นบน Render
-
-## Colab สำหรับ Semantic Search ของ LCI
-
-เปิด [notebooks/CN230_LCI_Semantic_Search_Colab.ipynb](notebooks/CN230_LCI_Semantic_Search_Colab.ipynb) ใน Google Colab แล้วเพิ่ม `DATABASE_URL` (External URL ของ Render) และ `GEMINI_API_KEY` ใน Colab Secrets ก่อนรัน Notebook จะใช้ `gemini-embedding-001` ขนาด 768 มิติให้ตรงกับ API ของเว็บ และเขียนเฉพาะ embeddings ลง `semantic_search_documents`; ไม่โหลด LCI ซ้ำ
-
-เริ่ม index 100 แถวเพื่อเช็กผลก่อน แล้วตั้ง `INDEX_LIMIT = 0` เพื่อทำรายการที่เหลือ หากพบ `exchange_id` ซ้ำ Notebook จะหยุดก่อนเขียน embeddings
-
-## Deploy ที่ Render
-
-ใช้ Blueprint จาก `render.yaml` โดยตั้ง Environment Variables ในหน้า Render:
-
-- `DATABASE_URL`: Internal Database URL ของ Render จาก host/port/database/user/password ที่ให้มา เมื่อ Web Service อยู่ใน workspace และ region เดียวกัน
-- `GEMINI_API_KEY`: API key จาก Google AI Studio
-
-Hostname รูปแบบ `dpg-...-a` ที่ได้มาจาก Render เป็น Internal URL ใช้ได้เมื่อ Web Service อยู่ใน workspace/region เดียวกับ DB เท่านั้น ให้นำค่า Internal URL ไปตั้ง `DATABASE_URL` ใน Environment ของ Render; สำหรับรันในเครื่องต้องใช้ External URL ซึ่งมี hostname อีกแบบและต้องมี `sslmode=require`.
-
-ใช้โมเดล `gemini-embedding-001` เพื่อสร้าง embeddings หลายรายการต่อ request ได้อย่างถูกต้อง พร้อมแยก task สำหรับเอกสารและ query ตามงาน retrieval ของ Gemini
-
-เก็บ secret ใน Environment ของ Render เท่านั้น ห้ามใส่ลง Git หรือ `render.yaml`
-
-## Deploy หน้า Dashboard บน Vercel
-
-โปรเจกต์นี้เตรียม `vercel.json` ไว้ให้ Vercel เสิร์ฟไฟล์หน้าเว็บจาก `static/` และ proxy คำขอ `/api/*` ไปยัง FastAPI ที่ Render (`https://cn230-lci.onrender.com`) หน้า Dashboard จึงเรียก `/api/health` และ `/api/search` บน origin เดียวกับหน้าเว็บได้ โดยไม่ต้องใส่ Gemini key ใน Vercel หรือเปิด CORS เพิ่ม
-
-เมื่อนำ GitHub repository นี้เข้า Vercel ให้ใช้ Root Directory เป็นราก repository และ Framework Preset เป็น Other; ค่าคำสั่ง build และ output directory อ่านจาก `vercel.json` (`static`) ได้เลย หาก Project Settings มีค่า override เก่าค้างอยู่ ให้ปิด override เพื่อให้ใช้ค่าจากไฟล์
-
-`DATABASE_URL` และ `GEMINI_API_KEY` ยังคงต้องตั้งไว้ใน Environment ของ Render เพราะ Render เป็น backend ที่เรียกฐานข้อมูลและ Gemini ส่วน Vercel ให้บริการเฉพาะหน้าเว็บและ proxy API
-
-API: `POST /api/search` รับ `{ "query": "การใช้ก๊าซธรรมชาติ", "limit": 10, "source_code": "SRC-11" }`
-
-สถานะ: `GET /api/health`
+ข้อมูล EPPO เป็นข้อมูลตามแหล่ง หน่วย สาขา และช่วงเวลาที่ระบุ คะแนน semantic similarity ไม่ใช่ความน่าจะเป็นว่าคำตอบถูกต้อง ควรตรวจแหล่งอ้างอิงก่อนสรุป และการมีข้อมูลไม่ครบทุกเดือนไม่สามารถใช้แทนยอดทั้งปีได้

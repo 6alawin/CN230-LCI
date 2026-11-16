@@ -1,0 +1,1 @@
+SELECT 'source' AS table_name, count(*) FROM source UNION ALL SELECT 'location', count(*) FROM location UNION ALL SELECT 'process', count(*) FROM process UNION ALL SELECT 'flow', count(*) FROM flow UNION ALL SELECT 'process_flow', count(*) FROM process_flow UNION ALL SELECT 'unit', count(*) FROM unit UNION ALL SELECT 'lci_exchange', count(*) FROM lci_exchange;

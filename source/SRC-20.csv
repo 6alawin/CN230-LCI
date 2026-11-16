@@ -1,0 +1,785 @@
+﻿Year,Month,Fuel Type,Quantity,UNIT
+1987,January,OIL,1588.61,Thousand Tons-CO2
+1987,February,OIL,1428.29,Thousand Tons-CO2
+1987,March,OIL,1581.16,Thousand Tons-CO2
+1987,April,OIL,1557.4,Thousand Tons-CO2
+1987,May,OIL,1513.35,Thousand Tons-CO2
+1987,June,OIL,1465.69,Thousand Tons-CO2
+1987,July,OIL,1542.77,Thousand Tons-CO2
+1987,August,OIL,1493.17,Thousand Tons-CO2
+1987,September,OIL,1406.57,Thousand Tons-CO2
+1987,October,OIL,1503.36,Thousand Tons-CO2
+1987,November,OIL,1460.19,Thousand Tons-CO2
+1987,December,OIL,1551.44,Thousand Tons-CO2
+1988,January,OIL,1767.64,Thousand Tons-CO2
+1988,February,OIL,1704.75,Thousand Tons-CO2
+1988,March,OIL,1872.79,Thousand Tons-CO2
+1988,April,OIL,1798.04,Thousand Tons-CO2
+1988,May,OIL,1734.7,Thousand Tons-CO2
+1988,June,OIL,1757.52,Thousand Tons-CO2
+1988,July,OIL,1717.99,Thousand Tons-CO2
+1988,August,OIL,1748.65,Thousand Tons-CO2
+1988,September,OIL,1682.44,Thousand Tons-CO2
+1988,October,OIL,1637.48,Thousand Tons-CO2
+1988,November,OIL,1729.29,Thousand Tons-CO2
+1988,December,OIL,1895.82,Thousand Tons-CO2
+1989,January,OIL,2069.27,Thousand Tons-CO2
+1989,February,OIL,1914.9,Thousand Tons-CO2
+1989,March,OIL,2228.95,Thousand Tons-CO2
+1989,April,OIL,2163.71,Thousand Tons-CO2
+1989,May,OIL,2189.01,Thousand Tons-CO2
+1989,June,OIL,2097.96,Thousand Tons-CO2
+1989,July,OIL,2107.53,Thousand Tons-CO2
+1989,August,OIL,2095.09,Thousand Tons-CO2
+1989,September,OIL,1995.35,Thousand Tons-CO2
+1989,October,OIL,2029.26,Thousand Tons-CO2
+1989,November,OIL,2089.01,Thousand Tons-CO2
+1989,December,OIL,2222.37,Thousand Tons-CO2
+1990,January,OIL,2415.54,Thousand Tons-CO2
+1990,February,OIL,2219.57,Thousand Tons-CO2
+1990,March,OIL,2477.71,Thousand Tons-CO2
+1990,April,OIL,2352.33,Thousand Tons-CO2
+1990,May,OIL,2396.02,Thousand Tons-CO2
+1990,June,OIL,2351.43,Thousand Tons-CO2
+1990,July,OIL,2353.07,Thousand Tons-CO2
+1990,August,OIL,2540.02,Thousand Tons-CO2
+1990,September,OIL,2429.25,Thousand Tons-CO2
+1990,October,OIL,2183.88,Thousand Tons-CO2
+1990,November,OIL,2287.4,Thousand Tons-CO2
+1990,December,OIL,2348.23,Thousand Tons-CO2
+1991,January,OIL,2650.84,Thousand Tons-CO2
+1991,February,OIL,2321.37,Thousand Tons-CO2
+1991,March,OIL,2522.32,Thousand Tons-CO2
+1991,April,OIL,2496.3,Thousand Tons-CO2
+1991,May,OIL,2498.86,Thousand Tons-CO2
+1991,June,OIL,2410.31,Thousand Tons-CO2
+1991,July,OIL,2475.9,Thousand Tons-CO2
+1991,August,OIL,2456.54,Thousand Tons-CO2
+1991,September,OIL,2198.19,Thousand Tons-CO2
+1991,October,OIL,2245.9,Thousand Tons-CO2
+1991,November,OIL,2310.31,Thousand Tons-CO2
+1991,December,OIL,2391.25,Thousand Tons-CO2
+1992,January,OIL,2534.59,Thousand Tons-CO2
+1992,February,OIL,2476.01,Thousand Tons-CO2
+1992,March,OIL,2632.69,Thousand Tons-CO2
+1992,April,OIL,2586.91,Thousand Tons-CO2
+1992,May,OIL,2590.61,Thousand Tons-CO2
+1992,June,OIL,2534.79,Thousand Tons-CO2
+1992,July,OIL,2526.81,Thousand Tons-CO2
+1992,August,OIL,2467.68,Thousand Tons-CO2
+1992,September,OIL,2467.49,Thousand Tons-CO2
+1992,October,OIL,2575.59,Thousand Tons-CO2
+1992,November,OIL,2576.95,Thousand Tons-CO2
+1992,December,OIL,2942.36,Thousand Tons-CO2
+1993,January,OIL,2995.46,Thousand Tons-CO2
+1993,February,OIL,2848.88,Thousand Tons-CO2
+1993,March,OIL,3157.08,Thousand Tons-CO2
+1993,April,OIL,3068.95,Thousand Tons-CO2
+1993,May,OIL,3114.44,Thousand Tons-CO2
+1993,June,OIL,3039.28,Thousand Tons-CO2
+1993,July,OIL,3104.99,Thousand Tons-CO2
+1993,August,OIL,2970.64,Thousand Tons-CO2
+1993,September,OIL,2895.95,Thousand Tons-CO2
+1993,October,OIL,2991.49,Thousand Tons-CO2
+1993,November,OIL,3130.75,Thousand Tons-CO2
+1993,December,OIL,3216.48,Thousand Tons-CO2
+1994,January,OIL,3285.76,Thousand Tons-CO2
+1994,February,OIL,3101.77,Thousand Tons-CO2
+1994,March,OIL,3379.19,Thousand Tons-CO2
+1994,April,OIL,3399.84,Thousand Tons-CO2
+1994,May,OIL,3395.45,Thousand Tons-CO2
+1994,June,OIL,3447.65,Thousand Tons-CO2
+1994,July,OIL,3487.98,Thousand Tons-CO2
+1994,August,OIL,3422.44,Thousand Tons-CO2
+1994,September,OIL,3264.2,Thousand Tons-CO2
+1994,October,OIL,3437.4,Thousand Tons-CO2
+1994,November,OIL,3532.99,Thousand Tons-CO2
+1994,December,OIL,3783.85,Thousand Tons-CO2
+1995,January,OIL,3811.96,Thousand Tons-CO2
+1995,February,OIL,3609.37,Thousand Tons-CO2
+1995,March,OIL,4206,Thousand Tons-CO2
+1995,April,OIL,4076.03,Thousand Tons-CO2
+1995,May,OIL,4339.78,Thousand Tons-CO2
+1995,June,OIL,4179.12,Thousand Tons-CO2
+1995,July,OIL,4052.13,Thousand Tons-CO2
+1995,August,OIL,4031.14,Thousand Tons-CO2
+1995,September,OIL,3733.44,Thousand Tons-CO2
+1995,October,OIL,3929.05,Thousand Tons-CO2
+1995,November,OIL,4016.43,Thousand Tons-CO2
+1995,December,OIL,4226.35,Thousand Tons-CO2
+1996,January,OIL,4106.11,Thousand Tons-CO2
+1996,February,OIL,4162.28,Thousand Tons-CO2
+1996,March,OIL,4492.43,Thousand Tons-CO2
+1996,April,OIL,4382.35,Thousand Tons-CO2
+1996,May,OIL,4533.31,Thousand Tons-CO2
+1996,June,OIL,4582.55,Thousand Tons-CO2
+1996,July,OIL,4616.21,Thousand Tons-CO2
+1996,August,OIL,4548.5,Thousand Tons-CO2
+1996,September,OIL,4111.58,Thousand Tons-CO2
+1996,October,OIL,4320.59,Thousand Tons-CO2
+1996,November,OIL,4342.81,Thousand Tons-CO2
+1996,December,OIL,4511.93,Thousand Tons-CO2
+1997,January,OIL,4770.96,Thousand Tons-CO2
+1997,February,OIL,4499.02,Thousand Tons-CO2
+1997,March,OIL,5092.68,Thousand Tons-CO2
+1997,April,OIL,4809.06,Thousand Tons-CO2
+1997,May,OIL,5159.52,Thousand Tons-CO2
+1997,June,OIL,4866.08,Thousand Tons-CO2
+1997,July,OIL,4831.29,Thousand Tons-CO2
+1997,August,OIL,4445.37,Thousand Tons-CO2
+1997,September,OIL,4117.5,Thousand Tons-CO2
+1997,October,OIL,4277.02,Thousand Tons-CO2
+1997,November,OIL,3911.27,Thousand Tons-CO2
+1997,December,OIL,4455.35,Thousand Tons-CO2
+1998,January,OIL,4125.59,Thousand Tons-CO2
+1998,February,OIL,3707.48,Thousand Tons-CO2
+1998,March,OIL,4149.66,Thousand Tons-CO2
+1998,April,OIL,3996.22,Thousand Tons-CO2
+1998,May,OIL,4065.48,Thousand Tons-CO2
+1998,June,OIL,3908.11,Thousand Tons-CO2
+1998,July,OIL,3759.2,Thousand Tons-CO2
+1998,August,OIL,3773.06,Thousand Tons-CO2
+1998,September,OIL,3750.21,Thousand Tons-CO2
+1998,October,OIL,3890.28,Thousand Tons-CO2
+1998,November,OIL,3605.32,Thousand Tons-CO2
+1998,December,OIL,4040.21,Thousand Tons-CO2
+1999,January,OIL,3870.18,Thousand Tons-CO2
+1999,February,OIL,3712.16,Thousand Tons-CO2
+1999,March,OIL,4235.21,Thousand Tons-CO2
+1999,April,OIL,4021.25,Thousand Tons-CO2
+1999,May,OIL,3892.15,Thousand Tons-CO2
+1999,June,OIL,3962.27,Thousand Tons-CO2
+1999,July,OIL,4167.62,Thousand Tons-CO2
+1999,August,OIL,3947.43,Thousand Tons-CO2
+1999,September,OIL,3692.86,Thousand Tons-CO2
+1999,October,OIL,3532.15,Thousand Tons-CO2
+1999,November,OIL,3789.57,Thousand Tons-CO2
+1999,December,OIL,4093.7,Thousand Tons-CO2
+2000,January,OIL,4026.16,Thousand Tons-CO2
+2000,February,OIL,3698.44,Thousand Tons-CO2
+2000,March,OIL,4040.75,Thousand Tons-CO2
+2000,April,OIL,4005.59,Thousand Tons-CO2
+2000,May,OIL,4085.74,Thousand Tons-CO2
+2000,June,OIL,3816.79,Thousand Tons-CO2
+2000,July,OIL,3734.97,Thousand Tons-CO2
+2000,August,OIL,3774.7,Thousand Tons-CO2
+2000,September,OIL,3424.12,Thousand Tons-CO2
+2000,October,OIL,3482.68,Thousand Tons-CO2
+2000,November,OIL,3582.67,Thousand Tons-CO2
+2000,December,OIL,3909.72,Thousand Tons-CO2
+2001,January,OIL,3855.61,Thousand Tons-CO2
+2001,January,NATURAL GAS,0.43,Thousand Tons-CO2
+2001,February,OIL,3594.66,Thousand Tons-CO2
+2001,February,NATURAL GAS,0.45,Thousand Tons-CO2
+2001,March,OIL,3950.53,Thousand Tons-CO2
+2001,March,NATURAL GAS,0.39,Thousand Tons-CO2
+2001,April,OIL,4058.6,Thousand Tons-CO2
+2001,April,NATURAL GAS,0.44,Thousand Tons-CO2
+2001,May,OIL,3932.39,Thousand Tons-CO2
+2001,May,NATURAL GAS,0.56,Thousand Tons-CO2
+2001,June,OIL,3850.98,Thousand Tons-CO2
+2001,June,NATURAL GAS,0.48,Thousand Tons-CO2
+2001,July,OIL,3873.54,Thousand Tons-CO2
+2001,July,NATURAL GAS,0.5,Thousand Tons-CO2
+2001,August,OIL,3870.79,Thousand Tons-CO2
+2001,August,NATURAL GAS,0.48,Thousand Tons-CO2
+2001,September,OIL,3638.59,Thousand Tons-CO2
+2001,September,NATURAL GAS,0.45,Thousand Tons-CO2
+2001,October,OIL,3819.91,Thousand Tons-CO2
+2001,October,NATURAL GAS,0.48,Thousand Tons-CO2
+2001,November,OIL,3863.46,Thousand Tons-CO2
+2001,November,NATURAL GAS,0.48,Thousand Tons-CO2
+2001,December,OIL,4242.27,Thousand Tons-CO2
+2001,December,NATURAL GAS,0.43,Thousand Tons-CO2
+2002,January,OIL,4137.83,Thousand Tons-CO2
+2002,January,NATURAL GAS,0.49,Thousand Tons-CO2
+2002,February,OIL,3792.31,Thousand Tons-CO2
+2002,February,NATURAL GAS,0.41,Thousand Tons-CO2
+2002,March,OIL,4260.35,Thousand Tons-CO2
+2002,March,NATURAL GAS,0.53,Thousand Tons-CO2
+2002,April,OIL,4126.17,Thousand Tons-CO2
+2002,April,NATURAL GAS,0.45,Thousand Tons-CO2
+2002,May,OIL,4190.52,Thousand Tons-CO2
+2002,May,NATURAL GAS,0.45,Thousand Tons-CO2
+2002,June,OIL,4011.77,Thousand Tons-CO2
+2002,June,NATURAL GAS,0.41,Thousand Tons-CO2
+2002,July,OIL,4141.23,Thousand Tons-CO2
+2002,July,NATURAL GAS,0.4,Thousand Tons-CO2
+2002,August,OIL,4193.99,Thousand Tons-CO2
+2002,August,NATURAL GAS,0.45,Thousand Tons-CO2
+2002,September,OIL,3771.51,Thousand Tons-CO2
+2002,September,NATURAL GAS,0.47,Thousand Tons-CO2
+2002,October,OIL,3979.65,Thousand Tons-CO2
+2002,October,NATURAL GAS,0.54,Thousand Tons-CO2
+2002,November,OIL,4182.27,Thousand Tons-CO2
+2002,November,NATURAL GAS,0.49,Thousand Tons-CO2
+2002,December,OIL,4466.17,Thousand Tons-CO2
+2002,December,NATURAL GAS,0.45,Thousand Tons-CO2
+2003,January,OIL,4525.76,Thousand Tons-CO2
+2003,January,NATURAL GAS,0.6,Thousand Tons-CO2
+2003,February,OIL,4021.99,Thousand Tons-CO2
+2003,February,NATURAL GAS,0.49,Thousand Tons-CO2
+2003,March,OIL,4543.28,Thousand Tons-CO2
+2003,March,NATURAL GAS,0.53,Thousand Tons-CO2
+2003,April,OIL,4381.38,Thousand Tons-CO2
+2003,April,NATURAL GAS,0.53,Thousand Tons-CO2
+2003,May,OIL,4507.51,Thousand Tons-CO2
+2003,May,NATURAL GAS,0.54,Thousand Tons-CO2
+2003,June,OIL,4353.25,Thousand Tons-CO2
+2003,June,NATURAL GAS,0.54,Thousand Tons-CO2
+2003,July,OIL,4387.7,Thousand Tons-CO2
+2003,July,NATURAL GAS,0.62,Thousand Tons-CO2
+2003,August,OIL,4305.52,Thousand Tons-CO2
+2003,August,NATURAL GAS,0.53,Thousand Tons-CO2
+2003,September,OIL,4187.91,Thousand Tons-CO2
+2003,September,NATURAL GAS,0.6,Thousand Tons-CO2
+2003,October,OIL,4316.85,Thousand Tons-CO2
+2003,October,NATURAL GAS,0.54,Thousand Tons-CO2
+2003,November,OIL,4556.79,Thousand Tons-CO2
+2003,November,NATURAL GAS,0.5,Thousand Tons-CO2
+2003,December,OIL,4935.79,Thousand Tons-CO2
+2003,December,NATURAL GAS,0.59,Thousand Tons-CO2
+2004,January,OIL,4656.9,Thousand Tons-CO2
+2004,January,NATURAL GAS,0.54,Thousand Tons-CO2
+2004,February,OIL,4566.9,Thousand Tons-CO2
+2004,February,NATURAL GAS,0.5,Thousand Tons-CO2
+2004,March,OIL,4913.3,Thousand Tons-CO2
+2004,March,NATURAL GAS,0.63,Thousand Tons-CO2
+2004,April,OIL,4694.56,Thousand Tons-CO2
+2004,April,NATURAL GAS,3.53,Thousand Tons-CO2
+2004,May,OIL,4822.04,Thousand Tons-CO2
+2004,May,NATURAL GAS,3.83,Thousand Tons-CO2
+2004,June,OIL,4485.59,Thousand Tons-CO2
+2004,June,NATURAL GAS,4.89,Thousand Tons-CO2
+2004,July,OIL,4617.84,Thousand Tons-CO2
+2004,July,NATURAL GAS,6,Thousand Tons-CO2
+2004,August,OIL,4556.69,Thousand Tons-CO2
+2004,August,NATURAL GAS,7.1,Thousand Tons-CO2
+2004,September,OIL,4457.43,Thousand Tons-CO2
+2004,September,NATURAL GAS,7.98,Thousand Tons-CO2
+2004,October,OIL,4810.21,Thousand Tons-CO2
+2004,October,NATURAL GAS,8.62,Thousand Tons-CO2
+2004,November,OIL,4845.49,Thousand Tons-CO2
+2004,November,NATURAL GAS,9.96,Thousand Tons-CO2
+2004,December,OIL,5074.71,Thousand Tons-CO2
+2004,December,NATURAL GAS,9.2,Thousand Tons-CO2
+2005,January,OIL,5004.95,Thousand Tons-CO2
+2005,January,NATURAL GAS,10.19,Thousand Tons-CO2
+2005,February,OIL,4957.74,Thousand Tons-CO2
+2005,February,NATURAL GAS,9.78,Thousand Tons-CO2
+2005,March,OIL,5206.51,Thousand Tons-CO2
+2005,March,NATURAL GAS,11.88,Thousand Tons-CO2
+2005,April,OIL,4970.15,Thousand Tons-CO2
+2005,April,NATURAL GAS,10.19,Thousand Tons-CO2
+2005,May,OIL,5197.42,Thousand Tons-CO2
+2005,May,NATURAL GAS,10.95,Thousand Tons-CO2
+2005,June,OIL,5008.72,Thousand Tons-CO2
+2005,June,NATURAL GAS,11.18,Thousand Tons-CO2
+2005,July,OIL,4388.55,Thousand Tons-CO2
+2005,July,NATURAL GAS,10.95,Thousand Tons-CO2
+2005,August,OIL,4697.58,Thousand Tons-CO2
+2005,August,NATURAL GAS,12.52,Thousand Tons-CO2
+2005,September,OIL,4284.09,Thousand Tons-CO2
+2005,September,NATURAL GAS,11.76,Thousand Tons-CO2
+2005,October,OIL,4333.75,Thousand Tons-CO2
+2005,October,NATURAL GAS,11.76,Thousand Tons-CO2
+2005,November,OIL,4497.11,Thousand Tons-CO2
+2005,November,NATURAL GAS,13.16,Thousand Tons-CO2
+2005,December,OIL,4865.24,Thousand Tons-CO2
+2005,December,NATURAL GAS,12.58,Thousand Tons-CO2
+2006,January,OIL,4714.48,Thousand Tons-CO2
+2006,January,NATURAL GAS,15.66,Thousand Tons-CO2
+2006,February,OIL,4410.14,Thousand Tons-CO2
+2006,February,NATURAL GAS,13.45,Thousand Tons-CO2
+2006,March,OIL,5001.54,Thousand Tons-CO2
+2006,March,NATURAL GAS,15.84,Thousand Tons-CO2
+2006,April,OIL,4613.96,Thousand Tons-CO2
+2006,April,NATURAL GAS,14.27,Thousand Tons-CO2
+2006,May,OIL,4751.66,Thousand Tons-CO2
+2006,May,NATURAL GAS,17.47,Thousand Tons-CO2
+2006,June,OIL,4410.7,Thousand Tons-CO2
+2006,June,NATURAL GAS,17.12,Thousand Tons-CO2
+2006,July,OIL,4373.69,Thousand Tons-CO2
+2006,July,NATURAL GAS,17.41,Thousand Tons-CO2
+2006,August,OIL,4373.89,Thousand Tons-CO2
+2006,August,NATURAL GAS,22.59,Thousand Tons-CO2
+2006,September,OIL,4220.86,Thousand Tons-CO2
+2006,September,NATURAL GAS,21.78,Thousand Tons-CO2
+2006,October,OIL,4396.54,Thousand Tons-CO2
+2006,October,NATURAL GAS,25.33,Thousand Tons-CO2
+2006,November,OIL,4607.15,Thousand Tons-CO2
+2006,November,NATURAL GAS,24.63,Thousand Tons-CO2
+2006,December,OIL,4756.2,Thousand Tons-CO2
+2006,December,NATURAL GAS,24.22,Thousand Tons-CO2
+2007,January,OIL,4759.06,Thousand Tons-CO2
+2007,January,NATURAL GAS,25.27,Thousand Tons-CO2
+2007,February,OIL,4374.46,Thousand Tons-CO2
+2007,February,NATURAL GAS,26.44,Thousand Tons-CO2
+2007,March,OIL,4953.78,Thousand Tons-CO2
+2007,March,NATURAL GAS,33.02,Thousand Tons-CO2
+2007,April,OIL,4604.31,Thousand Tons-CO2
+2007,April,NATURAL GAS,32.96,Thousand Tons-CO2
+2007,May,OIL,4579.63,Thousand Tons-CO2
+2007,May,NATURAL GAS,35.17,Thousand Tons-CO2
+2007,June,OIL,4637.88,Thousand Tons-CO2
+2007,June,NATURAL GAS,37.5,Thousand Tons-CO2
+2007,July,OIL,4479.99,Thousand Tons-CO2
+2007,July,NATURAL GAS,40.47,Thousand Tons-CO2
+2007,August,OIL,4650,Thousand Tons-CO2
+2007,August,NATURAL GAS,44.43,Thousand Tons-CO2
+2007,September,OIL,4322.87,Thousand Tons-CO2
+2007,September,NATURAL GAS,46.87,Thousand Tons-CO2
+2007,October,OIL,4505.76,Thousand Tons-CO2
+2007,October,NATURAL GAS,53.45,Thousand Tons-CO2
+2007,November,OIL,4498.5,Thousand Tons-CO2
+2007,November,NATURAL GAS,58.64,Thousand Tons-CO2
+2007,December,OIL,4708.54,Thousand Tons-CO2
+2007,December,NATURAL GAS,65.8,Thousand Tons-CO2
+2008,January,OIL,4662.45,Thousand Tons-CO2
+2008,January,NATURAL GAS,74.18,Thousand Tons-CO2
+2008,February,OIL,4337.72,Thousand Tons-CO2
+2008,February,NATURAL GAS,78.72,Thousand Tons-CO2
+2008,March,OIL,4716.04,Thousand Tons-CO2
+2008,March,NATURAL GAS,93.22,Thousand Tons-CO2
+2008,April,OIL,4531.41,Thousand Tons-CO2
+2008,April,NATURAL GAS,99.28,Thousand Tons-CO2
+2008,May,OIL,4377.83,Thousand Tons-CO2
+2008,May,NATURAL GAS,113.37,Thousand Tons-CO2
+2008,June,OIL,3948.93,Thousand Tons-CO2
+2008,June,NATURAL GAS,125.54,Thousand Tons-CO2
+2008,July,OIL,3740.76,Thousand Tons-CO2
+2008,July,NATURAL GAS,149.94,Thousand Tons-CO2
+2008,August,OIL,3940.42,Thousand Tons-CO2
+2008,August,NATURAL GAS,165.14,Thousand Tons-CO2
+2008,September,OIL,3805.23,Thousand Tons-CO2
+2008,September,NATURAL GAS,171.02,Thousand Tons-CO2
+2008,October,OIL,4116.66,Thousand Tons-CO2
+2008,October,NATURAL GAS,192.44,Thousand Tons-CO2
+2008,November,OIL,4079.6,Thousand Tons-CO2
+2008,November,NATURAL GAS,188.89,Thousand Tons-CO2
+2008,December,OIL,4646.86,Thousand Tons-CO2
+2008,December,NATURAL GAS,195.3,Thousand Tons-CO2
+2009,January,OIL,4848.9,Thousand Tons-CO2
+2009,January,NATURAL GAS,210.61,Thousand Tons-CO2
+2009,February,OIL,4116.44,Thousand Tons-CO2
+2009,February,NATURAL GAS,216.08,Thousand Tons-CO2
+2009,March,OIL,4679.24,Thousand Tons-CO2
+2009,March,NATURAL GAS,248.63,Thousand Tons-CO2
+2009,April,OIL,4522.58,Thousand Tons-CO2
+2009,April,NATURAL GAS,219.99,Thousand Tons-CO2
+2009,May,OIL,4710.14,Thousand Tons-CO2
+2009,May,NATURAL GAS,240.95,Thousand Tons-CO2
+2009,June,OIL,4242.91,Thousand Tons-CO2
+2009,June,NATURAL GAS,247.18,Thousand Tons-CO2
+2009,July,OIL,4345.31,Thousand Tons-CO2
+2009,July,NATURAL GAS,257.43,Thousand Tons-CO2
+2009,August,OIL,4282.1,Thousand Tons-CO2
+2009,August,NATURAL GAS,270.24,Thousand Tons-CO2
+2009,September,OIL,4126.75,Thousand Tons-CO2
+2009,September,NATURAL GAS,263.31,Thousand Tons-CO2
+2009,October,OIL,4339.24,Thousand Tons-CO2
+2009,October,NATURAL GAS,278.27,Thousand Tons-CO2
+2009,November,OIL,4277.04,Thousand Tons-CO2
+2009,November,NATURAL GAS,277.98,Thousand Tons-CO2
+2009,December,OIL,4874.15,Thousand Tons-CO2
+2009,December,NATURAL GAS,302.32,Thousand Tons-CO2
+2010,January,OIL,4498.69,Thousand Tons-CO2
+2010,January,NATURAL GAS,278.39,Thousand Tons-CO2
+2010,February,OIL,4419.97,Thousand Tons-CO2
+2010,February,NATURAL GAS,279.44,Thousand Tons-CO2
+2010,March,OIL,4775.24,Thousand Tons-CO2
+2010,March,NATURAL GAS,316.94,Thousand Tons-CO2
+2010,April,OIL,4445.46,Thousand Tons-CO2
+2010,April,NATURAL GAS,287.73,Thousand Tons-CO2
+2010,May,OIL,4513.58,Thousand Tons-CO2
+2010,May,NATURAL GAS,301.5,Thousand Tons-CO2
+2010,June,OIL,4400.5,Thousand Tons-CO2
+2010,June,NATURAL GAS,315.54,Thousand Tons-CO2
+2010,July,OIL,4457.18,Thousand Tons-CO2
+2010,July,NATURAL GAS,323.73,Thousand Tons-CO2
+2010,August,OIL,4276.07,Thousand Tons-CO2
+2010,August,NATURAL GAS,325.82,Thousand Tons-CO2
+2010,September,OIL,4195.78,Thousand Tons-CO2
+2010,September,NATURAL GAS,331.59,Thousand Tons-CO2
+2010,October,OIL,4273.77,Thousand Tons-CO2
+2010,October,NATURAL GAS,348.15,Thousand Tons-CO2
+2010,November,OIL,4576.5,Thousand Tons-CO2
+2010,November,NATURAL GAS,357.06,Thousand Tons-CO2
+2010,December,OIL,4803.72,Thousand Tons-CO2
+2010,December,NATURAL GAS,379.4,Thousand Tons-CO2
+2011,January,OIL,4618.5,Thousand Tons-CO2
+2011,January,NATURAL GAS,374.48,Thousand Tons-CO2
+2011,February,OIL,4290.95,Thousand Tons-CO2
+2011,February,NATURAL GAS,374.76,Thousand Tons-CO2
+2011,March,OIL,4792.54,Thousand Tons-CO2
+2011,March,NATURAL GAS,416.51,Thousand Tons-CO2
+2011,April,OIL,4658.34,Thousand Tons-CO2
+2011,April,NATURAL GAS,376.23,Thousand Tons-CO2
+2011,May,OIL,4717.23,Thousand Tons-CO2
+2011,May,NATURAL GAS,429.04,Thousand Tons-CO2
+2011,June,OIL,4579.4,Thousand Tons-CO2
+2011,June,NATURAL GAS,429.55,Thousand Tons-CO2
+2011,July,OIL,4382.93,Thousand Tons-CO2
+2011,July,NATURAL GAS,436.78,Thousand Tons-CO2
+2011,August,OIL,4455.1,Thousand Tons-CO2
+2011,August,NATURAL GAS,446.97,Thousand Tons-CO2
+2011,September,OIL,4317.14,Thousand Tons-CO2
+2011,September,NATURAL GAS,433.51,Thousand Tons-CO2
+2011,October,OIL,4243.6,Thousand Tons-CO2
+2011,October,NATURAL GAS,399.86,Thousand Tons-CO2
+2011,November,OIL,4318.44,Thousand Tons-CO2
+2011,November,NATURAL GAS,344.33,Thousand Tons-CO2
+2011,December,OIL,4966.34,Thousand Tons-CO2
+2011,December,NATURAL GAS,438.94,Thousand Tons-CO2
+2012,January,OIL,4570.87,Thousand Tons-CO2
+2012,January,NATURAL GAS,481.9,Thousand Tons-CO2
+2012,February,OIL,4518.19,Thousand Tons-CO2
+2012,February,NATURAL GAS,466.44,Thousand Tons-CO2
+2012,March,OIL,4834.59,Thousand Tons-CO2
+2012,March,NATURAL GAS,503.18,Thousand Tons-CO2
+2012,April,OIL,4548.07,Thousand Tons-CO2
+2012,April,NATURAL GAS,453.7,Thousand Tons-CO2
+2012,May,OIL,4750.7,Thousand Tons-CO2
+2012,May,NATURAL GAS,502.23,Thousand Tons-CO2
+2012,June,OIL,4552.42,Thousand Tons-CO2
+2012,June,NATURAL GAS,489.2,Thousand Tons-CO2
+2012,July,OIL,4470.29,Thousand Tons-CO2
+2012,July,NATURAL GAS,490.06,Thousand Tons-CO2
+2012,August,OIL,4491.86,Thousand Tons-CO2
+2012,August,NATURAL GAS,510.11,Thousand Tons-CO2
+2012,September,OIL,4230.35,Thousand Tons-CO2
+2012,September,NATURAL GAS,496.3,Thousand Tons-CO2
+2012,October,OIL,4529.24,Thousand Tons-CO2
+2012,October,NATURAL GAS,513.58,Thousand Tons-CO2
+2012,November,OIL,4714.37,Thousand Tons-CO2
+2012,November,NATURAL GAS,509.82,Thousand Tons-CO2
+2012,December,OIL,4968.19,Thousand Tons-CO2
+2012,December,NATURAL GAS,502.57,Thousand Tons-CO2
+2013,January,OIL,4511.52,Thousand Tons-CO2
+2013,January,NATURAL GAS,522.91,Thousand Tons-CO2
+2013,February,OIL,4118.24,Thousand Tons-CO2
+2013,February,NATURAL GAS,504.82,Thousand Tons-CO2
+2013,March,OIL,4644.27,Thousand Tons-CO2
+2013,March,NATURAL GAS,558.63,Thousand Tons-CO2
+2013,April,OIL,4371.16,Thousand Tons-CO2
+2013,April,NATURAL GAS,508.08,Thousand Tons-CO2
+2013,May,OIL,4624.31,Thousand Tons-CO2
+2013,May,NATURAL GAS,567.32,Thousand Tons-CO2
+2013,June,OIL,4203.55,Thousand Tons-CO2
+2013,June,NATURAL GAS,540.9,Thousand Tons-CO2
+2013,July,OIL,4284.12,Thousand Tons-CO2
+2013,July,NATURAL GAS,554.46,Thousand Tons-CO2
+2013,August,OIL,4186.02,Thousand Tons-CO2
+2013,August,NATURAL GAS,572.75,Thousand Tons-CO2
+2013,September,OIL,3876.44,Thousand Tons-CO2
+2013,September,NATURAL GAS,542.19,Thousand Tons-CO2
+2013,October,OIL,4175.08,Thousand Tons-CO2
+2013,October,NATURAL GAS,556.98,Thousand Tons-CO2
+2013,November,OIL,4302.4,Thousand Tons-CO2
+2013,November,NATURAL GAS,548.32,Thousand Tons-CO2
+2013,December,OIL,4479.17,Thousand Tons-CO2
+2013,December,NATURAL GAS,547.13,Thousand Tons-CO2
+2014,January,OIL,4142.57,Thousand Tons-CO2
+2014,January,NATURAL GAS,548.37,Thousand Tons-CO2
+2014,February,OIL,3834.03,Thousand Tons-CO2
+2014,February,NATURAL GAS,531.25,Thousand Tons-CO2
+2014,March,OIL,4245.63,Thousand Tons-CO2
+2014,March,NATURAL GAS,590.44,Thousand Tons-CO2
+2014,April,OIL,4119.44,Thousand Tons-CO2
+2014,April,NATURAL GAS,528.06,Thousand Tons-CO2
+2014,May,OIL,4271.01,Thousand Tons-CO2
+2014,May,NATURAL GAS,574.75,Thousand Tons-CO2
+2014,June,OIL,3904.76,Thousand Tons-CO2
+2014,June,NATURAL GAS,553.63,Thousand Tons-CO2
+2014,July,OIL,4013.57,Thousand Tons-CO2
+2014,July,NATURAL GAS,575.65,Thousand Tons-CO2
+2014,August,OIL,3963.93,Thousand Tons-CO2
+2014,August,NATURAL GAS,575.38,Thousand Tons-CO2
+2014,September,OIL,3846.65,Thousand Tons-CO2
+2014,September,NATURAL GAS,559.14,Thousand Tons-CO2
+2014,October,OIL,3975.45,Thousand Tons-CO2
+2014,October,NATURAL GAS,571.17,Thousand Tons-CO2
+2014,November,OIL,4022.21,Thousand Tons-CO2
+2014,November,NATURAL GAS,556.09,Thousand Tons-CO2
+2014,December,OIL,4442.9,Thousand Tons-CO2
+2014,December,NATURAL GAS,565.01,Thousand Tons-CO2
+2015,January,OIL,4584.4,Thousand Tons-CO2
+2015,January,NATURAL GAS,548.17,Thousand Tons-CO2
+2015,February,OIL,4312.25,Thousand Tons-CO2
+2015,February,NATURAL GAS,520.21,Thousand Tons-CO2
+2015,March,OIL,4695.88,Thousand Tons-CO2
+2015,March,NATURAL GAS,594.63,Thousand Tons-CO2
+2015,April,OIL,4578.69,Thousand Tons-CO2
+2015,April,NATURAL GAS,521.56,Thousand Tons-CO2
+2015,May,OIL,4688.74,Thousand Tons-CO2
+2015,May,NATURAL GAS,570.51,Thousand Tons-CO2
+2015,June,OIL,4455.24,Thousand Tons-CO2
+2015,June,NATURAL GAS,545.33,Thousand Tons-CO2
+2015,July,OIL,4562.78,Thousand Tons-CO2
+2015,July,NATURAL GAS,561.12,Thousand Tons-CO2
+2015,August,OIL,4516.81,Thousand Tons-CO2
+2015,August,NATURAL GAS,537.42,Thousand Tons-CO2
+2015,September,OIL,4270.98,Thousand Tons-CO2
+2015,September,NATURAL GAS,507.76,Thousand Tons-CO2
+2015,October,OIL,4512.18,Thousand Tons-CO2
+2015,October,NATURAL GAS,511.89,Thousand Tons-CO2
+2015,November,OIL,4604.77,Thousand Tons-CO2
+2015,November,NATURAL GAS,511.26,Thousand Tons-CO2
+2015,December,OIL,5043.6,Thousand Tons-CO2
+2015,December,NATURAL GAS,525.48,Thousand Tons-CO2
+2016,January,OIL,5047.27,Thousand Tons-CO2
+2016,January,NATURAL GAS,509.32,Thousand Tons-CO2
+2016,February,OIL,4988.42,Thousand Tons-CO2
+2016,February,NATURAL GAS,499.67,Thousand Tons-CO2
+2016,March,OIL,5260.33,Thousand Tons-CO2
+2016,March,NATURAL GAS,549.52,Thousand Tons-CO2
+2016,April,OIL,5047.25,Thousand Tons-CO2
+2016,April,NATURAL GAS,478.05,Thousand Tons-CO2
+2016,May,OIL,5204.13,Thousand Tons-CO2
+2016,May,NATURAL GAS,518.2,Thousand Tons-CO2
+2016,June,OIL,4889.38,Thousand Tons-CO2
+2016,June,NATURAL GAS,485.94,Thousand Tons-CO2
+2016,July,OIL,4874.38,Thousand Tons-CO2
+2016,July,NATURAL GAS,482.04,Thousand Tons-CO2
+2016,August,OIL,5019.98,Thousand Tons-CO2
+2016,August,NATURAL GAS,489.76,Thousand Tons-CO2
+2016,September,OIL,4760.98,Thousand Tons-CO2
+2016,September,NATURAL GAS,466.28,Thousand Tons-CO2
+2016,October,OIL,4752.54,Thousand Tons-CO2
+2016,October,NATURAL GAS,474.21,Thousand Tons-CO2
+2016,November,OIL,5057.71,Thousand Tons-CO2
+2016,November,NATURAL GAS,462.63,Thousand Tons-CO2
+2016,December,OIL,5403.9,Thousand Tons-CO2
+2016,December,NATURAL GAS,508.47,Thousand Tons-CO2
+2017,January,OIL,5095.87,Thousand Tons-CO2
+2017,January,NATURAL GAS,439.42,Thousand Tons-CO2
+2017,February,OIL,4923.75,Thousand Tons-CO2
+2017,February,NATURAL GAS,419.83,Thousand Tons-CO2
+2017,March,OIL,5535.28,Thousand Tons-CO2
+2017,March,NATURAL GAS,476.22,Thousand Tons-CO2
+2017,April,OIL,5066.98,Thousand Tons-CO2
+2017,April,NATURAL GAS,404.29,Thousand Tons-CO2
+2017,May,OIL,5324.58,Thousand Tons-CO2
+2017,May,NATURAL GAS,444.17,Thousand Tons-CO2
+2017,June,OIL,5225.74,Thousand Tons-CO2
+2017,June,NATURAL GAS,425.62,Thousand Tons-CO2
+2017,July,OIL,5090.07,Thousand Tons-CO2
+2017,July,NATURAL GAS,431.96,Thousand Tons-CO2
+2017,August,OIL,5151.75,Thousand Tons-CO2
+2017,August,NATURAL GAS,440.17,Thousand Tons-CO2
+2017,September,OIL,5010.25,Thousand Tons-CO2
+2017,September,NATURAL GAS,424.55,Thousand Tons-CO2
+2017,October,OIL,4978.2,Thousand Tons-CO2
+2017,October,NATURAL GAS,409.64,Thousand Tons-CO2
+2017,November,OIL,5151.76,Thousand Tons-CO2
+2017,November,NATURAL GAS,420.78,Thousand Tons-CO2
+2017,December,OIL,5542.74,Thousand Tons-CO2
+2017,December,NATURAL GAS,420.57,Thousand Tons-CO2
+2018,January,OIL,5377.93,Thousand Tons-CO2
+2018,January,NATURAL GAS,406.04,Thousand Tons-CO2
+2018,February,OIL,5137.79,Thousand Tons-CO2
+2018,February,NATURAL GAS,387.88,Thousand Tons-CO2
+2018,March,OIL,5692.34,Thousand Tons-CO2
+2018,March,NATURAL GAS,430.13,Thousand Tons-CO2
+2018,April,OIL,5319.07,Thousand Tons-CO2
+2018,April,NATURAL GAS,363.15,Thousand Tons-CO2
+2018,May,OIL,5331.41,Thousand Tons-CO2
+2018,May,NATURAL GAS,405.34,Thousand Tons-CO2
+2018,June,OIL,5182.16,Thousand Tons-CO2
+2018,June,NATURAL GAS,395.05,Thousand Tons-CO2
+2018,July,OIL,5074.5,Thousand Tons-CO2
+2018,July,NATURAL GAS,388.96,Thousand Tons-CO2
+2018,August,OIL,5213.35,Thousand Tons-CO2
+2018,August,NATURAL GAS,396.22,Thousand Tons-CO2
+2018,September,OIL,4818.57,Thousand Tons-CO2
+2018,September,NATURAL GAS,369.8,Thousand Tons-CO2
+2018,October,OIL,5131.64,Thousand Tons-CO2
+2018,October,NATURAL GAS,377.77,Thousand Tons-CO2
+2018,November,OIL,5312.54,Thousand Tons-CO2
+2018,November,NATURAL GAS,376.03,Thousand Tons-CO2
+2018,December,OIL,5671.55,Thousand Tons-CO2
+2018,December,NATURAL GAS,369.17,Thousand Tons-CO2
+2019,January,OIL,6247.87,Thousand Tons-CO2
+2019,January,NATURAL GAS,357.91,Thousand Tons-CO2
+2019,February,OIL,5780.31,Thousand Tons-CO2
+2019,February,NATURAL GAS,338.77,Thousand Tons-CO2
+2019,March,OIL,6424.86,Thousand Tons-CO2
+2019,March,NATURAL GAS,382.08,Thousand Tons-CO2
+2019,April,OIL,6092,Thousand Tons-CO2
+2019,April,NATURAL GAS,342.02,Thousand Tons-CO2
+2019,May,OIL,6208.97,Thousand Tons-CO2
+2019,May,NATURAL GAS,365.74,Thousand Tons-CO2
+2019,June,OIL,5937.6,Thousand Tons-CO2
+2019,June,NATURAL GAS,343.37,Thousand Tons-CO2
+2019,July,OIL,6039.26,Thousand Tons-CO2
+2019,July,NATURAL GAS,345.99,Thousand Tons-CO2
+2019,August,OIL,5914.75,Thousand Tons-CO2
+2019,August,NATURAL GAS,345.23,Thousand Tons-CO2
+2019,September,OIL,5544.99,Thousand Tons-CO2
+2019,September,NATURAL GAS,314.9,Thousand Tons-CO2
+2019,October,OIL,6018.19,Thousand Tons-CO2
+2019,October,NATURAL GAS,334.43,Thousand Tons-CO2
+2019,November,OIL,6059.41,Thousand Tons-CO2
+2019,November,NATURAL GAS,323.27,Thousand Tons-CO2
+2019,December,OIL,6289.01,Thousand Tons-CO2
+2019,December,NATURAL GAS,320.76,Thousand Tons-CO2
+2020,January,OIL,6438.6,Thousand Tons-CO2
+2020,January,NATURAL GAS,318.68,Thousand Tons-CO2
+2020,February,OIL,6032.36,Thousand Tons-CO2
+2020,February,NATURAL GAS,300.43,Thousand Tons-CO2
+2020,March,OIL,6190.14,Thousand Tons-CO2
+2020,March,NATURAL GAS,285.88,Thousand Tons-CO2
+2020,April,OIL,5204.81,Thousand Tons-CO2
+2020,April,NATURAL GAS,186.83,Thousand Tons-CO2
+2020,May,OIL,5794.8,Thousand Tons-CO2
+2020,May,NATURAL GAS,211.87,Thousand Tons-CO2
+2020,June,OIL,5742.71,Thousand Tons-CO2
+2020,June,NATURAL GAS,229.87,Thousand Tons-CO2
+2020,July,OIL,6131.97,Thousand Tons-CO2
+2020,July,NATURAL GAS,165.12,Thousand Tons-CO2
+2020,August,OIL,6013.98,Thousand Tons-CO2
+2020,August,NATURAL GAS,260.16,Thousand Tons-CO2
+2020,September,OIL,5956.72,Thousand Tons-CO2
+2020,September,NATURAL GAS,250.56,Thousand Tons-CO2
+2020,October,OIL,5719.96,Thousand Tons-CO2
+2020,October,NATURAL GAS,246.52,Thousand Tons-CO2
+2020,November,OIL,6105.08,Thousand Tons-CO2
+2020,November,NATURAL GAS,252.62,Thousand Tons-CO2
+2020,December,OIL,6295.98,Thousand Tons-CO2
+2020,December,NATURAL GAS,249.98,Thousand Tons-CO2
+2021,January,OIL,5422.86,Thousand Tons-CO2
+2021,January,NATURAL GAS,212.23,Thousand Tons-CO2
+2021,February,OIL,5633.43,Thousand Tons-CO2
+2021,February,NATURAL GAS,140.67,Thousand Tons-CO2
+2021,March,OIL,6428.18,Thousand Tons-CO2
+2021,March,NATURAL GAS,265.03,Thousand Tons-CO2
+2021,April,OIL,5671.98,Thousand Tons-CO2
+2021,April,NATURAL GAS,211.2,Thousand Tons-CO2
+2021,May,OIL,5339.74,Thousand Tons-CO2
+2021,May,NATURAL GAS,205.9,Thousand Tons-CO2
+2021,June,OIL,5367.38,Thousand Tons-CO2
+2021,June,NATURAL GAS,208.89,Thousand Tons-CO2
+2021,July,OIL,4871.88,Thousand Tons-CO2
+2021,July,NATURAL GAS,181.44,Thousand Tons-CO2
+2021,August,OIL,4780.19,Thousand Tons-CO2
+2021,August,NATURAL GAS,172.46,Thousand Tons-CO2
+2021,September,OIL,4851.99,Thousand Tons-CO2
+2021,September,NATURAL GAS,177.34,Thousand Tons-CO2
+2021,October,OIL,5384.33,Thousand Tons-CO2
+2021,October,NATURAL GAS,194.6,Thousand Tons-CO2
+2021,November,OIL,6112.25,Thousand Tons-CO2
+2021,November,NATURAL GAS,203.77,Thousand Tons-CO2
+2021,December,OIL,6803.34,Thousand Tons-CO2
+2021,December,NATURAL GAS,215.13,Thousand Tons-CO2
+2022,January,OIL,6689.91,Thousand Tons-CO2
+2022,January,NATURAL GAS,206.4,Thousand Tons-CO2
+2022,February,OIL,6136.29,Thousand Tons-CO2
+2022,February,NATURAL GAS,198.61,Thousand Tons-CO2
+2022,March,OIL,6480.01,Thousand Tons-CO2
+2022,March,NATURAL GAS,222.15,Thousand Tons-CO2
+2022,April,OIL,6712.67,Thousand Tons-CO2
+2022,April,NATURAL GAS,199.68,Thousand Tons-CO2
+2022,May,OIL,6326.18,Thousand Tons-CO2
+2022,May,NATURAL GAS,226.24,Thousand Tons-CO2
+2022,June,OIL,6172.97,Thousand Tons-CO2
+2022,June,NATURAL GAS,227.73,Thousand Tons-CO2
+2022,July,OIL,5948.11,Thousand Tons-CO2
+2022,July,NATURAL GAS,222.77,Thousand Tons-CO2
+2022,August,OIL,6276.48,Thousand Tons-CO2
+2022,August,NATURAL GAS,225.31,Thousand Tons-CO2
+2022,September,OIL,6147.11,Thousand Tons-CO2
+2022,September,NATURAL GAS,213.04,Thousand Tons-CO2
+2022,October,OIL,6354.09,Thousand Tons-CO2
+2022,October,NATURAL GAS,217.11,Thousand Tons-CO2
+2022,November,OIL,6654.37,Thousand Tons-CO2
+2022,November,NATURAL GAS,213.36,Thousand Tons-CO2
+2022,December,OIL,7076.27,Thousand Tons-CO2
+2022,December,NATURAL GAS,225.69,Thousand Tons-CO2
+2023,January,OIL,7026.1,Thousand Tons-CO2
+2023,January,NATURAL GAS,225.07,Thousand Tons-CO2
+2023,February,OIL,6286.52,Thousand Tons-CO2
+2023,February,NATURAL GAS,210.1,Thousand Tons-CO2
+2023,March,OIL,6831.2,Thousand Tons-CO2
+2023,March,NATURAL GAS,235.72,Thousand Tons-CO2
+2023,April,OIL,6511.56,Thousand Tons-CO2
+2023,April,NATURAL GAS,207.99,Thousand Tons-CO2
+2023,May,OIL,6737.01,Thousand Tons-CO2
+2023,May,NATURAL GAS,224.05,Thousand Tons-CO2
+2023,June,OIL,6348.63,Thousand Tons-CO2
+2023,June,NATURAL GAS,215.95,Thousand Tons-CO2
+2023,July,OIL,6402.4,Thousand Tons-CO2
+2023,July,NATURAL GAS,213.92,Thousand Tons-CO2
+2023,August,OIL,6272.21,Thousand Tons-CO2
+2023,August,NATURAL GAS,213.36,Thousand Tons-CO2
+2023,September,OIL,5993.51,Thousand Tons-CO2
+2023,September,NATURAL GAS,199.01,Thousand Tons-CO2
+2023,October,OIL,6232.17,Thousand Tons-CO2
+2023,October,NATURAL GAS,195.64,Thousand Tons-CO2
+2023,November,OIL,6700.83,Thousand Tons-CO2
+2023,November,NATURAL GAS,196.61,Thousand Tons-CO2
+2023,December,OIL,6916.94,Thousand Tons-CO2
+2023,December,NATURAL GAS,195.1,Thousand Tons-CO2
+2024,January,OIL,6854.82,Thousand Tons-CO2
+2024,January,NATURAL GAS,189.49,Thousand Tons-CO2
+2024,February,OIL,6525.03,Thousand Tons-CO2
+2024,February,NATURAL GAS,182.55,Thousand Tons-CO2
+2024,March,OIL,7035.62,Thousand Tons-CO2
+2024,March,NATURAL GAS,194.42,Thousand Tons-CO2
+2024,April,OIL,6681.07,Thousand Tons-CO2
+2024,April,NATURAL GAS,174.53,Thousand Tons-CO2
+2024,May,OIL,6775.84,Thousand Tons-CO2
+2024,May,NATURAL GAS,184.72,Thousand Tons-CO2
+2024,June,OIL,6381.48,Thousand Tons-CO2
+2024,June,NATURAL GAS,177.39,Thousand Tons-CO2
+2024,July,OIL,6580.37,Thousand Tons-CO2
+2024,July,NATURAL GAS,174.29,Thousand Tons-CO2
+2024,August,OIL,6657.71,Thousand Tons-CO2
+2024,August,NATURAL GAS,176.19,Thousand Tons-CO2
+2024,September,OIL,6117.48,Thousand Tons-CO2
+2024,September,NATURAL GAS,164.66,Thousand Tons-CO2
+2024,October,OIL,6585.28,Thousand Tons-CO2
+2024,October,NATURAL GAS,167.35,Thousand Tons-CO2
+2024,November,OIL,6864.76,Thousand Tons-CO2
+2024,November,NATURAL GAS,168.4,Thousand Tons-CO2
+2024,December,OIL,7041.19,Thousand Tons-CO2
+2024,December,NATURAL GAS,166.06,Thousand Tons-CO2
+2025,January,OIL,6974.87,Thousand Tons-CO2
+2025,January,NATURAL GAS,160.42,Thousand Tons-CO2
+2025,February,OIL,6435.04,Thousand Tons-CO2
+2025,February,NATURAL GAS,149.95,Thousand Tons-CO2
+2025,March,OIL,6949.1,Thousand Tons-CO2
+2025,March,NATURAL GAS,165.22,Thousand Tons-CO2
+2025,April,OIL,6822.44,Thousand Tons-CO2
+2025,April,NATURAL GAS,144.82,Thousand Tons-CO2
+2025,May,OIL,6822.35,Thousand Tons-CO2
+2025,May,NATURAL GAS,151.53,Thousand Tons-CO2
+2025,June,OIL,6462.52,Thousand Tons-CO2
+2025,June,NATURAL GAS,149.81,Thousand Tons-CO2
+2025,July,OIL,6466.81,Thousand Tons-CO2
+2025,July,NATURAL GAS,148.29,Thousand Tons-CO2
+2025,August,OIL,6468.75,Thousand Tons-CO2
+2025,August,NATURAL GAS,146.33,Thousand Tons-CO2
+2025,September,OIL,6032.13,Thousand Tons-CO2
+2025,September,NATURAL GAS,136.23,Thousand Tons-CO2
+2025,October,OIL,6442.68,Thousand Tons-CO2
+2025,October,NATURAL GAS,139.86,Thousand Tons-CO2
+2025,November,OIL,6546.95,Thousand Tons-CO2
+2025,November,NATURAL GAS,135.37,Thousand Tons-CO2
+2025,December,OIL,7104.33,Thousand Tons-CO2
+2025,December,NATURAL GAS,138.68,Thousand Tons-CO2
+2026,January,OIL,7040.9,Thousand Tons-CO2
+2026,January,NATURAL GAS,132.88,Thousand Tons-CO2
+2026,February,OIL,6487.79,Thousand Tons-CO2
+2026,February,NATURAL GAS,128.4,Thousand Tons-CO2
+2026,March,OIL,7872.71,Thousand Tons-CO2
+2026,March,NATURAL GAS,144.88,Thousand Tons-CO2
+2026,April,OIL,5811.99,Thousand Tons-CO2
+2026,April,NATURAL GAS,131.44,Thousand Tons-CO2
+2026,May,OIL,6399.73,Thousand Tons-CO2
+2026,May,NATURAL GAS,138.22,Thousand Tons-CO2
+2026,June,OIL,6214.41,Thousand Tons-CO2
+2026,June,NATURAL GAS,130.48,Thousand Tons-CO2
+2026,July,OIL,6459.09,Thousand Tons-CO2
+2026,July,NATURAL GAS,130.93,Thousand Tons-CO2
+2026,August,OIL,6356.97,Thousand Tons-CO2
+2026,August,NATURAL GAS,127.46,Thousand Tons-CO2
