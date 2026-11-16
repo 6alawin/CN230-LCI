@@ -1,6 +1,7 @@
 # CN230 LCI Semantic Search
 
 เว็บค้นหาข้อมูล LCI ตามความหมายของคำค้น ด้วย Gemini Embeddings และ pgvector บน Render PostgreSQL
+https://cn230-lci.onrender.com/
 
 ## สิ่งที่เตรียมไว้
 
