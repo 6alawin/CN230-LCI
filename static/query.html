@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CN230 LCI — Query</title>
+  <style>
+    :root { font-family: Inter, "Segoe UI", Tahoma, sans-serif; color: #e7edf6; background: #0b1220; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(ellipse at 80% 0, #173457, transparent 45%), #0b1220; }
+    .layout { min-height: 100vh; display: grid; grid-template-columns: 248px minmax(0,1fr); }
+    aside { padding: 30px 18px; border-right: 1px solid #263346; background: #0b1220; }
+    .brand { padding: 0 12px 30px; font-weight: 750; }
+    .brand small { display: block; margin-top: 5px; color: #91a0b6; font-weight: 400; }
+    .nav { display: block; padding: 12px; border-radius: 10px; color: #a9b8cb; text-decoration: none; }
+    .nav.active { color: #e8fffb; background: #102c34; box-shadow: inset 2px 0 #37d6c0; }
+    main { max-width: 1400px; width: 100%; padding: 38px clamp(18px,5vw,72px) 70px; margin: auto; }
+    .eyebrow { color: #37d6c0; font-size: 11px; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { font-size: clamp(30px,4vw,45px); margin: 9px 0; }
+    p { color: #a2b0c3; line-height: 1.6; }
+    .panel { margin-top: 28px; border: 1px solid #2a3a4c; border-radius: 16px; padding: 20px; background: #111b2c; }
+    label { display: block; margin-bottom: 8px; color: #b9c9db; font-size: 13px; }
+    select, textarea { width: 100%; color: #edf4ff; background: #0c1524; border: 1px solid #324158; border-radius: 9px; font: inherit; }
+    select { max-width: 220px; padding: 11px; }
+    textarea { display: block; margin-top: 18px; min-height: 185px; padding: 16px; resize: vertical; font: 14px/1.55 Consolas, "Courier New", monospace; }
+    textarea:focus, select:focus { outline: 2px solid #37d6c0; }
+    .actions { display: flex; align-items: center; gap: 15px; margin-top: 16px; }
+    button { border: 0; border-radius: 9px; padding: 12px 22px; color: #06211f; background: #52d6ca; font: inherit; font-weight: 700; cursor: pointer; }
+    button:disabled { opacity: .6; cursor: wait; }
+    #status { color: #a2b0c3; font-size: 13px; }
+    .error { color: #ff9eaa !important; }
+    .table-wrap { overflow: auto; max-height: 600px; margin-top: 16px; border: 1px solid #2a3a4c; border-radius: 11px; }
+    table { border-collapse: collapse; min-width: 100%; font-size: 13px; }
+    th, td { padding: 11px 14px; border-bottom: 1px solid #273548; text-align: left; white-space: pre-wrap; vertical-align: top; }
+    th { position: sticky; top: 0; background: #1b2d40; color: #aeece3; }
+    td { max-width: 430px; overflow-wrap: anywhere; }
+    tr:nth-child(even) { background: #142135; }
+    @media(max-width:750px) { .layout { display: block; } aside { display: flex; align-items: center; gap: 12px; padding: 12px; border-right: 0; border-bottom: 1px solid #263346; } .brand { padding: 0; margin-right: auto; } .brand small { display: none; } main { padding-top: 25px; } }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside><div class="brand">CN230 LCI<small>Query Workspace</small></div><a class="nav" href="/">ภาพรวม</a><a class="nav active" href="/query">Query</a></aside>
+    <main>
+      <div class="eyebrow">Explore the verified LCI data</div>
+      <h1>Query ข้อมูลเอง</h1>
+      <p>พิมพ์ SQL เพื่ออ่านข้อมูล PostgreSQL หรือเลือก Cypher เมื่อใช้เว็บในเครื่องที่เชื่อม Neo4j ผลลัพธ์แสดงสูงสุด 100 แถว</p>
+      <section class="panel">
+        <form id="query-form">
+          <label for="language">ภาษา Query</label>
+          <select id="language"><option value="sql">SQL · PostgreSQL</option><option value="cypher">Cypher · Neo4j ในเครื่อง</option></select>
+          <label for="statement" style="margin-top:18px">คำสั่ง</label>
+          <textarea id="statement" spellcheck="false" required maxlength="5000">SELECT s.src_code, COUNT(*) AS exchanges
+FROM lci_exchange e
+JOIN source s ON s.source_id = e.source_id
+GROUP BY s.src_code
+ORDER BY s.src_code;</textarea>
+          <div class="actions"><button id="run" type="submit">รัน Query</button><span id="status" role="status" aria-live="polite">พร้อมใช้งาน</span></div>
+        </form>
+      </section>
+      <section class="panel" aria-label="ผลลัพธ์ Query"><h2>ผลลัพธ์</h2><div class="table-wrap"><table id="result-table"></table></div></section>
+    </main>
+  </div>
+  <script>
+    const language = document.querySelector('#language');
+    const statement = document.querySelector('#statement');
+    const status = document.querySelector('#status');
+    const table = document.querySelector('#result-table');
+    const run = document.querySelector('#run');
+    const examples = {
+      sql: 'SELECT s.src_code, COUNT(*) AS exchanges\nFROM lci_exchange e\nJOIN source s ON s.source_id = e.source_id\nGROUP BY s.src_code\nORDER BY s.src_code;',
+      cypher: 'MATCH (e:Exchange)-[:REPORTED_BY]->(s:Source)\nRETURN s.code AS source, count(e) AS exchanges\nORDER BY source'
+    };
+    language.addEventListener('change', () => { statement.value = examples[language.value]; table.replaceChildren(); status.textContent = 'พร้อมใช้งาน'; });
+    document.querySelector('#query-form').addEventListener('submit', async event => {
+      event.preventDefault();
+      run.disabled = true;
+      status.classList.remove('error');
+      status.textContent = 'กำลังรัน Query…';
+      table.replaceChildren();
+      try {
+        const response = await fetch('/api/query', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({language:language.value, query:statement.value}) });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.detail || 'รัน Query ไม่สำเร็จ');
+        const head = document.createElement('thead');
+        const heading = document.createElement('tr');
+        for (const column of result.columns) { const cell = document.createElement('th'); cell.textContent = column; heading.append(cell); }
+        head.append(heading);
+        const body = document.createElement('tbody');
+        for (const row of result.rows) { const tr = document.createElement('tr'); for (const value of row) { const cell = document.createElement('td'); cell.textContent = value ?? 'NULL'; tr.append(cell); } body.append(tr); }
+        table.append(head, body);
+        status.textContent = `${result.rows.length} แถว${result.truncated ? ' · แสดงเพียง 100 แถวแรก' : ''}`;
+      } catch (error) { status.classList.add('error'); status.textContent = error.message; }
+      finally { run.disabled = false; }
+    });
+  </script>
+</body>
+</html>

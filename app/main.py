@@ -12,12 +12,36 @@ class SearchRequest(BaseModel):
     source_code: str | None = Field(default=None, pattern=r"^SRC-\d{2}$")
 
 
+class QueryRequest(BaseModel):
+    language: str
+    query: str = Field(min_length=1, max_length=5000)
+
+
 app = FastAPI(title="CN230 LCI Semantic Search", version="0.1.0")
 
 
 @app.get("/")
 def home():
     return FileResponse("static/index.html")
+
+
+@app.get("/query")
+def query_page():
+    return FileResponse("static/query.html")
+
+
+@app.post("/api/query")
+def run_query(request: QueryRequest):
+    if request.language != "sql":
+        raise HTTPException(status_code=400, detail="Cypher พร้อมใช้งานบนเว็บในเครื่องที่เชื่อม Neo4j")
+    from app.query_workbench import run_sql
+    try:
+        settings = get_settings()
+        return run_sql(settings.database_url, request.query, settings.cloud_snapshot_schema)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    except psycopg.Error as exc:
+        raise HTTPException(status_code=400, detail="คำสั่ง SQL ไม่สำเร็จ กรุณาตรวจชื่อตารางและคอลัมน์") from exc
 
 
 @app.get("/api/health")
