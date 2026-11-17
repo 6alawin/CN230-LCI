@@ -15,6 +15,9 @@ class PageTests(unittest.TestCase):
                 response = self.client.get(path)
                 self.assertEqual(response.status_code, 200)
                 self.assertIn(marker, response.text)
+                self.assertIn('id="workspace-sidebar"', response.text)
+                self.assertIn('src="/assets/workspace.js"', response.text)
+                self.assertIn('href="/assets/workspace.css"', response.text)
                 for link in ('href="/"', 'href="/search"', 'href="/query"'):
                     self.assertIn(link, response.text)
         self.assertNotIn('id="search-form"', self.client.get('/').text)
