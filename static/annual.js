@@ -65,7 +65,7 @@ async function load(year){
  status.textContent='กำลังรวมข้อมูลรายปี';data=null;tooltip.hidden=true;
  document.querySelector('#annual-nodes').replaceChildren();document.querySelector('#annual-evidence').replaceChildren();paint();
  try{
-  const params=new URLSearchParams({fuel});if(year)params.set('year',year);
+  const params=new URLSearchParams({fuel});if(year && /^\d{4}$/.test(String(year)))params.set('year',year);
   const response=await fetch('/api/annual-flow?'+params,{signal:active.signal});if(!response.ok)throw Error();
   data=await response.json();
   yearSelect.replaceChildren(...data.years.map(y=>new Option(y,y)));yearSelect.value=data.year;
