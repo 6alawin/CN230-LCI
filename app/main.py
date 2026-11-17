@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from app.energy_data import make_energy_router
 from app.source_files import router as source_files_router
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -21,6 +22,7 @@ class QueryRequest(BaseModel):
 
 app = FastAPI(title="CN230 LCI Semantic Search", version="0.1.0")
 app.include_router(source_files_router)
+app.include_router(make_energy_router(lambda: (get_settings().database_url, get_settings().cloud_snapshot_schema)))
 app.mount("/assets", StaticFiles(directory="static"), name="assets")
 
 

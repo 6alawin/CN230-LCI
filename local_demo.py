@@ -7,6 +7,7 @@ from urllib.request import Request, urlopen
 import numpy as np
 import psycopg
 from fastapi import FastAPI, HTTPException
+from app.energy_data import make_energy_router
 from app.source_files import router as source_files_router
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -89,6 +90,7 @@ class QueryRequest(BaseModel):
 
 app = FastAPI()
 app.include_router(source_files_router)
+app.include_router(make_energy_router(lambda: (DATABASE_URL, 'public')))
 app.mount("/assets", StaticFiles(directory=ROOT / "static"), name="assets")
 
 @app.get('/')
