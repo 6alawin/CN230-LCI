@@ -125,6 +125,18 @@ def api_query(request: QueryRequest):
 def search_page():
     return FileResponse(ROOT / 'static' / 'search.html')
 
+@app.get("/api/annual-flow")
+def annual_flow(fuel: str = "all", year: int | None = None):
+    from app.annual_flow import read_annual_flow
+
+    try:
+        return read_annual_flow(DATABASE_URL, 'public', fuel, year)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    except psycopg.Error as exc:
+        raise HTTPException(status_code=503, detail="อ่านข้อมูลรายปีไม่ได้") from exc
+
+
 @app.get('/api/flow')
 def flow(fuel: str = 'coal', year: int | None = None, month: int | None = None):
     from app.flow import read_flow
