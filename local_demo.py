@@ -7,6 +7,7 @@ from urllib.request import Request, urlopen
 import numpy as np
 import psycopg
 from fastapi import FastAPI, HTTPException
+from app.source_files import router as source_files_router
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -87,6 +88,7 @@ class QueryRequest(BaseModel):
     query: str
 
 app = FastAPI()
+app.include_router(source_files_router)
 app.mount("/assets", StaticFiles(directory=ROOT / "static"), name="assets")
 
 @app.get('/')

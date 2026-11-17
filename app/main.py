@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from app.source_files import router as source_files_router
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
@@ -19,6 +20,7 @@ class QueryRequest(BaseModel):
 
 
 app = FastAPI(title="CN230 LCI Semantic Search", version="0.1.0")
+app.include_router(source_files_router)
 app.mount("/assets", StaticFiles(directory="static"), name="assets")
 
 

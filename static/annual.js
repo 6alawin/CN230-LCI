@@ -14,7 +14,7 @@ const activities={'ELECTRICITY':'ผลิตไฟฟ้า','ELECTRICITY (EGAT
 let fuel='all',data=null,selected='electricity',controller=null;
 let paused=motion.matches,frame=null,time=0,previous=0;
 function paragraph(text,cls){const p=document.createElement('p');p.textContent=text;if(cls)p.className=cls;return p;}
-function summary(node){return node.summaries.map(x=>`${nf.format(Number(x.amount))} ${x.unit}`).join(' · ');}
+function summary(node){if(node.id==="co2" && node.records.length) return "ดู CO₂ แยกตามสาขาและเชื้อเพลิง";return node.summaries.map(x=>`${nf.format(Number(x.amount))} ${x.unit}`).join(' · ');}
 function selectNode(id){
  selected=id;
  for(const el of document.querySelectorAll('.annual-node'))el.classList.toggle('selected',el.dataset.node===id);
@@ -49,7 +49,7 @@ function renderNodes(){
   const button=document.createElement('button');button.className='annual-node '+node.id+(node.records.length?'':' empty');button.type='button';button.dataset.node=node.id;button.style.top=(positions[node.id]*100)+'%';
   const icon=document.createElement('span');icon.className='iso-block';icon.textContent=icons[node.id];icon.setAttribute('aria-hidden','true');
   const text=document.createElement('span');const label=document.createElement('span');label.className='node-label';label.textContent=node.label;
-  const amount=document.createElement('span');amount.className='node-quantity';amount.textContent=node.records.length?node.summaries.map(x=>`${nf.format(Number(x.amount))} ${x.unit}`).join('\n'):'ไม่มีข้อมูลตามเงื่อนไข';
+  const amount=document.createElement('span');amount.className='node-quantity';amount.textContent=node.records.length?(node.id==='co2'?summary(node):node.summaries.map(x=>`${nf.format(Number(x.amount))} ${x.unit}`).join('\n')):'ไม่มีข้อมูลตามเงื่อนไข';
   const coverage=document.createElement('span');coverage.className='node-completeness';coverage.textContent=node.records.length?(node.complete?'ครบ 12 เดือน':'บางรายการมีข้อมูลไม่ครบปี'):'';
   text.append(label,amount,coverage);button.append(icon,text);
   function activate(){selectNode(node.id);}
@@ -85,7 +85,7 @@ function paint(){
   const path=id==='co2'?[w*.44,h*.44,w*.44,h*.25,w*.43,h*.13,w*.40,h*.13]:[w*.48,h*.52,w*.60,h*.52,w*.61,h*y,w*.72,h*y];
   paths.push({path,color:id==='co2'?'#e2aa82':'#9cc596',available});
  }
- for(const {path,color,available} of paths){ctx.beginPath();curve(path);ctx.strokeStyle=available?color+'77':'#45616b55';ctx.lineWidth=available?2:1;ctx.setLineDash(available?[]:[4,6]);ctx.stroke();ctx.setLineDash([]);if(!available)continue;
+ for(const {path,color,available} of paths){if(!available || !data)continue;ctx.beginPath();curve(path);ctx.strokeStyle=available?color+'77':'#45616b55';ctx.lineWidth=available?2:1;ctx.setLineDash([4,6]);ctx.stroke();ctx.setLineDash([]);if(!available)continue;
   for(let i=0;i<9;i++){const t=(time*.09+i/9)%1,[x,y]=point(t,path);ctx.beginPath();ctx.arc(x,y,2.5,0,Math.PI*2);ctx.fillStyle=color;ctx.shadowColor=color;ctx.shadowBlur=7;ctx.fill();ctx.shadowBlur=0;}
  }
 }
