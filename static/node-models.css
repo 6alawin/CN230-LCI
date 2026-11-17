@@ -1,0 +1,17 @@
+/* แสดงโมเดลมุมคงที่ภายในผังเดิม และใช้โหนดเดิมสำหรับเลือกข้อมูล */
+.annual .iso-block[data-model]{background:none!important;border:0!important;box-shadow:none!important;transform:none!important;overflow:visible}
+.iso-block[data-model] img{width:105px;height:88px;max-width:none;object-fit:contain;pointer-events:none;user-select:none}
+.annual-node .iso-block[data-model]{width:66px;height:59px}
+.annual-node .iso-block[data-model] img{width:88px;height:74px}
+.annual-hub .iso-block[data-model] img{width:180px;height:150px}
+.annual-hub .iso-block[data-model]{width:145px;height:125px;margin-bottom:14px}
+.annual-fuel{left:5%;gap:23px}
+.annual-fuel .iso-block[data-model]{width:80px}
+.annual-node{left:71%;width:29%;gap:13px;padding:6px 8px}
+.annual-node.co2{left:38%;width:34%}
+.annual-scroll{overflow:visible}
+#annual-stage{height:670px;min-width:0}
+.annual-ground{inset:170px 15px 25px;transform:perspective(600px) rotateX(52deg) rotateZ(-5deg)}
+@media(max-width:900px){.annual-fuel{left:1%;gap:2px;font-size:11px}.annual-node{left:65%;width:35%;gap:4px}.annual-node .node-label{font-size:12px}.annual-node .node-quantity{font-size:10px}.annual-node .iso-block[data-model]{width:45px}.annual-hub{left:39%}.annual-node.co2{left:32%;width:53%}}
+@media(max-width:620px){#annual-stage{height:760px}.annual-hub{left:30%;top:49%}.annual-hub .iso-block[data-model] img{width:120px;height:105px}.annual-hub .iso-block[data-model]{width:100px;height:90px}.annual-hub strong{font-size:11px}.annual-hub small{max-width:90px;margin:auto}.annual-fuel{left:0;display:block;text-align:center;width:85px}.annual-fuel .iso-block[data-model]{width:65px;margin:auto}.iso-block[data-model] img{width:83px;height:70px}.fuel-coal{top:20%}.fuel-gas{top:52%}.fuel-oil{top:84%}.annual-node{left:52%;width:48%;padding:4px}.annual-node .iso-block[data-model]{width:35px}.annual-node .iso-block[data-model] img{width:59px;height:54px}.annual-node.co2{left:38%;width:62%}.annual-hub{top:40%}.annual-ground{display:none}.annual-scroll:after{content:none}.left-label{left:0}.right-label{left:52%}.annual-node .node-completeness{font-size:9px}.annual-node .node-quantity{line-height:1.5}#annual-tooltip{left:5%;max-width:90%}}
+
