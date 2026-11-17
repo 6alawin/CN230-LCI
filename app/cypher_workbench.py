@@ -4,16 +4,16 @@ import os
 import re
 
 from neo4j import GraphDatabase, Query, READ_ACCESS
-from neo4j.exceptions import Neo4jError, ServiceUnavailable, SessionExpired
+from neo4j.exceptions import AuthError, Neo4jError, ServiceUnavailable, SessionExpired
 
 
 def run_cypher(statement):
     query = statement.strip().rstrip(";").strip()
     if not re.match(r"^(MATCH|OPTIONAL\s+MATCH|WITH|RETURN|UNWIND)\b", query, re.I):
         raise ValueError("รองรับ Cypher สำหรับอ่านข้อมูล เริ่มด้วย MATCH, WITH, RETURN หรือ UNWIND")
-    uri = os.getenv("NEO4J_URI")
+    uri = os.getenv("NEO4J_URI", "").strip()
     user = os.getenv("NEO4J_USER") or os.getenv("NEO4J_USERNAME", "neo4j")
-    password = os.getenv("NEO4J_PASSWORD")
+    password = os.getenv("NEO4J_PASSWORD", "").strip()
     if not uri or not password:
         raise ValueError("ยังไม่มีค่าการเชื่อม Neo4j Aura บน Service")
     try:
@@ -34,5 +34,7 @@ def run_cypher(statement):
                 return {"columns": columns, "rows": rows, "truncated": len(records) > 100}
     except (ServiceUnavailable, SessionExpired) as exc:
         raise ValueError("ติดต่อ Neo4j Aura ไม่ได้ กรุณาตรวจสถานะ Instance และค่าการเชื่อมต่อ") from exc
+    except AuthError as exc:
+        raise ValueError("Neo4j Aura ปฏิเสธชื่อผู้ใช้หรือรหัสผ่าน กรุณาตรวจ NEO4J_URI, NEO4J_USER และ NEO4J_PASSWORD ให้มาจาก Instance เดียวกัน") from exc
     except Neo4jError as exc:
-        raise ValueError("คำสั่ง Cypher ไม่สำเร็จ กรุณาตรวจ syntax และชื่อโหนดกับความสัมพันธ์") from exc
+        raise ValueError("คำสั่ง Cypher ไม่สำเร็จ (" + str(exc.code or "Neo4jError") + ") กรุณาตรวจคำสั่งและสิทธิ์ฐานข้อมูล") from exc
