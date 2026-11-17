@@ -6,16 +6,21 @@ import psycopg
 from psycopg import sql
 
 SECTORS = {
+    "production": "การผลิต", "imports": "การนำเข้า",
     "refining": "กลั่นน้ำมัน", "electricity": "ผลิตไฟฟ้า", "cooking": "หุงต้ม",
     "industry": "อุตสาหกรรม", "transport": "ขนส่ง", "other": "การใช้อื่น", "co2": "การปล่อย CO₂"
 }
 TYPES = {"coal": "COAL", "gas": "NATURAL_GAS", "oil": "OIL"}
 CO2 = {"coal": "CO2 - COAL / LIGNITE", "gas": "CO2 - NATURAL GAS", "oil": "CO2 - OIL"}
-SOURCES = ['SRC-04','SRC-09','SRC-11','SRC-15','SRC-18','SRC-19','SRC-20','SRC-21','SRC-22']
+SOURCES = [f'SRC-{n:02d}' for n in (1,2,3,4,5,6,9,10,11,13,14,15,16,17,18,19,20,21,22)]
 
 
 def sector_for(row):
     source, process, kind = row['source_code'], row['process'], row['process_type']
+    if kind == 'PRODUCTION':
+        return 'production'
+    if kind == 'IMPORT':
+        return 'imports'
     if kind == 'EMISSION':
         return 'co2'
     if source == 'SRC-04':
@@ -53,9 +58,9 @@ def annualize(rows, year, fuel):
         if month in item['months']:
             raise ValueError('พบข้อมูลเดือนซ้ำภายในชุดเดียวกัน กรุณาตรวจ Exchange ก่อนรวมรายปี')
         value = Decimal(row['amount'])
-        if row['unit'] in ('BBL/DAY','MMSCFD'):
+        if row['unit'] in ('BBL/DAY','MMSCFD','Million Litres/Day'):
             value *= monthrange(year,month)[1]
-            item['unit'] = 'BBL' if row['unit'] == 'BBL/DAY' else 'MMSCF'
+            item['unit'] = {'BBL/DAY':'BBL','MMSCFD':'MMSCF','Million Litres/Day':'Million Litres'}[row['unit']]
             item['conversion'] = 'monthly_rate_times_calendar_days'
         elif row['unit'] in ('1,000 Tons','Thousand Tons'):
             value *= 1000
@@ -98,7 +103,8 @@ def read_annual_flow(database_url,schema,fuel='all',year=None):
             WHERE e.period_year=%s AND e.period_month BETWEEN 1 AND 12 AND e.validation_status='VERIFIED'
               AND s.src_code=ANY(%s)
               AND ((pf.direction='IN' AND p.process_type IN ('DOMESTIC_USE','REFINING'))
-                   OR (pf.direction='OUT' AND p.process_type='EMISSION'))
+                   OR (pf.direction='OUT' AND p.process_type IN ('EMISSION','PRODUCTION'))
+                   OR (pf.direction='IN' AND p.process_type='IMPORT'))
             ORDER BY s.src_code,p.name,f.name,e.period_month""",(year,SOURCES)).fetchall()
     rows=[dict(zip(('entity_id','source_code','process','process_type','product','product_type','month','amount','unit'),r)) for r in raw]
     result=annualize(rows,year,fuel)

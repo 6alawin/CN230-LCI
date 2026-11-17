@@ -16,3 +16,14 @@
 @media(max-width:620px){#annual-stage{height:760px}.annual-hub{left:30%;top:49%}.annual-hub .iso-block[data-model] img{width:120px;height:105px}.annual-hub .iso-block[data-model]{width:100px;height:90px}.annual-hub strong{font-size:11px}.annual-hub small{max-width:90px;margin:auto}.annual-fuel{left:0;display:block;text-align:center;width:85px}.annual-fuel .iso-block[data-model]{width:65px;margin:auto}.iso-block[data-model] img{width:83px;height:70px}.fuel-coal{top:20%}.fuel-gas{top:52%}.fuel-oil{top:84%}.annual-node{left:52%;width:48%;padding:4px}.annual-node .iso-block[data-model]{width:35px}.annual-node .iso-block[data-model] img{width:59px;height:54px}.annual-node.co2{left:38%;width:62%}.annual-hub{top:40%}.annual-ground{display:none}.annual-scroll:after{content:none}.left-label{left:0}.right-label{left:52%}.annual-node .node-completeness{font-size:9px}.annual-node .node-quantity{line-height:1.5}#annual-tooltip{left:5%;max-width:90%}}
 
 @media(max-width:620px){.annual-node .iso-block[data-model]{width:36px;height:42px}.annual-node .iso-block[data-model] img{width:42px;height:40px}.annual-node>span:last-child{min-width:0;overflow-wrap:anywhere}.annual-node .node-quantity{font-size:9px}.annual-node.co2{left:40%;width:60%}}
+/* แผงข้อมูลปรากฏเฉพาะระหว่างชี้โหนดในพื้นที่กลางล่าง */
+#annual-tooltip{left:29%;top:auto;bottom:3%;width:40%;max-width:520px;font-size:11px;padding:13px 16px;box-sizing:border-box;line-height:1.7}
+#annual-tooltip[hidden],.annual-details[hidden]{display:none!important}
+.annual-node.production,.annual-node.imports{left:3%;width:25%}
+@media(max-width:900px){.annual-node.production,.annual-node.imports{left:0;width:30%}#annual-tooltip{left:25%;width:48%;font-size:10px}}
+@media(max-width:620px){#annual-stage{height:900px}.annual-node.production,.annual-node.imports{left:0;width:43%}.annual-node.production{top:9%!important}.annual-node.imports{top:94%!important}#annual-tooltip{left:3%;bottom:1%;width:94%;max-width:none;z-index:8}.fuel-coal{top:25%}.fuel-gas{top:57%}.fuel-oil{top:79%}}
+#annual-tooltip{left:28%;width:45%;max-width:620px;font-size:10px;line-height:1.5}
+#annual-tooltip strong{font-size:12px}
+.annual-hover-lines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 14px;margin-top:8px}
+#annual-tooltip p{font-size:10px;line-height:1.5;margin:0;color:#b9dcd1}
+@media(max-width:620px){#annual-tooltip{left:1%;width:98%;font-size:9px;padding:8px}.annual-hover-lines{gap:3px 8px}#annual-tooltip p{font-size:9px}}

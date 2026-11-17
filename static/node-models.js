@@ -69,6 +69,7 @@ function image(kind){
   for(const [x,z,r] of [[-.8,0,.55],[.05,.25,.65],[.9,-.25,.5]])
    shape(p,new THREE.DodecahedronGeometry(r,0),0x59636b,x,.5,z);
  }else if(kind==='gas'||kind==='oil'||kind==='other') facility(p,kind==='oil'?0:kind==='gas'?1:3);
+ else if(kind==='production'||kind==='imports')facility(p,0);
  else if(kind==='refining'||kind==='hub')facility(p,2);
  else if(kind==='transport'){
   block(p,-.2,.57,0,1.75,.8,.8,0x93b2bb);block(p,1,.44,0,.65,.55,.8,brass);

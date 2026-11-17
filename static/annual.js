@@ -6,17 +6,39 @@ const status=document.querySelector('#annual-status');
 const tooltip=document.querySelector('#annual-tooltip');
 const pause=document.querySelector('#pause');
 const motion=matchMedia('(prefers-reduced-motion: reduce)');
-const positions={refining:.27,electricity:.40,cooking:.53,industry:.66,transport:.79,other:.92,co2:.13};
-const icons={refining:'▥',electricity:'ϟ',cooking:'⌂',industry:'▥',transport:'⇢',other:'◇',co2:'CO₂'};
+const positions={production:.16,imports:.88,refining:.27,electricity:.40,cooking:.53,industry:.66,transport:.79,other:.92,co2:.13};
+const icons={production:'▥',imports:'⇢',refining:'▥',electricity:'ϟ',cooking:'⌂',industry:'▥',transport:'⇢',other:'◇',co2:'CO₂'};
 const nf=new Intl.NumberFormat('en-US',{maximumFractionDigits:2});
 const exact=new Intl.NumberFormat('en-US',{maximumFractionDigits:8});
 const activities={'ELECTRICITY':'ผลิตไฟฟ้า','ELECTRICITY (EGAT)':'ผลิตไฟฟ้า · กฟผ.','ELECTRICITY (IPP)':'ผลิตไฟฟ้า · IPP','ELECTRICITY (SPP)':'ผลิตไฟฟ้า · SPP','INDUSTRY':'อุตสาหกรรม','COOKING':'หุงต้ม','NGV':'รถยนต์ NGV','AUTOMOBILE':'รถยนต์ LPG','GSP':'โรงแยกก๊าซ','FEEDSTOCK':'วัตถุดิบป้อนกระบวนการ','OWN USED ENERGY':'ใช้เป็นพลังงานในกิจการ','OWN USED FEEDSTOCK':'ใช้เป็นวัตถุดิบในกิจการ','ELECTRICITY GENERATION':'ผลิตไฟฟ้า','OTHER ECONOMIC SECTORS':'เศรษฐกิจอื่น','TRANSPORT':'ขนส่ง'};
-let fuel='all',data=null,selected='electricity',controller=null;
+let fuel='all',data=null,selected=null,controller=null;
 let paused=motion.matches,frame=null,time=0,previous=0;
 function paragraph(text,cls){const p=document.createElement('p');p.textContent=text;if(cls)p.className=cls;return p;}
-function summary(node){if(node.id==='co2' && node.records.length){
-  return node.records.map(row => row.source_code+' · '+(activities[row.process] || row.process)+' · '+row.product+' · '+nf.format(Number(row.amount))+' '+row.unit).join('\n');
- }return node.summaries.map(x=>`${nf.format(Number(x.amount))} ${x.unit}`).join(' · ');}
+function summary(node){
+ if(['co2','production','imports'].includes(node.id)){
+  const totals=new Map();
+  for(const row of node.records){
+   const label=row.source_code+' · '+row.product+' · '+row.unit;
+   totals.set(label,(totals.get(label)||0)+Number(row.amount));
+  }
+  return [...totals].map(([key,value])=>key+' · '+nf.format(value)).join('\n');
+ }
+ return node.summaries.map(x=>nf.format(Number(x.amount))+' '+x.unit).join(' · ');
+}
+function hideHover(){
+ tooltip.hidden=true;selected=null;
+ for(const el of document.querySelectorAll('.annual-node'))el.classList.remove('selected');
+}
+function showHover(node){
+ selectNode(node.id);
+ tooltip.replaceChildren();
+ const heading=document.createElement('strong');heading.textContent=node.label+' · '+data.year;tooltip.append(heading);
+ const lines=document.createElement('div');lines.className='annual-hover-lines';
+ for(const line of (summary(node)||'ไม่พบข้อมูล').split('\n'))lines.append(paragraph(line));
+ tooltip.append(lines,paragraph(node.complete?'ครบ 12 เดือน':'รวมเฉพาะเดือนที่มีข้อมูล'));
+ if(!['production','imports','co2'].includes(node.id))tooltip.append(paragraph([...new Set(node.records.map(r=>r.source_code))].join(' · ')));
+ tooltip.hidden=false;
+}
 function selectNode(id){
  selected=id;
  for(const el of document.querySelectorAll('.annual-node'))el.classList.toggle('selected',el.dataset.node===id);
@@ -25,6 +47,7 @@ function selectNode(id){
  document.querySelector('#annual-detail-title').textContent=`${node.label} · ปี ${data.year}`;
  document.querySelector('#annual-coverage').textContent=node.records.length ? (node.complete?'ทุกรายการมีข้อมูลครบ 12 เดือน':'รวมเฉพาะเดือนที่มีข้อมูล') : 'ยังไม่มีข้อมูล';
  let note='แสดงปริมาณตามกิจกรรมและแหล่งข้อมูล หน่วยแต่ละชนิดแยกยอดจากกัน';
+ if(id==='production'||id==='imports')note='แยกชุดข้อมูลตามแหล่ง ผลิตภัณฑ์ และหน่วย อัตรารายวันคูณวันจริงของแต่ละเดือน ชุดข้อมูลมีขอบเขตต่างกัน';
  if(id==='cooking')note='ต้นทาง SRC-09 ระบุ COOKING หรือการหุงต้ม ยังไม่มีตัวแยกครัวเรือนออกจากร้านค้าและกิจกรรมหุงต้มอื่น';
  if(id==='co2')note='ผลรวม CO₂ ที่รายงานแยกตามเชื้อเพลิงและสาขา จาก SRC-18 ถึง SRC-21 ค่านี้เป็นข้อมูลการปล่อยที่รายงานแยกชุดจากปริมาณการใช้เชื้อเพลิง';
  if(id==='electricity')note='ปริมาณเชื้อเพลิงที่ใช้ผลิตไฟฟ้า อ้าง SRC-15 สำหรับถ่านหิน SRC-11 สำหรับก๊าซ และ SRC-22 สำหรับน้ำมัน ยังไม่มีปริมาณไฟฟ้าที่ผลิตเป็น kWh';
@@ -51,16 +74,18 @@ function renderNodes(){
   const button=document.createElement('button');button.className='annual-node '+node.id+(node.records.length?'':' empty');button.type='button';button.dataset.node=node.id;button.style.top=(positions[node.id]*100)+'%';
   const icon=document.createElement('span');icon.className='iso-block';icon.textContent=icons[node.id];icon.setAttribute('aria-hidden','true');
   const text=document.createElement('span');const label=document.createElement('span');label.className='node-label';label.textContent=node.label;
-  const amount=document.createElement('span');amount.className='node-quantity';amount.textContent=node.records.length?(node.id==='co2'?'ดูปริมาณแยกตามสาขา':node.summaries.map(x=>`${nf.format(Number(x.amount))} ${x.unit}`).join('\n')):'ไม่มีข้อมูลตามเงื่อนไข';
+  const amount=document.createElement('span');amount.className='node-quantity';amount.textContent=node.records.length?(['co2','production','imports'].includes(node.id)?'ชี้เพื่อดูปริมาณแยกแหล่ง':node.summaries.map(x=>`${nf.format(Number(x.amount))} ${x.unit}`).join('\n')):'ไม่มีข้อมูลตามเงื่อนไข';
   const coverage=document.createElement('span');coverage.className='node-completeness';coverage.textContent=node.records.length?(node.complete?'ครบ 12 เดือน':'บางรายการมีข้อมูลไม่ครบปี'):'';
   text.append(label,amount,coverage);button.append(icon,text);
-  function activate(){selectNode(node.id);}
-  button.addEventListener('click',activate);button.addEventListener('focus',activate);
-  button.addEventListener('mouseenter',()=>{activate();tooltip.textContent=node.label+' · '+data.year+'\n'+(summary(node)||'ไม่พบข้อมูล')+'\n'+(node.complete?'ครบ 12 เดือน':'ดูช่วงที่มีข้อมูลในรายละเอียดด้านล่าง');tooltip.hidden=false;});
-  button.addEventListener('mouseleave',()=>tooltip.hidden=true);
+  button.setAttribute('aria-describedby','annual-tooltip');
+  button.addEventListener('mouseenter',()=>showHover(node));
+  button.addEventListener('mouseleave',hideHover);
+  button.addEventListener('focus',()=>{if(button.matches(':focus-visible'))showHover(node);});
+  button.addEventListener('blur',hideHover);
+  button.addEventListener('click',event=>{if(event.pointerType==='touch'){if(selected===node.id)hideHover();else showHover(node);}});
   container.append(button);
  }
- selectNode(selected);paint();
+ hideHover();paint();
 }
 async function load(year){
  if(controller)controller.abort();controller=new AbortController();const active=controller;
@@ -84,7 +109,7 @@ function paint(){
  for(const [kind,y]of [['coal',.32],['gas',.52],['oil',.72]])paths.push({path:[w*.28,h*y,w*.33,h*y,w*.34,h*.52,w*.37,h*.52],color:kind==='oil'?'#c9b476':kind==='gas'?'#82c8dc':'#7fd7ac',available:fuel==='all'||fuel===kind});
  for(const [id,y] of Object.entries(positions)){
   const available=!!data?.nodes.find(n=>n.id===id)?.records.length;
-  const path=id==='co2'?[w*.44,h*.44,w*.44,h*.25,w*.43,h*.13,w*.40,h*.13]:[w*.48,h*.52,w*.60,h*.52,w*.61,h*y,w*.72,h*y];
+  const path=['production','imports'].includes(id)?[w*.28,h*y,w*.33,h*y,w*.34,h*.52,w*.37,h*.52]:id==='co2'?[w*.44,h*.44,w*.44,h*.25,w*.43,h*.13,w*.40,h*.13]:[w*.48,h*.52,w*.60,h*.52,w*.61,h*y,w*.72,h*y];
   paths.push({path,color:id==='co2'?'#e2aa82':'#9cc596',available});
  }
  for(const {path,color,available} of paths){if(!available || !data)continue;ctx.beginPath();curve(path);ctx.strokeStyle=available?color+'77':'#45616b55';ctx.lineWidth=available?2:1;ctx.setLineDash([4,6]);ctx.stroke();ctx.setLineDash([]);
@@ -98,3 +123,8 @@ new ResizeObserver(()=>{const r=Math.min(devicePixelRatio||1,2);canvas.width=sta
 yearSelect.addEventListener('change',()=>load(yearSelect.value));for(const button of document.querySelectorAll('[data-fuel]'))button.addEventListener('click',()=>{fuel=button.dataset.fuel;for(const item of document.querySelectorAll('[data-fuel]'))item.setAttribute('aria-pressed',String(item===button));load(yearSelect.value);});
 sync();load();
 (async()=>{try{const r=await fetch('/api/overview');if(!r.ok)throw Error();const d=await r.json();document.querySelector('#exchanges').textContent=nf.format(d.exchanges);document.querySelector('#sources').textContent=nf.format(d.sources);document.querySelector('#period').textContent=`${d.first_year}–${d.last_year}`;document.querySelector('#health').textContent='● ข้อมูลจากฐานปัจจุบัน';}catch{document.querySelector('#health').textContent='อ่านภาพรวมไม่ได้';}})();
+
+document.querySelector('.annual-details').hidden=true;
+stage.addEventListener('mouseleave',hideHover);
+document.addEventListener('keydown',event=>{if(event.key==='Escape')hideHover();});
+document.addEventListener('pointerdown',event=>{if(!event.target.closest('.annual-node'))hideHover();});
