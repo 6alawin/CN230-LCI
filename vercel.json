@@ -6,6 +6,18 @@
     {
       "source": "/api/:path*",
       "destination": "https://cn230-lci.onrender.com/api/:path*"
+    },
+    {
+      "source": "/search",
+      "destination": "/search.html"
+    },
+    {
+      "source": "/query",
+      "destination": "/query.html"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/:path*"
     }
   ]
 }

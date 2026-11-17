@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 import psycopg
 
@@ -18,6 +19,7 @@ class QueryRequest(BaseModel):
 
 
 app = FastAPI(title="CN230 LCI Semantic Search", version="0.1.0")
+app.mount("/assets", StaticFiles(directory="static"), name="assets")
 
 
 @app.get("/")
@@ -43,6 +45,20 @@ def run_query(request: QueryRequest):
     except psycopg.Error as exc:
         raise HTTPException(status_code=400, detail="คำสั่ง SQL ไม่สำเร็จ กรุณาตรวจชื่อตารางและคอลัมน์") from exc
 
+
+
+@app.get("/search")
+def search_page():
+    return FileResponse("static/search.html")
+
+@app.get("/api/overview")
+def overview():
+    from app.overview import read_overview
+    settings = get_settings()
+    try:
+        return read_overview(settings.database_url, settings.cloud_snapshot_schema)
+    except psycopg.Error as exc:
+        raise HTTPException(status_code=503, detail="อ่านภาพรวมฐานข้อมูลไม่ได้") from exc
 
 @app.get("/api/health")
 def health():

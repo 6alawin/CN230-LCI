@@ -8,6 +8,7 @@ import numpy as np
 import psycopg
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 from app.query_workbench import run_sql
@@ -86,6 +87,7 @@ class QueryRequest(BaseModel):
     query: str
 
 app = FastAPI()
+app.mount("/assets", StaticFiles(directory=ROOT / "static"), name="assets")
 
 @app.get('/')
 def home():
@@ -117,6 +119,19 @@ def api_query(request: QueryRequest):
         raise ValueError('เลือก SQL หรือ Cypher')
     except Exception as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
+@app.get('/search')
+def search_page():
+    return FileResponse(ROOT / 'static' / 'search.html')
+
+@app.get('/api/overview')
+def overview():
+    from app.overview import read_overview
+    try:
+        return read_overview(DATABASE_URL, 'public')
+    except psycopg.Error as exc:
+        raise HTTPException(status_code=503, detail='อ่านภาพรวมฐานข้อมูลไม่ได้') from exc
 
 @app.get('/api/health')
 def health():

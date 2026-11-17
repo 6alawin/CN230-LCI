@@ -1,0 +1,15 @@
+
+:root { font-family: "Segoe UI", Tahoma, sans-serif; --muted:#9bacc1; --teal:#65e6ce; }
+body { background:radial-gradient(ellipse at 78% -10%,#183447 0,transparent 50%),#0a121d; }
+.nav-item,.nav { transition:background .2s,color .2s; }
+.nav-item:hover,.nav:hover { background:#183039; color:#e8fffa; }
+.nav-item:focus-visible,.nav:focus-visible,a:focus-visible,button:focus-visible { outline:2px solid #65e6ce; outline-offset:4px; }
+#search-page .hero h1 { font-size:36px; letter-spacing:-.03em; }
+#search-page .topbar { margin-bottom:28px; }
+#search-page .intro { font-size:15px; }
+#search-page #rag-answer { margin-top:18px; padding:24px; line-height:1.9; border-color:#386357; background:#102a2a; }
+#search-page .result-card p { font-size:14px; }
+#search-page .section-note { font-size:12px; }
+#search-page .stat-card { min-height:80px; }
+#search-page .search-panel { box-shadow:none; }
+@media(max-width:850px){ aside { flex-wrap:wrap; gap:10px; } aside .nav-item { display:flex; padding:9px 12px; } aside .brand { margin-right:auto; } }
