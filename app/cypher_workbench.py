@@ -2,6 +2,7 @@
 import json
 import os
 import re
+from urllib.parse import urlsplit
 
 from neo4j import GraphDatabase, Query, READ_ACCESS
 from neo4j.exceptions import AuthError, Neo4jError, ServiceUnavailable, SessionExpired
@@ -16,10 +17,13 @@ def run_cypher(statement):
     password = os.getenv("NEO4J_PASSWORD", "").strip()
     if not uri or not password:
         raise ValueError("ยังไม่มีค่าการเชื่อม Neo4j Aura บน Service")
+    # Aura ใช้ฐานข้อมูลเริ่มต้นของบัญชี ชื่อ Instance บน Console เป็นคนละค่ากับชื่อฐาน
+    hostname = urlsplit(uri).hostname or ""
+    database = None if hostname.endswith(".databases.neo4j.io") else os.getenv("NEO4J_DATABASE", "neo4j")
     try:
         with GraphDatabase.driver(uri, auth=(user, password), connection_timeout=10,
                                   max_transaction_retry_time=0) as driver:
-            with driver.session(database=os.getenv("NEO4J_DATABASE", "neo4j"),
+            with driver.session(database=database,
                                 default_access_mode=READ_ACCESS) as session:
                 # ตรวจแผนก่อนรัน เพื่อป้องกันคำสั่งเขียนที่ซ่อนอยู่หลัง MATCH หรือ WITH
                 plan = session.run(Query("EXPLAIN " + query, timeout=5)).consume()
