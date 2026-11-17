@@ -51,6 +51,20 @@ def run_query(request: QueryRequest):
 def search_page():
     return FileResponse("static/search.html")
 
+@app.get("/api/flow")
+def flow(fuel: str = "coal", year: int | None = None, month: int | None = None):
+    from app.flow import read_flow
+    settings = get_settings()
+    try:
+        if month is not None and not 1 <= month <= 12:
+            raise ValueError("เดือนต้องอยู่ระหว่าง 1 ถึง 12")
+        return read_flow(settings.database_url, settings.cloud_snapshot_schema, fuel, year, month)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    except psycopg.Error as exc:
+        raise HTTPException(status_code=503, detail="อ่านข้อมูลการไหลไม่ได้") from exc
+
+
 @app.get("/api/overview")
 def overview():
     from app.overview import read_overview
