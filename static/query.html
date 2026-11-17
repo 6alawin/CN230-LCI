@@ -38,18 +38,18 @@
     @media(max-width:750px) { .layout { display: block; } aside { display: flex; align-items: center; gap: 12px; padding: 12px; border-right: 0; border-bottom: 1px solid #263346; } .brand { padding: 0; margin-right: auto; } .brand small { display: none; } main { padding-top: 25px; } }
   </style>
 <link rel="stylesheet" href="/assets/dashboard.css">
-<link rel="stylesheet" href="/assets/theme.css"></head>
+<link rel="stylesheet" href="/assets/theme.css"><link rel="stylesheet" href="/assets/workspace.css"></head>
 <body>
   <div class="layout">
-    <aside><div class="brand">CN230 LCI<small>Query Workspace</small></div><a class="nav" href="/">Overview</a><a class="nav" href="/search">Search</a><a class="nav active" href="/query">Query</a></aside>
+    <aside id="workspace-sidebar"><nav aria-label="เมนูหลัก"><a href="/">Overview</a><a href="/search">Search</a><a href="/query">Query</a></nav></aside><script src="/assets/workspace.js"></script>
     <main>
       <div class="eyebrow">Explore the verified LCI data</div>
       <h1>Query ข้อมูลเอง</h1>
-      <p>พิมพ์ SQL เพื่ออ่านข้อมูล PostgreSQL หรือเลือก Cypher เมื่อใช้เว็บในเครื่องที่เชื่อม Neo4j ผลลัพธ์แสดงสูงสุด 100 แถว</p>
+      <p>พิมพ์ SQL เพื่ออ่าน PostgreSQL หรือเลือก Cypher เพื่ออ่านกราฟบน Neo4j Aura ผลลัพธ์แสดงสูงสุด 100 แถว</p>
       <section class="panel">
         <form id="query-form">
           <label for="language">ภาษา Query</label>
-          <select id="language"><option value="sql">SQL · PostgreSQL</option><option value="cypher">Cypher · Neo4j ในเครื่อง</option></select>
+          <select id="language"><option value="sql">SQL · PostgreSQL</option><option value="cypher">Cypher · Neo4j Aura</option></select>
           <label for="statement" style="margin-top:18px">คำสั่ง</label>
           <textarea id="statement" spellcheck="false" required maxlength="5000">SELECT s.src_code, COUNT(*) AS exchanges
 FROM lci_exchange e

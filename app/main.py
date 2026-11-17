@@ -36,11 +36,14 @@ def query_page():
 
 @app.post("/api/query")
 def run_query(request: QueryRequest):
-    if request.language != "sql":
-        raise HTTPException(status_code=400, detail="Cypher พร้อมใช้งานบนเว็บในเครื่องที่เชื่อม Neo4j")
     from app.query_workbench import run_sql
     try:
         settings = get_settings()
+        if request.language == "cypher":
+            from app.cypher_workbench import run_cypher
+            return run_cypher(request.query)
+        if request.language != "sql":
+            raise ValueError("เลือก SQL หรือ Cypher")
         return run_sql(settings.database_url, request.query, settings.cloud_snapshot_schema)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
