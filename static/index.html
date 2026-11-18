@@ -22,7 +22,7 @@
 <button aria-pressed="false" data-panel="quality">Data Quality</button>
 
 <section id="flow-panel" class="graphic annual" aria-label="ภาพการไหลของพลังงานรายปี">
-<div class="graphic-head"><div><h2>การไหลของพลังงานรายปี</h2><p>ปริมาณแยกการใช้งานและ CO₂ · ชี้หรือแตะจุดเพื่อดูรายละเอียด</p></div><div class="controls"><label for="annual-year">ปี ค.ศ.</label><select id="annual-year"><option>กำลังอ่าน</option></select><button id="pause" aria-pressed="false">หยุดภาพ</button></div></div>
+<div class="graphic-head"><div><h2>การไหลของพลังงานรายปี</h2><p>ชี้เพื่อดูปริมาณ · กดกิจกรรมปลายทางเพื่อดูเชื้อเพลิงที่ใช้ · กด CO₂ เพื่อดูหลักฐานการปล่อย</p></div><div class="controls"><label for="annual-year">ปี ค.ศ.</label><select id="annual-year"><option>กำลังอ่าน</option></select><button id="pause" aria-pressed="false">หยุดภาพ</button></div></div>
 <div class="annual-filter" aria-label="ชนิดเชื้อเพลิง"><button data-fuel="all" aria-pressed="true">ทั้งหมด</button><button data-fuel="coal" aria-pressed="false">ถ่านหิน / ลิกไนต์</button><button data-fuel="gas" aria-pressed="false">ก๊าซธรรมชาติ</button><button data-fuel="oil" aria-pressed="false">น้ำมัน / LPG</button><span id="annual-status" role="status"></span></div>
 <div class="annual-scroll" tabindex="0" aria-label="แผนภาพรายปี เลื่อนแนวนอนเพื่อดูบนจอเล็ก"><div id="annual-stage"><div class="annual-ground" aria-hidden="true"></div><canvas id="annual-canvas" aria-hidden="true"></canvas>
 <div class="column-label left-label">เชื้อเพลิง</div><div class="column-label right-label">นำไปใช้ทำอะไร</div>
@@ -30,7 +30,7 @@
 <div class="annual-hub"><div class="iso-block"><div class="plant"><i class="window"></i></div></div><strong>การใช้เชื้อเพลิง</strong><small>แยกตามสถิติของแต่ละสาขา</small></div>
 <div id="annual-nodes"></div><div id="annual-tooltip" role="tooltip" hidden></div></div></div>
 <p class="annual-caption">┄ เส้นประแสดงความเชื่อมโยงเชิงแนวคิด ไม่ใช่เส้นทางท่อหรือขนส่งจริง ปริมาณรายปีแสดงพร้อมหน่วยและวิธีแปลงในรายละเอียด แต่ละชุดข้อมูลมีขอบเขตต่างกัน จึงใช้ตรวจสมดุลมวลหรือสมดุลพลังงานระหว่างทุกเส้นร่วมกันไม่ได้</p>
-<section class="annual-details" aria-label="หลักฐานปริมาณรายปี"><div class="detail-top"><h3 id="annual-detail-title">รายละเอียดปริมาณ</h3><span id="annual-coverage"></span></div><p id="annual-detail-note"></p><div id="annual-evidence"></div></section></section>
+<section id="annual-trace" class="annual-details" aria-labelledby="annual-detail-title" hidden><div class="detail-top"><h3 id="annual-detail-title" tabindex="-1">รายละเอียดปริมาณ</h3><span id="annual-coverage"></span><button id="annual-trace-close" type="button">ปิดรายละเอียด</button></div><p id="annual-detail-note"></p><div id="annual-evidence"></div></section></section>
 <section class="explorer" id="factors" hidden><h2>Factors · หน่วยและขอบเขตการคำนวณ</h2>
 <dl><dt>มวล</dt><dd>1 Thousand Tons หรือ 1,000 Tons เท่ากับ 1,000 ตัน</dd>
 <dt>อัตรารายวัน</dt><dd>สำหรับอัตราเฉลี่ยรายเดือน คูณ BBL/DAY หรือ MMSCFD ด้วยจำนวนวันปฏิทินของเดือนนั้น จะได้ปริมาณ BBL หรือ MMSCF ตามลำดับ</dd>

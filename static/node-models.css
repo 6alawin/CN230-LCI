@@ -27,3 +27,18 @@
 .annual-hover-lines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 14px;margin-top:8px}
 #annual-tooltip p{font-size:10px;line-height:1.5;margin:0;color:#b9dcd1}
 @media(max-width:620px){#annual-tooltip{left:1%;width:98%;font-size:9px;padding:8px}.annual-hover-lines{gap:3px 8px}#annual-tooltip p{font-size:9px}}
+#annual-stage .annual-node[aria-expanded="true"]{background:#26483d;border-radius:12px;box-shadow:inset 2px 0 #7fd7ac}
+#annual-stage.tracing .annual-fuel:not(.trace-input){opacity:.35}
+#annual-stage .trace-input{opacity:1;color:#dfffee;text-shadow:0 0 12px #7fd7ac}
+#annual-trace .detail-top{flex-wrap:wrap}
+#annual-trace-close{margin-left:auto}
+.trace-diagram{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin:16px 0}
+.trace-diagram section{position:relative;min-width:0;padding:14px;background:#132d33;border:1px solid #477064;border-radius:10px}
+.trace-diagram section:last-child{border-color:#916e54}
+.trace-diagram h4{margin:0 0 6px;color:#d9efe6}
+.trace-diagram p{font-size:12px;overflow-wrap:anywhere}
+.trace-diagram section+section:before{content:'→';position:absolute;left:-23px;top:45%;color:#86e1c6}
+@keyframes trace-step-in{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:no-preference){.trace-diagram section{animation:trace-step-in .38s ease-out both}.trace-diagram section:nth-child(2){animation-delay:.32s}.trace-diagram section:nth-child(3){animation-delay:.64s}}
+@media(max-width:620px){.trace-diagram{grid-template-columns:1fr}.trace-diagram section+section:before{content:'↓';top:-25px;left:50%}}
+#annual-trace .annual-evidence p{overflow-wrap:anywhere}

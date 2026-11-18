@@ -11,6 +11,7 @@ SECTORS = {
     "industry": "อุตสาหกรรม", "transport": "ขนส่ง", "other": "การใช้อื่น", "co2": "การปล่อย CO₂"
 }
 TYPES = {"coal": "COAL", "gas": "NATURAL_GAS", "oil": "OIL"}
+FUEL_GROUPS = {product_type: group for group, product_type in TYPES.items()}
 CO2 = {"coal": "CO2 - COAL / LIGNITE", "gas": "CO2 - NATURAL GAS", "oil": "CO2 - OIL"}
 SOURCES = [f'SRC-{n:02d}' for n in (1,2,3,4,5,6,9,10,11,13,14,15,16,17,18,19,20,21,22)]
 
@@ -51,6 +52,7 @@ def annualize(rows, year, fuel):
         key = (sector,row['source_code'],row['process'],row['product'],row['unit'])
         if key not in groups:
             groups[key] = dict(sector=sector,source_code=row['source_code'],process=row['process'],
+                               fuel_group=FUEL_GROUPS.get(row['product_type']),
                                product=row['product'],source_unit=row['unit'],unit=row['unit'],
                                amount=Decimal(0),months=[],exchange_ids=[],conversion='sum')
         item = groups[key]
